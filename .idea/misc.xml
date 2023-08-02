@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_button_tablesale_billsplit_merge_selected.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_imagebutton_billsplitmerge_radio.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_imagebutton_cashinout_delete.xml" value="0.3685" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_imagebutton_main_payment.xml" value="0.3925" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_imagebutton_main_payment2.xml" value="0.3925" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_imagebutton_main_qty_minus2.xml" value="0.3925" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_imagebutton_main_qty_plus.xml" value="0.3925" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_imagebutton_main_qty_plus2.xml" value="0.3925" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_imagebutton_paymentcreditcard_cardprocessing.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_imagebutton_roundlayout_white_gray.xml" value="0.446" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_imagebutton_settings_system_disable.xml" value="0.3685" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_roundbutton_breakfastmenu_normal.xml" value="0.518" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_roundbutton_breakfastmenu_rollover.xml" value="0.518" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_roundbutton_dinnermenu_normal.xml" value="0.518" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_roundbutton_dinnermenu_rollover.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_roundbutton_lunchmenu_normal.xml" value="0.518" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_roundbutton_lunchmenu_rollover.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_roundbutton_nightmenu_normal.xml" value="0.518" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_roundbutton_nightmenu_rollover.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_selector_roundbutton_breakfastmenu.xml" value="0.518" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_selector_roundbutton_dinnermenu.xml" value="0.518" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_selector_roundbutton_lunchmenu.xml" value="0.518" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_selector_roundbutton_nightmenu.xml" value="0.518" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/background_splash.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/button_selector_category_otherpay_selected.xml" value="0.3925" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/button_selector_gray.xml" value="0.446" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/button_selector_gray2.xml" value="0.446" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/button_selector_gray3.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/button_selector_intro_quit.xml" value="0.3685" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/button_selector_jjjsignpad_cancel_void.xml" value="0.446" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/button_selector_jjjsignpad_ok2.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/button_selector_paymentcreditcard_cardprocess.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/button_selector_red.xml" value="0.3925" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/button_selector_settings.xml" value="0.3685" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/button_selector_settings_selected.xml" value="0.3685" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/button_selector_white2.xml" value="0.3925" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/layout_shape_round.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_background_settings.xml" value="0.3685" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_background_settings_sub.xml" value="0.3685" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_background_settings_tab.xml" value="0.3685" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_background_settings_tab_selected.xml" value="0.3685" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_blue.xml" value="0.3925" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_blue_2.xml" value="0.3925" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_blue_2_line.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_blue_2_pushed.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_cart.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_gray.xml" value="0.446" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_gray_card_cancelvoid.xml" value="0.445" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_gray_card_cancelvoid_pushed.xml" value="0.445" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_gray_white.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_gray_white_selected.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_green_2.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_mergeselected_line.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_mergeselected_line_selected.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_paybybills_line.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_paybybills_line_selected.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_paymentcreditcard_cardprocess.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_paymentcreditcard_cardprocess_selected.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_red.xml" value="0.3925" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_resetall_line.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_resetall_line_selected.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_resetselected_line.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_resetselected_line_selected.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_selectedprinting_line.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_selectedprinting_line_selected.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_selector_paymentcreditcard.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_submitsignature_line.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_submitsignature_line_selected.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_voidbybills_line.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_voidbybills_line_selected.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_button_white2.xml" value="0.3925" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_darkblue.xml" value="0.518" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_quick_grid_not_sel.xml" value="0.2665" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_quick_grid_sel.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_salehistory_button_blue.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_selector_button_gray.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_table5.xml" value="0.2665" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_table5_2.xml" value="0.2665" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_table_handheld_selected.xml" value="0.2665" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_table_onorder.xml" value="0.2665" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_table_selected5.xml" value="0.2665" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_table_selected5_2.xml" value="0.2665" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_tablesale_grid_row.xml" value="0.2665" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_tablesale_grid_row_wh.xml" value="0.2665" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_white_round.xml" value="0.3685" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/roundlayout_white_round_blackline.xml" value="0.3925" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/selector_roundlayout_button_blue.xml" value="0.3685" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/selector_roundlayout_button_blue_line.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/selector_roundlayout_button_cancelvoid_card.xml" value="0.445" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/selector_roundlayout_button_cart.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/selector_roundlayout_button_green.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/selector_roundlayout_button_mergeselected.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/selector_roundlayout_button_paybybills.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/selector_roundlayout_button_resetall.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/selector_roundlayout_button_resetselected.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/selector_roundlayout_button_selectedprinting.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/selector_roundlayout_button_submitsignature.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/selector_roundlayout_button_voidbybills.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/tablet_button_selector_red.xml" value="0.3685" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/tablet_button_selector_red_line.xml" value="0.518" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/tablet_button_selector_round_red_line.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/tablet_button_selector_skyblue.xml" value="0.3685" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/tablet_roundlayout_button_red.xml" value="0.3685" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/tablet_roundlayout_button_red_line.xml" value="0.518" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/tablet_roundlayout_button_round_red_line.xml" value="0.3475" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/tablet_roundlayout_button_selector_gray.xml" value="0.3685" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/tablet_roundlayout_button_skyblue.xml" value="0.3685" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/tablet_roundlayout_button_skyblue_dark.xml" value="0.3685" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_billsplitmerge.xml" value="0.2846153846153846" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_cash_in_out_popup.xml" value="0.3017094017094017" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_command_download_data.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_emploee_login.xml" value="0.3017094017094017" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_jjj_sign_pad.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_jjj_sign_pad2.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_jjj_sign_pad3.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_main.xml" value="0.3451086956521739" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_main_command.xml" value="0.3017094017094017" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_main_lite.xml" value="0.2846153846153846" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_main_middle_service_modifer.xml" value="0.3451086956521739" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_main_payment.xml" value="0.3017094017094017" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_memo_to_kitchen.xml" value="0.2846153846153846" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_payment_credit_card.xml" value="0.367948717948718" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_payment_customer_select_receipt.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_payment_customer_select_receipt2.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_payment_customer_select_receipt3.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_payment_review.xml" value="0.3017094017094017" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_payment_thank_you.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_service_detail_popup.xml" value="0.2846153846153846" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_settings.xml" value="0.3017094017094017" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_settings_device_kitchen_printer3.xml" value="0.3017094017094017" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_settings_device_printer.xml" value="0.3451086956521739" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_settings_system.xml" value="0.21511273613650214" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_signpad3.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_splash.xml" value="0.2846153846153846" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_table_main.xml" value="0.3451086956521739" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_table_people_cnt.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_table_split.xml" value="0.3017094017094017" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_time_menu_set.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_tip_card_list.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/activity_tipinsert3.xml" value="0.2846153846153846" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/bottom_itemadd_layout.xml" value="0.3017094017094017" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/expandablelist_group.xml" value="0.2846153846153846" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/fragment_menu_menulist_group.xml" value="0.2846153846153846" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/fragment_menu_menulist_item.xml" value="0.2846153846153846" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/grid_item.xml" value="0.2846153846153846" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/grid_view.xml" value="0.2846153846153846" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/main_salecart_list.xml" value="0.3017094017094017" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/popup_main_action.xml" value="0.2846153846153846" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/popup_table_action.xml" value="0.3017094017094017" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/roundlayout_table_handheld_selected.xml" value="0.30085470085470084" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/snackbar_custom.xml" value="0.28376068376068375" />
+        <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/layout/tablet_quick_table_grid_row.xml" value="0.2846153846153846" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_imagebutton_adminpassword_delete.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_imagebutton_adminpassword_number.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_imagebutton_command_title.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_imagebutton_payment_enter.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_imagebutton_settings_gateway_disable.xml" value="0.4465" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_imagebutton_settings_system.xml" value="0.4835" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_imagebutton_settings_system_disable.xml" value="0.4115" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_imagebutton_timemenu_breakfast.xml" value="0.4445" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_roundbutton_breakfastmenu_normal.xml" value="0.4445" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_roundbutton_breakfastmenu_rollover.xml" value="0.4445" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_roundbutton_dinnermenu_normal.xml" value="0.4445" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_roundbutton_dinnermenu_rollover.xml" value="0.4445" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_roundbutton_lunchmenu_normal.xml" value="0.4445" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_roundbutton_lunchmenu_rollover.xml" value="0.4445" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_roundbutton_nightmenu_normal.xml" value="0.4445" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_roundbutton_nightmenu_rollover.xml" value="0.4445" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_roundlayout_category_item_bg4.xml" value="0.4445" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_selector_roundbutton_breakfastmenu.xml" value="0.4445" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_selector_roundbutton_dinnermenu.xml" value="0.4445" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_selector_roundbutton_lunchmenu.xml" value="0.4445" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/ab_selector_roundbutton_nightmenu.xml" value="0.4445" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/button_selector_bluebutton.xml" value="0.2845" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/button_selector_bluebutton2.xml" value="0.2845" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/button_selector_bluebutton3.xml" value="0.2845" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/button_selector_cashinout_button_cashin.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/button_selector_category4.xml" value="0.4115" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/button_selector_download1.xml" value="0.4345" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/button_selector_download2.xml" value="0.4345" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/button_selector_giftcard_search.xml" value="0.4175" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/button_selector_jjjsignpad_notclick.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/button_selector_modifierbutton_blue.xml" value="0.4445" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/button_selector_modifierbutton_gray.xml" value="0.4445" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/button_selector_modifierbutton_red.xml" value="0.4445" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/button_selector_numberbutton.xml" value="0.418" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/button_selector_numberbutton_qty.xml" value="0.418" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/button_selector_settings.xml" value="0.4835" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/button_selector_settings_selected.xml" value="0.4835" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundbackground_ordertype.xml" value="0.4175" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_background_cartoption.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_background_salehistory_detail.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_background_settings_sub.xml" value="0.4835" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_background_settings_tab.xml" value="0.4835" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_black_back.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_black_roundlayout.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_blue.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_button_blue.xml" value="0.4605" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_button_blue_2.xml" value="0.4605" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_button_blue_2_pushed.xml" value="0.4605" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_button_cart.xml" value="0.4605" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_button_cart_pushed.xml" value="0.4605" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_button_green.xml" value="0.4605" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_button_green_2.xml" value="0.4605" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_button_green_2_pushed.xml" value="0.4605" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_button_red.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_button_red_2.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_button_red_2_pushed.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_darkblue.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_download1.xml" value="0.4345" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_download1_rollover.xml" value="0.4345" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_gray_row.xml" value="0.4605" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_line.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_line_whitebule2.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_pagerno_edittext.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_quick_grid_not_sel.xml" value="0.4175" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_quick_grid_sel.xml" value="0.4175" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/roundlayout_salehistory.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/selector_roundlayout_button_blue.xml" value="0.4605" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/selector_roundlayout_button_cart.xml" value="0.4605" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/selector_roundlayout_button_green.xml" value="0.4605" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/selector_roundlayout_button_red.xml" value="0.3745" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/selector_roundlayout_button_white.xml" value="0.4605" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/shape_switch_on_80.xml" value="0.3135" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/shape_switch_selector_100.xml" value="0.3135" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/shape_switch_selector_80.xml" value="0.3135" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/tablet_button_selector_red.xml" value="0.4605" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/drawable/tablet_roundlayout_blue.xml" value="0.2845" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_admin_password.xml" value="0.2328125" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_billsplitmerge.xml" value="0.21655701754385964" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_category.xml" value="0.28046875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_command_download_data.xml" value="0.28046875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_emploee_login.xml" value="0.25" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_employee_key_in.xml" value="0.28046875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_intro_real_demo_choice.xml" value="0.3536184210526316" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_jjj_sign_pad.xml" value="0.28046875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_jjj_sign_pad2.xml" value="0.28046875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_jjj_sign_pad3.xml" value="0.28046875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_jjjpax_batch.xml" value="0.28046875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_jjjpax_pay.xml" value="0.28046875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_main_command.xml" value="0.21655701754385964" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_main_discount.xml" value="0.3384615384615385" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_main_giftcard.xml" value="0.3384615384615385" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_main_lite.xml" value="0.34484649122807015" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_main_main.xml" value="0.34484649122807015" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_main_middle_service_modifer.xml" value="0.21655701754385964" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_main_payment.xml" value="0.29523026315789475" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_main_quicksale.xml" value="0.34484649122807015" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_mainmiddleservice_scale_weight.xml" value="0.23163377192982457" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_payment_calculator.xml" value="0.28046875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_payment_credit_card.xml" value="0.28046875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_payment_review.xml" value="0.34484649122807015" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_payment_select_other_pay.xml" value="0.28046875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_payment_thank_you.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_push_popup_for_reservation.xml" value="0.3140625" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_recall.xml" value="0.28046875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_reservation_web_page.xml" value="0.3140625" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_sale_history.xml" value="0.34484649122807015" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_sale_history__reprint.xml" value="0.46794871794871795" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_sale_history_list.xml" value="0.34484649122807015" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_sale_history_list_web.xml" value="0.3140625" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_sale_history_tip_adjustment.xml" value="0.34484649122807015" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_sale_history_web.xml" value="0.3140625" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_select_get_food_type.xml" value="0.3536184210526316" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_service_detail_popup.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_service_list.xml" value="0.28046875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_settings.xml" value="0.2328125" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_settings_device_kitchen_printer1.xml" value="0.3918803418803419" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_settings_device_kitchen_printer2.xml" value="0.3918803418803419" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_settings_device_kitchen_printer3.xml" value="0.3918803418803419" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_settings_device_kitchen_printer4.xml" value="0.3918803418803419" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_settings_device_kitchen_printer5.xml" value="0.3918803418803419" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_settings_device_label_printer1.xml" value="0.3918803418803419" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_settings_device_label_printer2.xml" value="0.3918803418803419" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_settings_device_label_printer3.xml" value="0.3918803418803419" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_settings_device_label_printer4.xml" value="0.3918803418803419" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_settings_device_label_printer5.xml" value="0.3918803418803419" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_settings_device_printer.xml" value="0.3384615384615385" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_settings_label_printer.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_settings_payment_gateway.xml" value="0.3384615384615385" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_settings_system.xml" value="0.27595766129032256" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_signpad.xml" value="0.28046875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_splash.xml" value="0.36430921052631576" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_table_main.xml" value="0.23985745614035087" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_table_people_cnt.xml" value="0.28046875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_table_splitted_list.xml" value="0.4076206140350877" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_tablet_category.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/activity_time_menu_set.xml" value="0.28046875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/alertdialog_custom_list.xml" value="0.3140625" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/cart_item.xml" value="0.28046875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/expandablelist_group.xml" value="0.36430921052631576" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/grid_item.xml" value="0.3918803418803419" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/grid_view.xml" value="0.3918803418803419" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/main_salecart_list.xml" value="0.28046875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/mainmiddleservice_list_row.xml" value="0.3140625" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/popup_main_action.xml" value="0.2328125" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/popup_table_action.xml" value="0.34484649122807015" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/popup_table_floor_list.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/popup_table_floor_list_row.xml" value="0.4705128205128205" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/popup_to_go_table.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/popupipinput.xml" value="0.3536184210526316" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/roundlayout_black.xml" value="0.2796875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/salehistory_list_item.xml" value="0.28046875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/salehistory_list_item_web.xml" value="0.3140625" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/scale_spiiner.xml" value="0.31171875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/tablesale_grid_bill_row.xml" value="0.28046875" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/tablesale_menu_list_row.xml" value="0.3140625" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet/app/src/main/res/layout/tablet_quick_table_grid_row.xml" value="0.36430921052631576" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_20230716/app/src/main/res/drawable/button_selector_numberbutton_qty.xml" value="0.443" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_20230716/app/src/main/res/layout/activity_emploee_login.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_20230716/app/src/main/res/layout/activity_main.xml" value="0.3804347826086957" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/drawable/button_color_selector.xml" value="0.441" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/drawable/roundlayout_background_realtimeweborders_ln1.xml" value="0.441" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/drawable/roundlayout_background_realtimeweborders_ln2.xml" value="0.441" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/drawable/roundlayout_button_selector_kaki.xml" value="0.441" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/drawable/roundlayout_button_selector_white.xml" value="0.441" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/drawable/roundlayout_button_white.xml" value="0.441" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/drawable/roundlayout_button_white2.xml" value="0.441" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/drawable/roundlayout_button_white3.xml" value="0.441" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/drawable/roundlayout_button_white5.xml" value="0.441" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/drawable/roundlayout_button_white_pushed.xml" value="0.441" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/drawable/roundlayout_button_whitebg.xml" value="0.441" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/drawable/selector_roundlayout_button_white.xml" value="0.441" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/drawable/shape_switch_selector_100.xml" value="0.441" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/drawable/table_main_button_black1.xml" value="0.441" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/layout/activity_category.xml" value="0.32264254385964913" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/layout/activity_emploee_login.xml" value="0.32264254385964913" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/layout/activity_main.xml" value="0.22916666666666666" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/layout/activity_payment_review.xml" value="0.1" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/layout/activity_service_72.xml" value="0.19764254385964913" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/layout/activity_splash.xml" value="0.32264254385964913" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/layout/activity_table_main.xml" value="0.32264254385964913" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/layout/popup_main_action.xml" value="0.32264254385964913" />
+        <entry key="..\:/code/bcs_home_work/tablet/Restaurant_POS_Tablet_mac/app/src/main/res/layout/popup_table_action.xml" value="0.32264254385964913" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/drawable/button_selector_calculator.xml" value="0.443" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/drawable/roundlayout_background_qty.xml" value="0.443" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/drawable/roundlayout_button_blue_2.xml" value="0.393" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/drawable/roundlayout_button_blue_2_pushed.xml" value="0.393" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/drawable/roundlayout_button_blue_tablesale_action.xml" value="0.392" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/drawable/roundlayout_button_blue_tablesale_action_pushed.xml" value="0.392" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/drawable/roundlayout_button_green_2.xml" value="0.393" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/drawable/roundlayout_button_purple.xml" value="0.392" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/drawable/roundlayout_button_purple_pushed.xml" value="0.392" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/drawable/roundlayout_darkblue.xml" value="0.3735" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/drawable/roundlayout_quick_grid_not_sel.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/drawable/roundlayout_quick_grid_sel.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/drawable/roundlayout_table5.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/drawable/roundlayout_table_selected.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/drawable/roundlayout_table_selected5_2.xml" value="0.3485" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/drawable/selector_roundlayout_button_blue.xml" value="0.393" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/drawable/selector_roundlayout_button_green.xml" value="0.393" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/drawable/selector_roundlayout_button_purple_tablesale_floor.xml" value="0.392" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/drawable/selector_roundlayout_button_tablesale_action.xml" value="0.392" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/layout/activity_main.xml" value="0.5638536221060493" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/layout/activity_main_main.xml" value="0.3804347826086957" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/layout/activity_main_payment.xml" value="0.3278985507246377" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/layout/activity_service_list.xml" value="0.2846153846153846" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/layout/activity_table_main.xml" value="0.32264957264957267" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/layout/fragment_menu_menulist_item.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/layout/main_salecart_list.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/layout/mainmiddleservice_list_row.xml" value="0.2846153846153846" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/layout/presentation_list_item.xml" value="0.47136752136752136" />
+        <entry key="..\:/code/bcs_home_work/tablet/qsrt_handheld_20230716/app/src/main/res/layout/tablet_quick_table_grid_row.xml" value="0.2846153846153846" />
+        <entry key="app/src/main/res/layout/activity_cash_in_out_popup.xml" value="0.28203125" />
+        <entry key="app/src/main/res/layout/activity_cash_in_out_popup_keypad.xml" value="0.28203125" />
+        <entry key="app/src/main/res/layout/activity_emploee_login.xml" value="0.24954710144927536" />
+        <entry key="app/src/main/res/layout/activity_intro_real_demo_choice.xml" value="0.2138157894736842" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22905982905982905" />
+        <entry key="app/src/main/res/layout/activity_payment_customer_select_receipt3.xml" value="0.21875" />
+      </map>
+    </option>
+  </component>
+  <component name="NullableNotNullManager">
+    <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
+    <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />
+    <option name="myNullables">
+      <value>
+        <list size="15">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
+          <item index="2" class="java.lang.String" itemvalue="javax.annotation.CheckForNull" />
+          <item index="3" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
+          <item index="4" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
+          <item index="5" class="java.lang.String" itemvalue="androidx.annotation.Nullable" />
+          <item index="6" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNullable" />
+          <item index="7" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.Nullable" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableDecl" />
+          <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableType" />
+          <item index="10" class="java.lang.String" itemvalue="android.annotation.Nullable" />
+          <item index="11" class="java.lang.String" itemvalue="com.android.annotations.Nullable" />
+          <item index="12" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.Nullable" />
+          <item index="13" class="java.lang.String" itemvalue="io.reactivex.annotations.Nullable" />
+          <item index="14" class="java.lang.String" itemvalue="io.reactivex.rxjava3.annotations.Nullable" />
+        </list>
+      </value>
+    </option>
+    <option name="myNotNulls">
+      <value>
+        <list size="14">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
+          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
+          <item index="3" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />
+          <item index="4" class="java.lang.String" itemvalue="androidx.annotation.NonNull" />
+          <item index="5" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNonNull" />
+          <item index="6" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.NonNull" />
+          <item index="7" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullDecl" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullType" />
+          <item index="9" class="java.lang.String" itemvalue="android.annotation.NonNull" />
+          <item index="10" class="java.lang.String" itemvalue="com.android.annotations.NonNull" />
+          <item index="11" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.NonNull" />
+          <item index="12" class="java.lang.String" itemvalue="io.reactivex.annotations.NonNull" />
+          <item index="13" class="java.lang.String" itemvalue="io.reactivex.rxjava3.annotations.NonNull" />
+        </list>
+      </value>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

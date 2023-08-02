@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <TextView
+                android:id="@+id/tablesalemain_title"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:textColor="#191d37"
+                android:text="Tables"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <Button
+
+                android:id="@+id/table_main_action"
+                android:padding="5dp"
+                android:layout_margin="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:background="@drawable/selector_roundlayout_button_blue_line"
+                android:text="COMMAND"
+                android:textStyle="bold"
+                android:textColor="#6b9ad9"
+                android:tag="optionaddPopupCloseButtonTag"
+                android:textSize="12dp" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:visibility="gone"
+                    android:layout_margin="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:background="@drawable/tablet_button_selector_red"
+                    android:tag="optionaddPopupCloseButtonTag"
+                    android:text="Close"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/floor_btn_ln"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector_roundlayout_button_purple_tablesale_floor"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="#ffffff"
+                    android:id="@+id/floor_btn_text1"
+
+                    android:gravity="center"
+                    android:textSize="30dp"
+                    android:text="Floor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/action_btn_ln"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/selector_roundlayout_button_tablesale_action"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/action_btn_text"
+                        android:textColor="#ffffff"
+                        android:gravity="center"
+                        android:textSize="30dp"
+                        android:text="Action"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/select_btn_ln"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/selector_roundlayout_button_blue"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textColor="#ffffff"
+                        android:gravity="center"
+                        android:textSize="30dp"
+                        android:text="Select"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <GridView
+            android:id="@+id/tablemain_grid"
+            android:numColumns="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </GridView>
+    </LinearLayout>
+
+</LinearLayout>

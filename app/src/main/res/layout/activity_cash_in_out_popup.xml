@@ -1,0 +1,2459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp">
+
+    <LinearLayout
+        android:id="@+id/cashInOutPopupLn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/roundlayout_cashinout" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|left"
+                        android:text="Employee : "
+
+                        android:textColor="#3e3d42"/>
+
+                    <TextView
+                        android:id="@+id/cashInOutEmployeeNameTv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text="Wanhaye Kim"
+
+                        android:textColor="#3e3d42"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cashInOutPoupuLogoutTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+
+                        android:textColor="#0054d5"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="right|center_vertical"
+
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/cashInOutPopupCloseButton"
+                        android:tag="cashInOutPopupCloseButtonTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:textSize="15dp"
+                        android:textColor="#fff"
+                        android:text="QUIT"
+                        android:background="@drawable/button_selector_intro_quit" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="horizontal"
+                android:background="#bbbbc8"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="650"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="920"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="40"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="15dp"
+                        android:background="#ffffff">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center_vertical"
+                            android:text="CASH IN &amp; OUT"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="#3e3d42"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="570"
+                        android:orientation="horizontal"
+                        android:background="#ffffff">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="720"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="11"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:paddingBottom="10dp"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.9"
+                                        android:orientation="vertical"
+                                        android:background="#ffffff">
+
+                                        <LinearLayout
+                                            android:id="@+id/cashSuEvLn"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="13"
+                                            android:orientation="vertical"
+                                            android:layout_margin="8dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="0.1"
+                                                android:orientation="horizontal">
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/cashSuLn01"
+                                                android:tag="01"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:layout_marginTop="10dp"
+                                                android:orientation="horizontal">
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="8dp"
+                                                    android:textSize="16dp"
+                                                    android:textColor="#3e3d42"
+                                                    android:text="$100.00 X " />
+                                                <TextView
+                                                    android:id="@+id/cashSuEv01"
+                                                    android:tag="01"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.5"
+                                                    android:gravity="center_vertical|right"
+                                                    android:inputType="numberDecimal"
+                                                    android:hint="0"
+                                                    android:paddingRight="5dp"
+                                                    android:textSize="16dp"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#fa1a01"
+                                                    android:background="@drawable/roundlayout_background_suev" />
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.2"
+                                                    android:gravity="center"
+                                                    android:textSize="14dp"
+                                                    android:textColor="#485253"
+                                                    android:text=" = "/>
+                                                <TextView
+                                                    android:id="@+id/cashAmtTv01"
+                                                    android:tag="suTvTag01"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="10dp"
+                                                    android:paddingLeft="10dp"
+                                                    android:text="$0.00"
+                                                    android:textColor="#3e3d42"
+                                                    android:textStyle="bold"
+                                                    android:textSize="14dp"/>
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/cashSuLn02"
+                                                android:tag="02"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:layout_marginTop="10dp"
+                                                android:orientation="horizontal">
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="8dp"
+                                                    android:textSize="16dp"
+                                                    android:textColor="#3e3d42"
+                                                    android:text="$50.00 X " />
+                                                <TextView
+                                                    android:id="@+id/cashSuEv02"
+                                                    android:tag="02"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.5"
+                                                    android:gravity="center_vertical|right"
+                                                    android:inputType="numberDecimal"
+                                                    android:hint="0"
+                                                    android:paddingRight="5dp"
+                                                    android:textSize="16dp"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#fa1a01"
+                                                    android:background="@drawable/roundlayout_background_suev"/>
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.2"
+                                                    android:gravity="center"
+                                                    android:textSize="14dp"
+                                                    android:textColor="#485253"
+                                                    android:text=" = "/>
+                                                <TextView
+                                                    android:id="@+id/cashAmtTv02"
+                                                    android:tag="suTvTag02"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="10dp"
+                                                    android:paddingLeft="10dp"
+                                                    android:text="$0.00"
+                                                    android:textColor="#3e3d42"
+                                                    android:textStyle="bold"
+                                                    android:textSize="14dp"/>
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/cashSuLn03"
+                                                android:tag="03"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:layout_marginTop="10dp"
+                                                android:orientation="horizontal">
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="8dp"
+                                                    android:textSize="16dp"
+                                                    android:textColor="#3e3d42"
+                                                    android:text="$20.00 X " />
+                                                <TextView
+                                                    android:id="@+id/cashSuEv03"
+                                                    android:tag="03"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.5"
+                                                    android:gravity="center_vertical|right"
+                                                    android:inputType="numberDecimal"
+                                                    android:hint="0"
+                                                    android:paddingRight="5dp"
+                                                    android:textSize="16dp"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#fa1a01"
+                                                    android:background="@drawable/roundlayout_background_suev"/>
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.2"
+                                                    android:gravity="center"
+                                                    android:textSize="14dp"
+                                                    android:textColor="#485253"
+                                                    android:text=" = "/>
+                                                <TextView
+                                                    android:id="@+id/cashAmtTv03"
+                                                    android:tag="suTvTag03"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="10dp"
+                                                    android:paddingLeft="10dp"
+                                                    android:text="$0.00"
+                                                    android:textColor="#3e3d42"
+                                                    android:textStyle="bold"
+                                                    android:textSize="14dp"/>
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/cashSuLn04"
+                                                android:tag="04"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:layout_marginTop="10dp"
+                                                android:orientation="horizontal">
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="8dp"
+                                                    android:textSize="16dp"
+                                                    android:textColor="#3e3d42"
+                                                    android:text="$10.00 X " />
+                                                <TextView
+                                                    android:id="@+id/cashSuEv04"
+                                                    android:tag="04"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.5"
+                                                    android:gravity="center_vertical|right"
+                                                    android:inputType="numberDecimal"
+                                                    android:hint="0"
+                                                    android:paddingRight="5dp"
+                                                    android:textSize="16dp"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#fa1a01"
+                                                    android:background="@drawable/roundlayout_background_suev"/>
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.2"
+                                                    android:gravity="center"
+                                                    android:textSize="14dp"
+                                                    android:textColor="#485253"
+                                                    android:text=" = "/>
+                                                <TextView
+                                                    android:id="@+id/cashAmtTv04"
+                                                    android:tag="suTvTag04"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="10dp"
+                                                    android:paddingLeft="10dp"
+                                                    android:text="$0.00"
+                                                    android:textColor="#3e3d42"
+                                                    android:textStyle="bold"
+                                                    android:textSize="14dp"/>
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/cashSuLn05"
+                                                android:tag="05"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:layout_marginTop="10dp"
+                                                android:orientation="horizontal">
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="8dp"
+                                                    android:textSize="16dp"
+                                                    android:textColor="#3e3d42"
+                                                    android:text="$5.00 X " />
+                                                <TextView
+                                                    android:id="@+id/cashSuEv05"
+                                                    android:tag="05"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.5"
+                                                    android:gravity="center_vertical|right"
+                                                    android:inputType="numberDecimal"
+                                                    android:hint="0"
+                                                    android:paddingRight="5dp"
+                                                    android:textSize="16dp"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#fa1a01"
+                                                    android:background="@drawable/roundlayout_background_suev"/>
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.2"
+                                                    android:gravity="center"
+                                                    android:textSize="14dp"
+                                                    android:textColor="#485253"
+                                                    android:text=" = "/>
+                                                <TextView
+                                                    android:id="@+id/cashAmtTv05"
+                                                    android:tag="suTvTag05"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="10dp"
+                                                    android:paddingLeft="10dp"
+                                                    android:text="$0.00"
+                                                    android:textColor="#3e3d42"
+                                                    android:textStyle="bold"
+                                                    android:textSize="14dp"/>
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/cashSuLn06"
+                                                android:tag="06"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:layout_marginTop="10dp"
+                                                android:orientation="horizontal">
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="8dp"
+                                                    android:textSize="16dp"
+                                                    android:textColor="#3e3d42"
+                                                    android:text="$2.00 X " />
+                                                <TextView
+                                                    android:id="@+id/cashSuEv06"
+                                                    android:tag="06"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.5"
+                                                    android:gravity="center_vertical|right"
+                                                    android:inputType="numberDecimal"
+                                                    android:hint="0"
+                                                    android:paddingRight="5dp"
+                                                    android:textSize="16dp"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#fa1a01"
+                                                    android:background="@drawable/roundlayout_background_suev"/>
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.2"
+                                                    android:gravity="center"
+                                                    android:textSize="14dp"
+                                                    android:textColor="#485253"
+                                                    android:text=" = "/>
+                                                <TextView
+                                                    android:id="@+id/cashAmtTv06"
+                                                    android:tag="suTvTag06"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="10dp"
+                                                    android:paddingLeft="10dp"
+                                                    android:text="$0.00"
+                                                    android:textColor="#3e3d42"
+                                                    android:textStyle="bold"
+                                                    android:textSize="14dp"/>
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/cashSuLn07"
+                                                android:tag="07"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:layout_marginTop="10dp"
+                                                android:orientation="horizontal">
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="8dp"
+                                                    android:textSize="16dp"
+                                                    android:textColor="#3e3d42"
+                                                    android:text="$1.00 X " />
+                                                <TextView
+                                                    android:id="@+id/cashSuEv07"
+                                                    android:tag="07"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.5"
+                                                    android:gravity="center_vertical|right"
+                                                    android:inputType="numberDecimal"
+                                                    android:hint="0"
+                                                    android:paddingRight="5dp"
+                                                    android:textSize="16dp"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#fa1a01"
+                                                    android:background="@drawable/roundlayout_background_suev"/>
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.2"
+                                                    android:gravity="center"
+                                                    android:textSize="14dp"
+                                                    android:textColor="#485253"
+                                                    android:text=" = "/>
+                                                <TextView
+                                                    android:id="@+id/cashAmtTv07"
+                                                    android:tag="suTvTag07"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="10dp"
+                                                    android:paddingLeft="10dp"
+                                                    android:text="$0.00"
+                                                    android:textColor="#3e3d42"
+                                                    android:textStyle="bold"
+                                                    android:textSize="14dp"/>
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/cashSuLn08"
+                                                android:tag="08"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:layout_marginTop="10dp"
+                                                android:orientation="horizontal">
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="8dp"
+                                                    android:textSize="16dp"
+                                                    android:textColor="#3e3d42"
+                                                    android:text="$0.50 X " />
+                                                <TextView
+                                                    android:id="@+id/cashSuEv08"
+                                                    android:tag="08"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.5"
+                                                    android:gravity="center_vertical|right"
+                                                    android:inputType="numberDecimal"
+                                                    android:hint="0"
+                                                    android:paddingRight="5dp"
+                                                    android:textSize="16dp"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#fa1a01"
+                                                    android:background="@drawable/roundlayout_background_suev"/>
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.2"
+                                                    android:gravity="center"
+                                                    android:textSize="14dp"
+                                                    android:textColor="#485253"
+                                                    android:text=" = "/>
+                                                <TextView
+                                                    android:id="@+id/cashAmtTv08"
+                                                    android:tag="suTvTag08"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="10dp"
+                                                    android:paddingLeft="10dp"
+                                                    android:text="$0.00"
+                                                    android:textColor="#3e3d42"
+                                                    android:textStyle="bold"
+                                                    android:textSize="14dp"/>
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/cashSuLn09"
+                                                android:tag="09"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:layout_marginTop="10dp"
+                                                android:orientation="horizontal">
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="8dp"
+                                                    android:textSize="16dp"
+                                                    android:textColor="#3e3d42"
+                                                    android:text="$0.25 X " />
+                                                <TextView
+                                                    android:id="@+id/cashSuEv09"
+                                                    android:tag="09"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.5"
+                                                    android:gravity="center_vertical|right"
+                                                    android:inputType="numberDecimal"
+                                                    android:hint="0"
+                                                    android:paddingRight="5dp"
+                                                    android:textSize="16dp"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#fa1a01"
+                                                    android:background="@drawable/roundlayout_background_suev"/>
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.2"
+                                                    android:gravity="center"
+                                                    android:textSize="14dp"
+                                                    android:textColor="#485253"
+                                                    android:text=" = "/>
+                                                <TextView
+                                                    android:id="@+id/cashAmtTv09"
+                                                    android:tag="suTvTag09"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="10dp"
+                                                    android:paddingLeft="10dp"
+                                                    android:text="$0.00"
+                                                    android:textColor="#3e3d42"
+                                                    android:textStyle="bold"
+                                                    android:textSize="14dp"/>
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/cashSuLn10"
+                                                android:tag="10"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:layout_marginTop="10dp"
+                                                android:orientation="horizontal">
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="8dp"
+                                                    android:textSize="16dp"
+                                                    android:textColor="#3e3d42"
+                                                    android:text="$0.10 X " />
+                                                <TextView
+                                                    android:id="@+id/cashSuEv10"
+                                                    android:tag="10"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.5"
+                                                    android:gravity="center_vertical|right"
+                                                    android:inputType="numberDecimal"
+                                                    android:hint="0"
+                                                    android:paddingRight="5dp"
+                                                    android:textSize="16dp"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#fa1a01"
+                                                    android:background="@drawable/roundlayout_background_suev"/>
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.2"
+                                                    android:gravity="center"
+                                                    android:textSize="14dp"
+                                                    android:textColor="#485253"
+                                                    android:text=" = "/>
+                                                <TextView
+                                                    android:id="@+id/cashAmtTv10"
+                                                    android:tag="suTvTag10"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="10dp"
+                                                    android:paddingLeft="10dp"
+                                                    android:text="$0.00"
+                                                    android:textColor="#3e3d42"
+                                                    android:textStyle="bold"
+                                                    android:textSize="14dp"/>
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/cashSuLn11"
+                                                android:tag="11"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:layout_marginTop="10dp"
+                                                android:orientation="horizontal">
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="8dp"
+                                                    android:textSize="16dp"
+                                                    android:textColor="#3e3d42"
+                                                    android:text="$0.05 X " />
+                                                <TextView
+                                                    android:id="@+id/cashSuEv11"
+                                                    android:tag="11"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.5"
+                                                    android:gravity="center_vertical|right"
+                                                    android:inputType="numberDecimal"
+                                                    android:hint="0"
+                                                    android:paddingRight="5dp"
+                                                    android:textSize="16dp"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#fa1a01"
+                                                    android:background="@drawable/roundlayout_background_suev"/>
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.2"
+                                                    android:gravity="center"
+                                                    android:textSize="14dp"
+                                                    android:textColor="#485253"
+                                                    android:text=" = "/>
+                                                <TextView
+                                                    android:id="@+id/cashAmtTv11"
+                                                    android:tag="suTvTag11"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="10dp"
+                                                    android:paddingLeft="10dp"
+                                                    android:text="$0.00"
+                                                    android:textColor="#3e3d42"
+                                                    android:textStyle="bold"
+                                                    android:textSize="14dp"/>
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/cashSuLn12"
+                                                android:tag="12"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:layout_marginTop="10dp"
+                                                android:orientation="horizontal">
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="8dp"
+                                                    android:textSize="16dp"
+                                                    android:textColor="#3e3d42"
+                                                    android:text="$0.01 X " />
+                                                <TextView
+                                                    android:id="@+id/cashSuEv12"
+                                                    android:tag="12"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.5"
+                                                    android:gravity="center_vertical|right"
+                                                    android:inputType="numberDecimal"
+                                                    android:hint="0"
+                                                    android:paddingRight="5dp"
+                                                    android:textSize="16dp"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#fa1a01"
+                                                    android:background="@drawable/roundlayout_background_suev"/>
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.2"
+                                                    android:gravity="center"
+                                                    android:textSize="14dp"
+                                                    android:textColor="#485253"
+                                                    android:text=" = "/>
+                                                <TextView
+                                                    android:id="@+id/cashAmtTv12"
+                                                    android:tag="suTvTag12"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.8"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="10dp"
+                                                    android:paddingLeft="10dp"
+                                                    android:text="$0.00"
+                                                    android:textColor="#3e3d42"
+                                                    android:textStyle="bold"
+                                                    android:textSize="14dp"/>
+                                            </LinearLayout>
+
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="0.3"
+                                                android:orientation="horizontal">
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1.2"
+                                            android:orientation="vertical"
+                                            android:padding="5dp">
+
+                                            <Button
+                                                android:id="@+id/suInitBtn"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:background="@drawable/ab_imagebutton_cashinout_init"/>
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.10"
+                                        android:orientation="vertical">
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1.8"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="40"
+                                            android:orientation="horizontal">
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="20"
+                                                android:orientation="horizontal">
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="95"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/tempTitleTv1"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="10dp"
+                                                    android:text="Reason"
+
+                                                    android:textColor="#3e3d42"/>
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="210"
+                                                android:orientation="horizontal">
+
+                                                <Spinner
+                                                    android:id="@+id/cashinoutReasonSpinner"
+                                                    android:tag="cashinoutReasonSpinnerTag"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:paddingLeft="10dp"
+                                                    android:paddingRight="10dp"
+                                                    android:layout_alignParentLeft="true"
+                                                    android:layout_alignParentTop="true"
+                                                    android:background="@drawable/roundlayout_cashinout_tv_bg1" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="100"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/tempTitleTv2"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center_vertical|right"
+                                                    android:text="Amount"
+
+                                                    android:textColor="#3e3d42"/>
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="50"
+                                                android:orientation="horizontal">
+
+                                                <ToggleButton
+                                                    android:id="@+id/cashInOutTypeTb"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="1"
+                                                    android:layout_gravity="center"
+                                                    android:background="@drawable/roundlayout_background_plus"
+                                                    android:layout_marginLeft="7dp"
+                                                    android:paddingLeft="3dp"
+                                                    android:paddingRight="3dp"
+                                                    android:textSize="22dp"
+                                                    android:textColor="#3e57ce"
+                                                    android:textOn="+"
+                                                    android:textOff="-"
+                                                    android:checked="true" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="10"
+                                                android:orientation="horizontal">
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="160"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/cashInOutAmountTv"
+                                                    android:tag="1000"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="10dp"
+                                                    android:text="0.0"
+                                                    android:textColor="#3e3d42"
+                                                    android:textSize="16dp"
+                                                    android:textStyle="bold"
+                                                    android:inputType="numberDecimal"
+                                                    android:background="@drawable/roundlayout_cashinout_tv_bg1" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="10"
+                                                android:orientation="horizontal">
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="70"
+                                                android:orientation="horizontal">
+
+                                                <Button
+                                                    android:id="@+id/cashinoutAddButton"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:background="@drawable/ab_imagebutton_cashinout_add"/>
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+
+
+                                        <LinearLayout
+                                            android:id="@+id/cashinoutReasonLn"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="40"
+                                            android:layout_marginTop="10dp"
+                                            android:orientation="horizontal">
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="20"
+                                                android:orientation="horizontal">
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="95"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center_vertical|right"
+                                                    android:paddingRight="10dp"
+                                                    android:text=""
+                                                    android:textSize="14dp"
+                                                    android:textColor="#3e3d42"/>
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="610"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/cashInOutReasonEv"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center_vertical|left"
+                                                    android:paddingLeft="10dp"
+                                                    android:paddingRight="10dp"
+                                                    android:hint="Type here..."
+                                                    android:text=""
+                                                    android:textColor="#3e3d42"
+                                                    android:textSize="16dp"
+                                                    android:inputType="text"
+                                                    android:background="@drawable/roundlayout_cashinout_tv_bg1" />
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="18"
+                                            android:orientation="horizontal">
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="350">
+                                            <LinearLayout
+                                                android:visibility="gone"
+                                                android:orientation="vertical"
+                                                android:layout_weight="3"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent">
+                                                <LinearLayout
+                                                    android:layout_weight="1"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"/>
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1">
+                                                    <TextView
+                                                        android:layout_gravity="center_vertical"
+                                                        android:text="   ROLL"
+                                                        android:textStyle="bold"
+                                                        android:textColor="#ff0000"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"/>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:id="@+id/cashSuLn13"
+                                                    android:tag="13"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:layout_marginTop="10dp"
+                                                    android:orientation="horizontal">
+                                                    <TextView
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="0.8"
+                                                        android:gravity="center_vertical|right"
+                                                        android:paddingRight="8dp"
+                                                        android:textSize="16dp"
+                                                        android:textColor="#3e3d42"
+                                                        android:text="$0.01 X 50" />
+                                                    <TextView
+                                                        android:id="@+id/cashSuEv13"
+                                                        android:tag="13"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="0.5"
+                                                        android:gravity="center_vertical|right"
+                                                        android:inputType="numberDecimal"
+                                                        android:hint="0"
+                                                        android:paddingRight="5dp"
+                                                        android:textSize="16dp"
+                                                        android:textStyle="bold"
+                                                        android:textColor="#fa1a01"
+                                                        android:background="@drawable/roundlayout_background_suev"/>
+                                                    <TextView
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="0.2"
+                                                        android:gravity="center"
+                                                        android:textSize="14dp"
+                                                        android:textColor="#485253"
+                                                        android:text=" = "/>
+                                                    <TextView
+                                                        android:id="@+id/cashAmtTv13"
+                                                        android:tag="suTvTag13"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="0.8"
+                                                        android:gravity="center_vertical|right"
+                                                        android:paddingRight="10dp"
+                                                        android:paddingLeft="10dp"
+                                                        android:text="$0.00"
+                                                        android:textColor="#3e3d42"
+                                                        android:textStyle="bold"
+                                                        android:textSize="14dp"/>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:id="@+id/cashSuLn14"
+                                                    android:tag="14"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:layout_marginTop="10dp"
+                                                    android:orientation="horizontal">
+                                                    <TextView
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="0.8"
+                                                        android:gravity="center_vertical|right"
+                                                        android:paddingRight="8dp"
+                                                        android:textSize="16dp"
+                                                        android:textColor="#3e3d42"
+                                                        android:text="$0.05 X 40" />
+                                                    <TextView
+                                                        android:id="@+id/cashSuEv14"
+                                                        android:tag="14"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="0.5"
+                                                        android:gravity="center_vertical|right"
+                                                        android:inputType="numberDecimal"
+                                                        android:hint="0"
+                                                        android:paddingRight="5dp"
+                                                        android:textSize="16dp"
+                                                        android:textStyle="bold"
+                                                        android:textColor="#fa1a01"
+                                                        android:background="@drawable/roundlayout_background_suev"/>
+                                                    <TextView
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="0.2"
+                                                        android:gravity="center"
+                                                        android:textSize="14dp"
+                                                        android:textColor="#485253"
+                                                        android:text=" = "/>
+                                                    <TextView
+                                                        android:id="@+id/cashAmtTv14"
+                                                        android:tag="suTvTag14"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="0.8"
+                                                        android:gravity="center_vertical|right"
+                                                        android:paddingRight="10dp"
+                                                        android:paddingLeft="10dp"
+                                                        android:text="$0.00"
+                                                        android:textColor="#3e3d42"
+                                                        android:textStyle="bold"
+                                                        android:textSize="14dp"/>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:id="@+id/cashSuLn15"
+                                                    android:tag="15"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:layout_marginTop="10dp"
+                                                    android:orientation="horizontal">
+                                                    <TextView
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="0.8"
+                                                        android:gravity="center_vertical|right"
+                                                        android:paddingRight="8dp"
+                                                        android:textSize="16dp"
+                                                        android:textColor="#3e3d42"
+                                                        android:text="$0.25 X 40" />
+                                                    <TextView
+                                                        android:id="@+id/cashSuEv15"
+                                                        android:tag="15"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="0.5"
+                                                        android:gravity="center_vertical|right"
+                                                        android:inputType="numberDecimal"
+                                                        android:hint="0"
+                                                        android:paddingRight="5dp"
+                                                        android:textSize="16dp"
+                                                        android:textStyle="bold"
+                                                        android:textColor="#fa1a01"
+                                                        android:background="@drawable/roundlayout_background_suev"/>
+                                                    <TextView
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="0.2"
+                                                        android:gravity="center"
+                                                        android:textSize="14dp"
+                                                        android:textColor="#485253"
+                                                        android:text=" = "/>
+                                                    <TextView
+                                                        android:id="@+id/cashAmtTv15"
+                                                        android:tag="suTvTag15"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="0.8"
+                                                        android:gravity="center_vertical|right"
+                                                        android:paddingRight="10dp"
+                                                        android:paddingLeft="10dp"
+                                                        android:text="$0.00"
+                                                        android:textColor="#3e3d42"
+                                                        android:textStyle="bold"
+                                                        android:textSize="14dp"/>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:id="@+id/cashSuLn16"
+                                                    android:tag="16"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:layout_marginTop="10dp"
+                                                    android:orientation="horizontal">
+                                                    <TextView
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="0.8"
+                                                        android:gravity="center_vertical|right"
+                                                        android:paddingRight="8dp"
+                                                        android:textSize="16dp"
+                                                        android:textColor="#3e3d42"
+                                                        android:text="$0.10 X 50" />
+                                                    <TextView
+                                                        android:id="@+id/cashSuEv16"
+                                                        android:tag="16"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="0.5"
+                                                        android:gravity="center_vertical|right"
+                                                        android:inputType="numberDecimal"
+                                                        android:hint="0"
+                                                        android:paddingRight="5dp"
+                                                        android:textSize="16dp"
+                                                        android:textStyle="bold"
+                                                        android:textColor="#fa1a01"
+                                                        android:background="@drawable/roundlayout_background_suev"/>
+                                                    <TextView
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="0.2"
+                                                        android:gravity="center"
+                                                        android:textSize="14dp"
+                                                        android:textColor="#485253"
+                                                        android:text=" = "/>
+                                                    <TextView
+                                                        android:id="@+id/cashAmtTv16"
+                                                        android:tag="suTvTag16"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="0.8"
+                                                        android:gravity="center_vertical|right"
+                                                        android:paddingRight="10dp"
+                                                        android:paddingLeft="10dp"
+                                                        android:text="$0.00"
+                                                        android:textColor="#3e3d42"
+                                                        android:textStyle="bold"
+                                                        android:textSize="14dp"/>
+                                                </LinearLayout>
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="3"
+                                                android:orientation="vertical"
+                                                android:background="#ffffff">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="1dp"
+                                                    android:orientation="horizontal"
+                                                    android:background="#bbbbc8"></LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="35"
+                                                    android:orientation="horizontal"
+                                                    android:background="#ffffff">
+
+                                                    <TextView
+                                                        android:id="@+id/tempTitleTv13"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="200"
+                                                        android:gravity="center"
+                                                        android:text="Date"
+
+                                                        android:textColor="#a4a2a9"/>
+
+                                                    <TextView
+                                                        android:id="@+id/tempTitleTv14"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="330"
+                                                        android:gravity="center"
+                                                        android:text="Reason"
+
+                                                        android:textColor="#a4a2a9"/>
+
+                                                    <TextView
+                                                        android:id="@+id/tempTitleTv15"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="155"
+                                                        android:gravity="center"
+                                                        android:text="Amount"
+
+                                                        android:textColor="#a4a2a9"/>
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="1dp"
+                                                    android:orientation="horizontal"
+                                                    android:background="#bbbbc8"></LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="350"
+                                                    android:orientation="horizontal">
+
+                                                    <ListView
+                                                        android:id="@+id/cashInOutHistoryLv"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:listSelector="#bbbbc8"
+                                                        android:cacheColorHint="#ffffff"
+                                                        android:fadingEdge="none"
+                                                        android:background="#ffffff">
+                                                    </ListView>
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="1dp"
+                                                    android:orientation="horizontal"
+                                                    android:background="#bbbbc8"></LinearLayout>
+
+
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="0.3"
+                                                    android:orientation="vertical"></LinearLayout>
+
+
+                                            </LinearLayout>
+
+
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_weight="150"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp">
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="60"
+                                                android:orientation="horizontal"
+                                                android:gravity="center_vertical|right"
+                                                android:background="#ffffff"
+                                                android:padding="5dp">
+
+                                                <ImageButton
+                                                    android:layout_marginRight="10dp"
+                                                    android:id="@+id/cashinoutRemoveButton"
+                                                    android:src="@drawable/ab_imagebutton_cashinout_delete"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@color/zxing_transparent"/>
+
+                                                <ImageButton
+                                                    android:id="@+id/cashinoutDetailViewButton"
+                                                    android:src="@drawable/ab_imagebutton_cashinout_detailview"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@color/zxing_transparent"/>
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="1dp"
+                                                android:orientation="horizontal"
+                                                android:background="#bbbbc8"></LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="10"
+                                                android:orientation="vertical"></LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="80"
+                                                android:orientation="vertical">
+
+                                                <LinearLayout
+                                                    android:paddingBottom="10dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:orientation="horizontal">
+
+                                                    <LinearLayout
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="145"
+                                                        android:orientation="horizontal">
+
+                                                        <!--
+                                                        <Button
+                                                            android:id="@+id/cashinoutRemoveButton"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+                                                            android:background="@drawable/ab_imagebutton_cashinout_remove"/>
+                                                            -->
+
+                                                        <LinearLayout
+                                                            android:layout_width="0dp"
+                                                            android:layout_height="match_parent"
+                                                            android:layout_weight="80"
+                                                            android:gravity="center_vertical|right"
+                                                            android:orientation="horizontal">
+
+                                                            <Button
+                                                                android:id="@+id/cashinoutCashoutButton"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:background="@drawable/ab_imagebutton_cashinout_cashout"/>
+
+                                                        </LinearLayout>
+
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="50"
+                                                        android:orientation="horizontal">
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="145"
+                                                        android:orientation="horizontal">
+
+                                                        <Button
+                                                            android:id="@+id/cashinoutCashDrawerButton"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+                                                            android:background="@drawable/ab_imagebutton_cashinout_cashdrawer"/>
+
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="15"
+                                                        android:orientation="horizontal">
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_weight="145"
+                                                        android:orientation="horizontal">
+
+                                                        <Button
+                                                            android:id="@+id/cashinoutGotosaleButton"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+                                                            android:background="@drawable/ab_imagebutton_cashinout_gotosale"/>
+
+                                                    </LinearLayout>
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+
+
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:orientation="horizontal"></LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#bbbbc8"></LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="400"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center_vertical"
+                        android:text="    END BANK"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textColor="#3e3d42"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="660"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="360"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="40"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="200"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/tempTitleTv3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:text="Start Cash"
+                                        android:textColor="#3e3d42"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="18"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="160"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/cashInOutStartCashTotalTv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:paddingRight="10dp"
+                                        android:text="0.0"
+                                        android:textColor="#3e3d42"
+
+                                        android:textStyle="bold"
+                                        android:background="@drawable/roundlayout_cashinout_tv_bg2" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="80"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:orientation="horizontal">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="40"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="200"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/tempTitleTv4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:text="Cash-In Total"
+                                        android:textColor="#3e3d42"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="18"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="160"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/cashInOutCashInTotalTv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:paddingRight="10dp"
+                                        android:text="0.0"
+                                        android:textColor="#3e3d42"
+
+                                        android:textStyle="bold"
+                                        android:background="@drawable/roundlayout_cashinout_tv_bg2" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="80"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:orientation="horizontal">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="40"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="200"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/tempTitleTv5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:text="Cash-Out Total"
+                                        android:textColor="#3e3d42"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="18"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="160"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/cashInOutCashOutTotalTv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:paddingRight="10dp"
+                                        android:text="0.0"
+                                        android:textColor="#3e3d42"
+
+                                        android:textStyle="bold"
+                                        android:background="@drawable/roundlayout_cashinout_tv_bg2" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="80"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:orientation="horizontal">
+                            </LinearLayout>
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="40"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="200"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/tempTitleTv6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:text="Sales Cash Total"
+                                        android:textColor="#3e3d42"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="18"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="160"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/cashInOutSalesCashTotalTv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:paddingRight="10dp"
+                                        android:text="0.0"
+                                        android:textColor="#3e3d42"
+
+                                        android:textStyle="bold"
+                                        android:background="@drawable/roundlayout_cashinout_tv_bg2" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="80"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:orientation="horizontal">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="40"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="200"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/tempTitleTv7"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:text="All Cash Total"
+                                        android:textColor="#3e3d42"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="18"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="160"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/cashInOutAllCashTotalTv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:paddingRight="10dp"
+                                        android:text="0.0"
+                                        android:textColor="#3e3d42"
+
+                                        android:textStyle="bold"
+                                        android:background="@drawable/roundlayout_cashinout_tv_bg3" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="80"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:orientation="horizontal">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="40"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="200"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/tempTitleTv8"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:text="End Cash"
+                                        android:textColor="#3e3d42"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="18"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="160"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/cashInOutEndCashTv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:paddingRight="10dp"
+                                        android:text="0.0"
+                                        android:textColor="#3e3d42"
+
+                                        android:textStyle="bold"
+                                        android:background="@drawable/roundlayout_cashinout_tv_bg2" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="80"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:orientation="horizontal">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="40"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="200"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/overshortTv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:text="Over Short Cash"
+                                        android:textColor="#3e3d42"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="18"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="160"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/cashInOutOverShortTv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:paddingRight="10dp"
+                                        android:text="0.0"
+                                        android:textColor="#3e3d42"
+
+                                        android:textStyle="bold"
+                                        android:background="@drawable/roundlayout_cashinout_tv_bg3" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="80"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="5"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/menu_character_color"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:orientation="horizontal">
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="40"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="200"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/tempTitleTv9"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:text="Credit Card Total"
+                                        android:textColor="#3e3d42"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="18"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="160"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/cashInOutCreditCardTotalTv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:paddingRight="10dp"
+                                        android:text="0.0"
+                                        android:textColor="#3e3d42"
+
+                                        android:textStyle="bold"
+                                        android:background="@drawable/roundlayout_cashinout_tv_bg2" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="80"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:orientation="horizontal">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="40"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="200"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/tempTitleTv10"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:text="Other Total"
+                                        android:textColor="#3e3d42"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="18"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="160"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/cashInOutCheckTotalTv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:paddingRight="10dp"
+                                        android:text="0.0"
+                                        android:textColor="#3e3d42"
+
+                                        android:textStyle="bold"
+                                        android:background="@drawable/roundlayout_cashinout_tv_bg2" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="80"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:orientation="horizontal">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="40"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="200"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/tempTitleTv11"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:text="Point Total"
+                                        android:textColor="#3e3d42"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="18"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="160"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/cashInOutPointTotalTv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:paddingRight="10dp"
+                                        android:text="0.0"
+                                        android:textColor="#3e3d42"
+
+                                        android:textStyle="bold"
+                                        android:background="@drawable/roundlayout_cashinout_tv_bg2" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="80"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:orientation="horizontal">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="40"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="200"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/tempTitleTv12"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:text="Gift Card Total"
+                                        android:textColor="#3e3d42"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="18"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="160"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/cashInOutGiftCardTotalTv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical|right"
+                                        android:paddingRight="10dp"
+                                        android:text="0.0"
+                                        android:textColor="#3e3d42"
+
+                                        android:textStyle="bold"
+                                        android:background="@drawable/roundlayout_cashinout_tv_bg2" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="80"
+                                    android:orientation="horizontal">
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="100"
+                        android:orientation="horizontal">
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="218"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="80"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="40"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="218"/>
+
+                        <TextView
+                            android:id="@+id/cashInOutPoupuPreviousListTv"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="160"
+                            android:gravity="center"
+                            android:textSize="14dp"
+                            android:textColor="#0054d5"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="80"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="30"
+                        android:orientation="horizontal">
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.jjbfather.jjjqsrt2go2goresthandheld">
+
+    <uses-sdk tools:overrideLibrary="com.byullbam.restapi, com.ingenico.framework.iconnectadapter, com.ingenico.framework.libtsisdkwrapper" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- 클로버 관련 시작 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" /> <!-- GCM 관련 시작 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.jjbfather.jjjqsr.permission.C2D_MESSAGE" /> <!-- GCM 관련 끝 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 파일 생성,삭제 하기 위한 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> <!-- 카메라 퍼미션 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- <uses-feature android:name="android.hardware.screen.portrait" /> -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <!--
+             Set custom default icon. This is used when no icon is set for incoming notification messages.
+             See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <receiver
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.JJJ_AppRestart_OnAlarm" />
+        <receiver android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.AlarmReceiver" />
+        <receiver android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.AlarmReceiver2" />
+        <receiver android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.AlarmReceiver3" />
+        <receiver android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.AlarmReceiver4" />
+
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.Splash"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- 앱에서 브라우저 오픈하기 위한 퍼미션 -->
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="Main"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.QtyEditActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="Quantity Edit"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.PaymentGiftCard"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/title_activity_payment_gift_card"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.PaymentReview"
+            android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SaleHistory"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SaleHistoryList"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SaleHistory_web"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SaleHistoryReturn"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/title_activity_sale_history_return"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SaleHistoryReturnItemList"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/title_activity_sale_history_return_item_list"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SaleHistoryTipAdjustment"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/title_activity_sale_history_tip_adjustment"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.ClockInOut"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/title_activity_clock_in_out"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.ClockInOutEdit"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/title_activity_clock_in_out_edit"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CloudWebPage"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/title_activity_cloud_web_page"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.Settings"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/title_activity_settings"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.Recall"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/title_activity_recall"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CashInOut"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/title_activity_cash_in_out"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.QtyEditCashInOut"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/title_activity_qty_edit_cash_in_out"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+<!--        <activity-->
+<!--            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.Splash"-->
+<!--            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"-->
+<!--            android:label="@string/title_activity_splash" />-->
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CloudWebPageAtNotConnection"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/title_activity_cloud_web_page_at_not_connection"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.AdminPassword"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/title_activity_admin_password"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.IntroRealDemoChoice"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/title_activity_intro_real_demo_choice"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.ReservationWebPage"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/title_activity_reservation_web_page"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.PaymentCreditCard"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/title_activity_payment_credit_card"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.BatchSummary"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/title_activity_batch_summary"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingsSystem"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingsDevicePrinter"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingsPaymentGateway"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingDeviceLabelPrinter"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingDeviceLabelPrinter1"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingDeviceLabelPrinter2"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingDeviceLabelPrinter3"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingDeviceLabelPrinter4"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingDeviceLabelPrinter5"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.TipCardList"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SaleHistoryReturnCreditCard"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.ClockInOutWebPage"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.ClockInOutNavtiveWeb"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.BackOfficeMain"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.BackOfficeStore"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.PushPopupForReservation"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:taskAffinity="com.example.jjbfather.jjjqsr.popup"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.ServiceDetailPopup"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CloudBackOffice"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.GiftCardBalanceCheck"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CustomerMemo"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CustomerAdd"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CustomerEdit"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.LoadingIntent"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.JJJ_PaxPay"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.QRCodeScan"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.AppPermissionCheck2" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CouponDetail"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.JJJ_PaxBatch"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.BatchListDetail"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.JJJ_SignPad"
+            android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.AppPermissionPage"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.DeliveryTakeawayInfo"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.RealTimeWebOrders"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.PushPopupForWebOrders"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:taskAffinity="com.example.jjbfather.jjjqsr.popup"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.PushPopupForCustomerArrive"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:taskAffinity="com.example.jjbfather.jjjqsr.popup"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.PushPopupForCurbNewSideMenu"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:taskAffinity="com.example.jjbfather.jjjqsr.popup"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.PushPopupForTablePay"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:taskAffinity="com.example.jjbfather.jjjqsr.popup"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingsDeviceKitchenPrinter1"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CustomerPointEdit"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.MainMiddleServiceOptionAdd"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.MainMiddleServiceModifer"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.MainMiddleServiceGeneralModifer"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingsSystemReset"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.Employee_Login"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.EmployeeSelectionPopup"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CashInOutPopup"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CashInOutPopupPreviousList"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CashInOutPopupPreviousListAdmin"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SelectGetFoodType"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.HereToGoInfo"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.PaymentCustomerSelectReceipt"
+            android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.PaymentEmailReceipt"
+            android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.PaymentSMSReceipt"
+            android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.PaymentSelectOtherPay"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingsDeviceKitchen"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingsDeviceKitchenPrinter2"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingsDeviceKitchenPrinter3"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingsDeviceKitchenPrinter4"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingsDeviceKitchenPrinter5"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.KitchenPrinterLoading"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.PaymentCashPad"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.PaymentCalculator"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.MemoToKitchen"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CashInOutPopupKeypad"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CashInOutPopupViewDetail"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.TimeMenuSet"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SaleHistory_Reprint"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.PaymentRotateScreen"
+            android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CloudBackOfficeCategoryDownload"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CashInOutPopupKeyin"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.PaymentThankYou"
+            android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CommandDownloadData"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.MainMiddleService_ScaleWeight"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.EndOfDay"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/title_activity_batch_summary"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.BlueToothDeviceListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/select_device"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.JJJ_KitchenPrintingList"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/title_activity_settings"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.JJJ_RemoveCard"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.JJJ_CardKeyIn"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.BackOfficeCommand"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.PaymentCreditCardSelect"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.PaymentSelectPay"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- table sale add -->
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.tablesale.TableSaleMain"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.tablesale.TableSaleBillPrint"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.tablesale.TableSplit"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.tablesale.TableSaleBillSplit"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.tablesale.TableSaleSelect"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CloudBackOffice_New"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.tablesale.TableSplittedList"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.tablesale.TableDetailInfo"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.tablesale.TablePeopleCnt"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.tablesale.TableCheckList"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.ProgressActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SaleHistoryList_web"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.EndOfDaySelectDate"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.tablesale.TableInfoPopup"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.tablesale.EmployeeKeyIn"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.tablesale.BillSplitMerge"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.tablesale.Bill_KeyPad"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CreditCardStatusActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingReceipt_popup"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:label="@string/title_activity_settings"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.receiptsetting.Setting_Server_Receipt"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.receiptsetting.Setting_Kitchen_Receipt"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.receiptsetting.Setting_Check_Receipt"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.receiptsetting.Setting_Customer_Receipt"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.receiptsetting.Setting_Merchant_Receipt"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.DynamicPrice"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.VoidCardList"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+
+
+        <!-- Service 시작 -->
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.UploadSaleJsonToCloud"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.UploadEndofdayJsonToCloud"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.UploadCashoutJsonToCloud"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.UploadCartDataToCloud"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.UploadCartDataDeleteToCloud"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.UploadSalesDataToCloud"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.UploadTipsDataToCloud"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.UploadDataBaseBackupToCloud"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CheckWebOrdersInCloudService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CheckNewTablePayInCloudService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CheckCursideInCloudService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CheckNewSideMenuOrderCloudService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CheckOnlineStatus"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.UploadKitchenPrintingDataToCloud"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SignatureImageDelete"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.UploadMemberMileageHistoryToCloud_Service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.UploadGiftCardHistoryToCloud_Service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CheckingUploadDataOnSale_Service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CheckingUploadDataOnTip_Service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CheckingUploadDataOnMemberMileage_Service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CheckingUploadDataOnGiftCardHistory_Service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.UploadSaleDoneSMS_Service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.JJJ_Printing"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.JJJ_PrintingKitchen"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.JJJ_TipProcessing_onService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.JJJ_SaleDataSaveInDB_Service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.NewCartCheckByStation"
+            android:enabled="true"
+            android:exported="false" /> <!-- Service 끝 -->
+        <!-- 구글 플레이 서비스 구글플레이서비스 (Google Play Service) -->
+        <!-- FCM 관련 -->
+        <!--
+        <service android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        -->
+        <!-- <meta-data -->
+        <!-- android:name="io.fabric.ApiKey" -->
+        <!-- android:value="59a3dd427b6e4ed7246253d9fc46901a8585dd00" /> -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.jjbfather.jjjqsrt2go2goresthandheld.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+    </application>
+
+</manifest>

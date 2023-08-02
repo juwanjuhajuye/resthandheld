@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+    <RelativeLayout
+        android:background="@drawable/roundlayout_white"
+        android:layout_margin="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/popup_table_floor_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="Floor List"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <ListView
+            android:background="#4682C2"
+            android:id="@+id/popup_table_floor_list_list"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/popup_table_floor_list_title" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

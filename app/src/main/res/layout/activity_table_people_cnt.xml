@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp">
+
+
+    <LinearLayout
+        android:id="@+id/qtyEditLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/darkTransparent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+            />
+
+            <TextView
+                android:id="@+id/quantityTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="HOW MANY GUEST?"
+                android:textColor="#ffffff"
+                android:textSize="26sp"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <EditText
+                    android:id="@+id/qtyEdit_qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:inputType="number"
+                    android:maxLength="5"
+
+                    android:text="100"
+
+                    android:textColor="@color/colorWhite"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+                    <Button
+                        android:id="@+id/qtyEdit_suButton1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector_numberbutton_qty_handheld"
+                        android:text="1"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"/>
+                    <Button
+                        android:id="@+id/qtyEdit_suButton2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector_numberbutton_qty_handheld"
+                        android:text="2"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"/>
+                    <Button
+                        android:id="@+id/qtyEdit_suButton3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector_numberbutton_qty_handheld"
+                        android:text="3"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"/>
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+                    <Button
+                        android:id="@+id/qtyEdit_suButton4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector_numberbutton_qty_handheld"
+                        android:text="4"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"/>
+                    <Button
+                        android:id="@+id/qtyEdit_suButton5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector_numberbutton_qty_handheld"
+                        android:text="5"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"/>
+                    <Button
+                        android:id="@+id/qtyEdit_suButton6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector_numberbutton_qty_handheld"
+                        android:text="6"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+                    <Button
+                        android:id="@+id/qtyEdit_suButton7"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector_numberbutton_qty_handheld"
+                        android:text="7"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"/>
+                    <Button
+                        android:id="@+id/qtyEdit_suButton8"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector_numberbutton_qty_handheld"
+                        android:text="8"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"/>
+                    <Button
+                        android:id="@+id/qtyEdit_suButton9"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector_numberbutton_qty_handheld"
+                        android:text="9"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+                    <Button
+                        android:id="@+id/qtyEdit_suButton0"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector_numberbutton_qty_handheld"
+                        android:text="0"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"/>
+                    <Button
+                        android:visibility="gone"
+                        android:id="@+id/qtyEdit_suButton00"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector_numberbutton_qty_handheld"
+                        android:layout_margin="3dp"
+                        android:text="00"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"/>
+                    <ImageButton
+                        android:id="@+id/qtyEdit_suButtonBack"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:src="@drawable/a0_handheld_ui_backspace_icon"
+                        android:background="@drawable/button_selector_numberbutton_qty_handheld"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_marginTop="20dp">
+
+                    <Button
+                        android:id="@+id/qtyEdit_suButtonX"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/button_selector_red"
+                        android:text="CANCEL"
+                        android:textSize="30dp"
+                        android:textColor="#ffffff"/>
+
+                    <Button
+                        android:id="@+id/qtyEdit_suButtonV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/button_selector_bluebutton"
+                        android:text="DONE"
+                        android:textColor="#ffffff"
+                        android:textSize="35dp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            />
+
+    </LinearLayout>
+</LinearLayout>

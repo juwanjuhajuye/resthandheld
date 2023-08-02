@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="#ffffff"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/table_main_btn_billprint"
+                android:text="BILL PRINT"
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+                android:background="@drawable/selector_roundlayout_button_blue"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <Button
+                android:id="@+id/table_main_btn_splitmergeprint"
+                android:text="BILL SPLIT\n/ MERGE / PRINT"
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+                android:background="@drawable/selector_roundlayout_button_blue"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <Button
+                android:visibility="gone"
+                android:id="@+id/table_main_btn_side3"
+                android:text="KITCHEN\nRE-PRINT"
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+                android:background="@drawable/selector_roundlayout_button_blue"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <!--                    <Button-->
+            <!--                        android:id="@+id/table_main_btn_side4"-->
+            <!--                        android:text="BILL MERGE"-->
+            <!--                        android:textColor="#ffffff"-->
+            <!--                        android:textSize="20dp"-->
+            <!--                        android:layout_marginTop="2dp"-->
+            <!--                        android:background="@drawable/table_main_imagebutton_mid"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"/>-->
+            <Button
+                android:id="@+id/table_main_btn_detailinfo"
+                android:text="DETAIL INFO"
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+                android:background="@drawable/selector_roundlayout_button_blue"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <Button
+                android:id="@+id/table_main_btn_movetable"
+                android:text="MOVE TABLE"
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+                android:background="@drawable/selector_roundlayout_button_blue"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <Button
+                android:id="@+id/table_main_btn_tablesplit"
+                android:text="TABLE SPLIT"
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+                android:background="@drawable/selector_roundlayout_button_blue"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+            <Button
+                android:id="@+id/table_main_btn_tablemerge"
+
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+                android:background="@drawable/selector_roundlayout_button_blue"
+                android:text="TABLE MERGE"
+                />
+
+            <Button
+                android:id="@+id/table_main_btn_tableclear"
+                android:text="TABLE CLEAR"
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+                android:background="@drawable/selector_roundlayout_button_blue"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <Button
+                android:id="@+id/table_main_btn_bellstop"
+                android:text="BELL STOP"
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:background="@drawable/selector_roundlayout_button_white"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <Button
+                android:visibility="gone"
+                android:id="@+id/table_main_btn_side7"
+                android:text="ALL\nINIT."
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+                android:background="@drawable/selector_roundlayout_button_blue"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/table_main_btn_side11"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="QUICK\nSALE"
+
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+                android:background="@drawable/selector_roundlayout_button_blue"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:id="@+id/popup_table_action_close"
+                android:background="@drawable/tablet_button_selector_red"
+                android:text="CLOSE"
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

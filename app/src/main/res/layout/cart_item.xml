@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/cartlistitemgrouptitle"
+            android:gravity="center"
+            android:text="JJJ"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/cartRl"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="#ffffff"
+                android:id="@+id/cartModOptionAdditionalTv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical|left"
+                android:textSize="20dp"
+                android:text="Add item name" />
+
+
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+                android:gravity="center"
+                android:text="" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/cartMinusTv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:background="@color/zxing_transparent"
+                    android:src="@drawable/tablet_main_middleservice_cart_min"
+                    android:scaleType="fitXY"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <TextView
+                android:textColor="#ffffff"
+                android:id="@+id/cartEaTv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="10.00" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/cartAddTv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    android:gravity="center"
+                    android:background="@color/zxing_transparent"
+                    android:src="@drawable/tablet_main_middleservice_cart_add"
+                    android:scaleType="fitXY"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/cartPriceTv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:text="10.00" />
+
+            <LinearLayout
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center">
+
+                <ImageButton
+
+                    android:id="@+id/cartDelTv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:background="@color/zxing_transparent"
+                    android:src="@drawable/tablet_main_middleservice_cart_del"
+                    android:scaleType="fitXY"
+                    android:text="" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@android:color/darker_gray"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JJJ_2go2go_POS_Rest_HandHeld.iml" filepath="$PROJECT_DIR$/.idea/modules/JJJ_2go2go_POS_Rest_HandHeld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/StarIOPort3.1/JJJ_2go2go_POS_Rest_HandHeld.StarIOPort3.1.iml" filepath="$PROJECT_DIR$/.idea/modules/StarIOPort3.1/JJJ_2go2go_POS_Rest_HandHeld.StarIOPort3.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/JJJ_2go2go_POS_Rest_HandHeld.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/JJJ_2go2go_POS_Rest_HandHeld.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/JJJ_2go2go_POS_Rest_HandHeld.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/JJJ_2go2go_POS_Rest_HandHeld.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/JJJ_2go2go_POS_Rest_HandHeld.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/JJJ_2go2go_POS_Rest_HandHeld.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/JJJ_2go2go_POS_Rest_HandHeld.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/JJJ_2go2go_POS_Rest_HandHeld.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/elo-peripherals-refresh-sdk-release/JJJ_2go2go_POS_Rest_HandHeld.elo-peripherals-refresh-sdk-release.iml" filepath="$PROJECT_DIR$/.idea/modules/elo-peripherals-refresh-sdk-release/JJJ_2go2go_POS_Rest_HandHeld.elo-peripherals-refresh-sdk-release.iml" />
+    </modules>
+  </component>
+</project>
