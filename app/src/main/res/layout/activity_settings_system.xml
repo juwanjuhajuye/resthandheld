@@ -1050,7 +1050,7 @@
                                 android:textSize="15dp"
                                 android:textColor="#ffffff"
                                 android:textStyle="bold"
-                                android:text="Department View"/>
+                                android:text="Employee Role View"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -1070,10 +1070,10 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="left|center_vertical"
-                                style="@style/SwitchCustom200"
+                                style="@style/SwitchCustom80"
                                 android:switchTextAppearance="@style/SwitchTextAppearance"
-                                android:textOn="Department View"
-                                android:textOff="Employees View Only"
+                                android:textOn="On"
+                                android:textOff="Off"
                                 android:checked="true"/>
                         </LinearLayout>
                     </LinearLayout>
