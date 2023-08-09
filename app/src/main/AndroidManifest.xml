@@ -751,7 +751,12 @@
             android:theme="@android:style/Theme.Dialog"
             android:windowSoftInputMode="stateAlwaysHidden" />
 
-
+        <!-- 08092023 -->
+        <activity
+            android:name=".tablesale.TableCombine"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
 
         <!-- Service 시작 -->
         <service
