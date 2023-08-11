@@ -8,6 +8,6 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.jjbfather.jjjqsrt2go2goresthandheld.com.example.jjbfather.jjjqsrt2go2gorest.JJJ_PaxBatch">
+    tools:context="com.example.jjbfather.jjjqsrt2go2goresthandheld.JJJ_PaxBatch">
 
 </RelativeLayout>

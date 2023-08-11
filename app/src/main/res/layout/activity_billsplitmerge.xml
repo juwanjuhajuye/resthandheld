@@ -121,20 +121,60 @@
                                 android:background="#808080"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
-                                <Button
-                                    android:textSize="20dp"
-                                    android:textStyle="bold"
-                                    android:paddingLeft="10dp"
-                                    android:id="@+id/btn_tablesale_byfoodmenu"
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"
                                     android:drawableLeft="@drawable/ab_imagebutton_billsplitmerge_radio"
                                     android:background="@color/zxing_transparent"
-                                    android:textColor="#000000"
-                                    android:drawablePadding="10dp"
-                                    android:text="By Food Menu"
+                                    android:orientation="horizontal"
+                                    android:layout_gravity="center_vertical">
+                                    <Button
+                                        android:textSize="20dp"
+                                        android:textStyle="bold"
+                                        android:paddingLeft="10dp"
+                                        android:id="@+id/btn_tablesale_byfoodmenu"
+                                        android:drawableLeft="@drawable/ab_imagebutton_billsplitmerge_radio"
+                                        android:background="@color/zxing_transparent"
+                                        android:textColor="#000000"
+                                        android:drawablePadding="10dp"
+                                        android:text="By Menu"
+                                        android:textAlignment="textStart"
+                                        android:layout_width="0dp"
+                                        android:layout_height="70dp"
+                                        android:layout_weight="1"/>
 
-                                    android:textAlignment="textStart"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="70dp"/>
+                                    <LinearLayout
+                                        android:layout_weight="1.5"
+                                        android:orientation="horizontal"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center">
+                                        <ImageButton
+                                            android:id="@+id/btn_tablesale_evenly_plus2"
+                                            android:background="@color/zxing_transparent"
+                                            android:src="@drawable/ab_imagebutton_tablesale_billsplitmerge_plus"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"/>
+                                        <TextView
+                                            android:text="1"
+                                            android:textSize="20dp"
+                                            android:textStyle="bold"
+                                            android:textColor="#000000"
+                                            android:gravity="center"
+                                            android:id="@+id/tablesale_split_evenly_txt2"
+                                            android:background="@drawable/roundlayout_white"
+                                            android:layout_width="70dp"
+                                            android:layout_height="50dp"/>
+                                        <ImageButton
+                                            android:id="@+id/btn_tablesale_evenly_minus2"
+                                            android:background="@color/zxing_transparent"
+                                            android:src="@drawable/ab_imagebutton_tablesale_billsplitmerge_min"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"/>
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
                                 <LinearLayout
                                     android:id="@+id/tablesale_byfoodmenu_view"
                                     android:layout_marginBottom="10dp"

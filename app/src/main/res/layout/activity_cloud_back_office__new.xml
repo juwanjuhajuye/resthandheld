@@ -8,7 +8,7 @@
     android:paddingTop="0dp"
     android:paddingBottom="0dp"
     android:orientation="vertical"
-    tools:context="com.example.jjbfather.jjjqsrt2go2goresthandheld.com.example.jjbfather.jjjqsrt2go2gorest.CloudBackOffice">
+    tools:context="com.example.jjbfather.jjjqsrt2go2goresthandheld.CloudBackOffice">
 
     <LinearLayout
         android:id="@+id/cloudBackOfficeLinearLayout"

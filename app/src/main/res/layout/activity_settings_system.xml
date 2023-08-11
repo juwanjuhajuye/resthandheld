@@ -1050,7 +1050,7 @@
                                 android:textSize="15dp"
                                 android:textColor="#ffffff"
                                 android:textStyle="bold"
-                                android:text="Employee Role View"/>
+                                android:text="Department View"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -1070,10 +1070,10 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="left|center_vertical"
-                                style="@style/SwitchCustom80"
+                                style="@style/SwitchCustom200"
                                 android:switchTextAppearance="@style/SwitchTextAppearance"
-                                android:textOn="On"
-                                android:textOff="Off"
+                                android:textOn="Department View"
+                                android:textOff="Employees View Only"
                                 android:checked="true"/>
                         </LinearLayout>
                     </LinearLayout>
@@ -1493,6 +1493,65 @@
 
 
                     </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1"
+                        android:orientation="horizontal">
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/settingsSystemTitleTextView78"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left|center_vertical"
+                                android:textSize="20dp"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+                                android:text="Customer Online Check"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2">
+                            <Switch
+                                android:id="@+id/customeronlinecheckynSwitch"
+                                android:tag="customeronlinecheckynSwitchTag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="left|center_vertical"
+                                style="@style/SwitchCustom80"
+                                android:switchTextAppearance="@style/SwitchTextAppearance"
+                                android:textOn="On"
+                                android:textOff="Off"
+                                android:checked="true"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -2452,6 +2511,73 @@
                                 android:text=""/>
 
 
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1"
+                        android:orientation="horizontal">
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/settingsSystemTitleTextView77"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left|center_vertical"
+                                android:textSize="20dp"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+                                android:text="Pager Number of Digits"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2">
+
+                            <EditText
+                                android:id="@+id/pagernumofdigitsEditText"
+                                android:tag="pagernumofdigitsEditTextTag"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="left|center_vertical"
+                                android:gravity="center"
+                                android:background="@drawable/roundlayout_background_settings_textview"
+                                android:padding="8dp"
+                                android:inputType="number"
+                                android:textSize="20dp"
+                                android:textColor="#3f3e3a"
+                                android:text=""/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.5"
+                                android:gravity="center_vertical|left"
+                                android:padding="8dp"
+                                android:textSize="16dp"
+                                android:textColor="#ffffff"
+                                android:text=" "/>
 
                         </LinearLayout>
                     </LinearLayout>
@@ -4835,10 +4961,175 @@
                     </LinearLayout>
 
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1"
+                        android:orientation="horizontal">
+                    </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:visibility="visible">
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            >
+                            <TextView
+                                android:id="@+id/settingsSystemTitleTextView76"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left|center_vertical"
+                                android:textSize="15dp"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+                                android:text="Custom Bill Split"/>
+                        </LinearLayout>
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.1">
+                        </LinearLayout>
 
+                        <LinearLayout
+                            android:gravity="end"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+                            <Switch
+                                android:id="@+id/custombillsplituseynSwitch"
+                                android:tag="custombillsplituseynSwitchTag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="left|center_vertical"
+                                style="@style/SwitchCustom80"
+                                android:switchTextAppearance="@style/SwitchTextAppearance"
+                                android:textOn="On"
+                                android:textOff="Off"
+                                android:checked="true"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1"
+                        android:orientation="horizontal">
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/settingsSystemTitleTextView89"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left|center_vertical"
+                                android:textSize="20dp"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+                                android:text="Data Upload Pause"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2">
+                            <Switch
+                                android:id="@+id/saledatauploadpauseynSwitch"
+                                android:tag="saledatauploadpauseynSwitchTag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="left|center_vertical"
+                                style="@style/SwitchCustom80"
+                                android:switchTextAppearance="@style/SwitchTextAppearance"
+                                android:textOn="On"
+                                android:textOff="Off"
+                                android:checked="true"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1"
+                        android:orientation="horizontal">
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/settingsSystemTitleTextView90"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left|center_vertical"
+                                android:textSize="20dp"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+                                android:text="Time Display on Table"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2">
+                            <Switch
+                                android:id="@+id/timeviewontableynSwitch"
+                                android:tag="timeviewontableynSwitchTag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="left|center_vertical"
+                                style="@style/SwitchCustom80"
+                                android:switchTextAppearance="@style/SwitchTextAppearance"
+                                android:textOn="On"
+                                android:textOff="Off"
+                                android:checked="true"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"

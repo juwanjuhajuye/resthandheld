@@ -1688,6 +1688,25 @@
                                         android:textStyle="bold" />
 
                                 </LinearLayout>
+                                <!-- 07.18.2022 - add pay for cash, card -->
+                                <LinearLayout
+                                    android:id="@+id/addpayincludedLn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/addpayincludedTv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="right|center_vertical"
+                                        android:text=""
+                                        android:textColor="#000000"
+                                        android:textSize="15dp" />
+
+                                </LinearLayout>
 
                             </LinearLayout>
 

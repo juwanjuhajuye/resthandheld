@@ -3,10 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/src/main/res/layout/activity_settings_system.xml" value="0.25555555555555554" />
-        <entry key="..\:/Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/src/main/res/layout/activity_table_combine.xml" value="0.22264957264957264" />
-        <entry key="..\:/Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/src/main/res/layout/activity_table_main.xml" value="0.22264957264957264" />
-        <entry key="..\:/Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/src/main/res/layout/popup_table_action.xml" value="0.22264957264957264" />
         <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_button_tablesale_billsplit_merge_selected.xml" value="0.3485" />
         <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_imagebutton_billsplitmerge_radio.xml" value="0.3485" />
         <entry key="..\:/code/bcs_home_work/qsrt2/HandHeld/QSRTHandHeld/qsrthandheld/app/src/main/res/drawable/ab_imagebutton_cashinout_delete.xml" value="0.3685" />
@@ -426,7 +422,7 @@
       </value>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

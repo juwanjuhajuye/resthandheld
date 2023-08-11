@@ -4,7 +4,7 @@
     android:id="@+id/activity_batch_detail"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jjbfather.jjjqsrt2go2goresthandheld.com.example.jjbfather.jjjqsrt2go2gorest.BatchListDetail"
+    tools:context="com.example.jjbfather.jjjqsrt2go2goresthandheld.BatchListDetail"
     android:orientation="horizontal">
 
     <LinearLayout

@@ -249,7 +249,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="2.5"
+                android:layout_weight="3.5"
                 android:orientation="horizontal"
                 android:background="#ffffff"
                 android:paddingLeft="10dp"
@@ -272,19 +272,40 @@
                         android:text="Balance"
                         android:textSize="15dp"
                         android:gravity="left|center_vertical"/>
-                    <TextView
-                        android:id="@+id/paymentBalanceEditText"
-                        android:tag="paymentBalanceEditTextTag"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="2"
-                        android:gravity="center_vertical|right"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-                        android:textColor="#393e3e"
-                        android:paddingRight="5dp"
-                        android:background="@drawable/roundlayout_background_paymentmoney"
-                        android:cursorVisible="false"/>
+                        android:orientation="vertical"
+                        android:layout_weight="2">
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/payment_addpay_comment"
+                            android:tag="payment_addpay_commentTag"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical|right"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:textColor="#393e3e"
+                            android:paddingRight="5dp"
+                            android:background="@drawable/roundlayout_background_paymentmoney"
+                            android:cursorVisible="false"/>
+                        <TextView
+                            android:id="@+id/paymentBalanceEditText"
+                            android:tag="paymentBalanceEditTextTag"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical|right"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="#393e3e"
+                            android:paddingRight="5dp"
+                            android:background="@drawable/roundlayout_background_paymentmoney"
+                            android:cursorVisible="false"/>
+                    </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -370,7 +391,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.7"
+            android:layout_weight="0.6"
             android:background="#ffffff"
             android:gravity="center"
             android:orientation="horizontal">
@@ -479,7 +500,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="6" >
+            android:layout_weight="5" >
 
             <LinearLayout
                 android:layout_width="match_parent"

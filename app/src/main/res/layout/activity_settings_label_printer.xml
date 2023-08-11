@@ -742,6 +742,69 @@
                             android:layout_weight="0.1"
                             android:orientation="horizontal"></LinearLayout>
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="left|center_vertical"
+                                    android:text="Printer Buzzer"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1"></LinearLayout>
+
+                            <LinearLayout
+                                android:gravity="right"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:orientation="horizontal"
+                                android:paddingBottom="8dp"
+                                android:paddingTop="8dp">
+
+                                <Switch
+                                    android:id="@+id/label_printer_buzzer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="left|center_vertical"
+                                    android:checked="true"
+                                    android:textOff="Off"
+                                    android:textOn="On"
+                                    style="@style/SwitchCustom40"
+                                    android:switchTextAppearance="@style/SwitchTextAppearance" />
+
+                                <Spinner
+                                    android:layout_marginLeft="20dp"
+                                    android:id="@+id/label_printer_buzzer_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.1"
+                            android:orientation="horizontal"></LinearLayout>
+
 
                         <LinearLayout
                             android:visibility="gone"

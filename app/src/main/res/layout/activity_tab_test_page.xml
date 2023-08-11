@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.jjbfather.jjjqsrt2go2goresthandheld.com.example.jjbfather.jjjqsrt2go2gorest.TabTestPage">
+    tools:context="com.example.jjbfather.jjjqsrt2go2goresthandheld.TabTestPage">
 
     <TextView
         android:layout_width="match_parent"

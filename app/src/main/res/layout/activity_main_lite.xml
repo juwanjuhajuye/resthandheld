@@ -8,7 +8,7 @@
     android:paddingRight="0dp"
     android:paddingTop="0dp"
     android:paddingBottom="0dp"
-    tools:context="com.example.jjbfather.jjjqsrt2go2goresthandheld.com.example.jjbfather.jjjqsrt2go2gorest.MainActivity">
+    tools:context="com.example.jjbfather.jjjqsrt2go2goresthandheld.MainActivity">
 
     <RelativeLayout
         android:id="@+id/rootLn"

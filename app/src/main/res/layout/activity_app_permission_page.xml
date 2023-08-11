@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jjbfather.jjjqsrt2go2goresthandheld.com.example.jjbfather.jjjqsrt2go2gorest.AppPermissionPage">
+    tools:context="com.example.jjbfather.jjjqsrt2go2goresthandheld.AppPermissionPage">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -244,6 +244,11 @@
             android:windowSoftInputMode="stateAlwaysHidden">
         </activity>
         <activity
+            android:name=".SettingsDeviceMasterPrinter"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingDeviceLabelPrinter1"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
             android:theme="@android:style/Theme.Dialog"
