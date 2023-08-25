@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#191d37"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+
+                    android:id="@+id/popup_billsplitmerge_merge_selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundlayout_selector_button_gray"
+                    android:text="Merge Selected"
+                    android:textAllCaps="false"
+                    android:textColor="#a1a1a1"
+
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+
+                <Button
+
+                    android:id="@+id/popup_billsplitmerge_reset_selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundlayout_selector_button_gray"
+                    android:text="Reset Selected"
+                    android:textAllCaps="false"
+                    android:textColor="#a1a1a1"
+
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+
+                    android:id="@+id/popup_billsplitmerge__resert_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundlayout_selector_button_gray"
+                    android:text="Reset All"
+                    android:textAllCaps="false"
+                    android:textColor="#a1a1a1"
+
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/popup_billsplitmerge_selected_printing"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundlayout_selector_button_gray"
+                    android:text="Selected Printing"
+                    android:textAllCaps="false"
+                    android:textColor="#a1a1a1"
+
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+
+                    android:id="@+id/popup_billsplitmerge_void_by_bills"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundlayout_selector_button_gray"
+                    android:text="Void by Bills"
+                    android:textAllCaps="false"
+                    android:textColor="#a1a1a1"
+
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+
+                <!--            -->
+
+
+                <Button
+                    android:id="@+id/popup_billsplitmerge_pay_by_bills"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundlayout_selector_button_gray"
+                    android:text="Pay by Bills"
+                    android:textAllCaps="false"
+                    android:textColor="#a1a1a1"
+
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/popup_billsplitmerge_close"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/tablet_button_selector_red_line"
+        android:text="CLOSE"
+        android:textColor="#8d0704"
+        android:textSize="40dp" />
+
+</RelativeLayout>

@@ -9,7 +9,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp">
+        android:layout_marginBottom="70dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,6 +42,7 @@
                     android:visibility="gone" />
 
                 <Button
+
                     android:id="@+id/popup_main_action_setting"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
@@ -55,18 +56,67 @@
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
+
+
                 <Button
-                    android:id="@+id/popup_main_action_pay"
+
+                    android:id="@+id/popup_main_action_general_modifier"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/selector_roundlayout_button_red"
-                    android:text="PAY"
+                    android:background="@drawable/roundlayout_selector_button_gray"
+                    android:text="General Modifier"
                     android:textAllCaps="false"
+                    android:textColor="#a1a1a1"
 
-                    android:textColor="#ffffff"
-                    android:textSize="25dp" />
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+
+                    android:id="@+id/popup_main_action_add_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundlayout_selector_button_gray"
+                    android:text="Add divider"
+                    android:textAllCaps="false"
+                    android:textColor="#a1a1a1"
+
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/popup_main_action_giftcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundlayout_selector_button_gray"
+                    android:text="GiftCard"
+                    android:textAllCaps="false"
+                    android:textColor="#a1a1a1"
+
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+
+                    android:id="@+id/popup_main_action_tax_exempt"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundlayout_selector_button_gray"
+                    android:text="Tax Exempt"
+                    android:textAllCaps="false"
+                    android:textColor="#a1a1a1"
+
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
 
 
                 <!--            -->
@@ -87,17 +137,21 @@
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/popup_main_action_discount"
+
+                    android:id="@+id/popup_main_action_print"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/selector_roundlayout_button_green"
-                    android:text="Discount"
+                    android:background="@drawable/roundlayout_selector_button_gray"
+                    android:text="Print"
                     android:textAllCaps="false"
-                    android:textColor="#2ba021"
+                    android:textColor="#a1a1a1"
+
                     android:textSize="25dp"
                     android:textStyle="bold" />
+
+
             </LinearLayout>
 
             <LinearLayout
@@ -111,6 +165,46 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/popup_main_action_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_roundlayout_button_red"
+                    android:text="PAY"
+                    android:textAllCaps="false"
+
+                    android:textColor="#ffffff"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/popup_main_action_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_roundlayout_button_green"
+                    android:text="Discount"
+                    android:textAllCaps="false"
+                    android:textColor="#2ba021"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/popup_main_action_remove_gratuity"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundlayout_selector_button_gray"
+                    android:text="Remove Gratuity"
+                    android:textAllCaps="false"
+                    android:textColor="#a1a1a1"
+
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/popup_main_action_quick"
@@ -127,6 +221,19 @@
                     android:textStyle="bold" />
 
                 <Button
+                    android:id="@+id/popup_main_action_remove_tax_exempt"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundlayout_selector_button_gray"
+                    android:text="Remove \nTax Exempt"
+                    android:textAllCaps="false"
+                    android:textColor="#a1a1a1"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
                     android:id="@+id/popup_main_action_product"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
@@ -139,19 +246,7 @@
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
-                <Button
-                    android:id="@+id/popup_main_action_giftcard"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/roundlayout_selector_button_gray"
-                    android:text="GiftCard"
-                    android:textAllCaps="false"
-                    android:textColor="#a1a1a1"
 
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/popup_main_action_menusearch"
@@ -168,6 +263,7 @@
                     android:textStyle="bold" />
 
                 <Button
+                    android:visibility="gone"
                     android:id="@+id/popup_main_action_logout"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
@@ -188,11 +284,12 @@
 
     <Button
         android:id="@+id/popup_main_action_close"
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/tablet_button_selector_red_line"
         android:text="CLOSE"

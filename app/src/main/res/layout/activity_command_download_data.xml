@@ -17,13 +17,13 @@
         android:orientation="vertical"
         android:focusable="true"
         android:focusableInTouchMode="true"
-        android:background="@color/colorWhite"
+        android:background="@color/colorBlack"
         >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
             android:gravity="right"
             android:orientation="vertical">
             <Button
@@ -55,7 +55,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1.5"
+                    android:layout_weight="2"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -72,7 +72,7 @@
                             android:layout_weight="1"
                             android:text="ALL DATA"
                             android:textSize="18dp"
-                            android:textColor="@color/colorAccent"
+                            android:textColor="#F44336"
                             android:textStyle="bold"
                             android:background="@drawable/button_selector_download1_accent"
                             android:gravity="center"/>
@@ -91,7 +91,7 @@
                             android:textSize="18dp"
                             android:textColor="#38853B"
                             android:textStyle="bold"
-                            android:background="@drawable/button_selector_download1"
+                            android:background="@drawable/button_selector_download1_handheld"
                             android:gravity="center"/>
 
                         <TextView
@@ -108,7 +108,7 @@
                             android:textSize="18dp"
                             android:textColor="#38853B"
                             android:textStyle="bold"
-                            android:background="@drawable/button_selector_download1"
+                            android:background="@drawable/button_selector_download1_handheld"
                             android:gravity="center"/>
 
                         <TextView
@@ -125,7 +125,7 @@
                             android:textSize="18dp"
                             android:textColor="#38853B"
                             android:textStyle="bold"
-                            android:background="@drawable/button_selector_download1"
+                            android:background="@drawable/button_selector_download1_handheld"
                             android:gravity="center"/>
 
 
@@ -147,7 +147,7 @@
                             android:textSize="18dp"
                             android:textColor="#38853B"
                             android:textStyle="bold"
-                            android:background="@drawable/button_selector_download1"
+                            android:background="@drawable/button_selector_download1_handheld"
                             android:gravity="center"/>
 
                         <TextView
@@ -164,7 +164,7 @@
                             android:textSize="18dp"
                             android:textColor="#38853B"
                             android:textStyle="bold"
-                            android:background="@drawable/button_selector_download1"
+                            android:background="@drawable/button_selector_download1_handheld"
                             android:gravity="center"/>
 
                         <TextView
@@ -181,7 +181,7 @@
                             android:textSize="18dp"
                             android:textColor="#38853B"
                             android:textStyle="bold"
-                            android:background="@drawable/button_selector_download1"
+                            android:background="@drawable/button_selector_download1_handheld"
                             android:gravity="center"/>
 
                         <TextView
@@ -198,7 +198,7 @@
                             android:textSize="18dp"
                             android:textColor="#38853B"
                             android:textStyle="bold"
-                            android:background="@drawable/button_selector_download1"
+                            android:background="@drawable/button_selector_download1_handheld"
                             android:gravity="center"/>
 
 
@@ -208,7 +208,7 @@
 
                 <LinearLayout
                     android:gravity="center"
-                    android:weightSum="5"
+
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="0.3"
@@ -216,14 +216,11 @@
 
                     >
 
-                    <Space
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        />
 
                     <Button
-                        android:layout_weight="3"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
                         android:id="@+id/uploadDatabtn"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -232,14 +229,10 @@
 
                         android:textColor="@color/colorWhite"
                         android:textStyle="bold"
-                        android:background="@drawable/button_selector_bluebutton"
+                        android:background="@drawable/button_selector_whitebutton_line"
                         android:gravity="center"/>
 
-                    <Space
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        />
+
 
                 </LinearLayout>
 
@@ -266,7 +259,7 @@
                             android:layout_weight="1"
                             android:text="ALL CATEGORIES"
                             android:textSize="18dp"
-                            android:textColor="@color/colorAccent"
+                            android:textColor="#F44336"
                             android:textStyle="bold"
                             android:background="@drawable/button_selector_download1_accent"
                             android:gravity="center"/>
@@ -293,7 +286,7 @@
 
                             <include
                                 android:id="@+id/servicecategory"
-                                layout="@layout/activity_category" />
+                                layout="@layout/activity_category_handheld" />
 
                         </FrameLayout>
 
@@ -331,29 +324,25 @@
                     android:layout_height="0dp"
                     android:layout_weight="1.5"
                     android:orientation="horizontal"
-                    android:weightSum="5">
+                    >
 
-                    <Space
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"></Space>
+
 
                     <Button
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
                         android:id="@+id/submitbtn"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
-
+                        android:textSize="30dp"
                         android:text="DONE"
-                        android:textColor="@color/colorWhite"
+                        android:textColor="#0054d5"
 
-                        android:background="@drawable/button_selector_bluebutton"
+                        android:background="@drawable/button_selector_bluebutton_line"
                         android:gravity="center"/>
 
-                    <Space
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"></Space>
+
 
                 </LinearLayout>
 

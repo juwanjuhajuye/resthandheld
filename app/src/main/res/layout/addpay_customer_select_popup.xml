@@ -105,14 +105,28 @@
                     android:textColor="#ffffff"
                     android:textSize="36dp" />
 
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/popup_payment_text_creditcardtax_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/popup_payment_text_creditcard_amount"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="30dp" />
+
 
                 <TextView
                     android:id="@+id/popup_payment_text_discount_card_amount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/popup_payment_text_creditcard_amount"
+                    android:layout_below="@+id/popup_payment_text_creditcardtax_amount"
                     android:layout_centerInParent="true"
                     android:text=""
+                    android:layout_marginBottom="20dp"
                     android:textColor="#ffffff"
                     android:textSize="20dp" />
 
@@ -162,12 +176,26 @@
                     android:textSize="36dp" />
 
                 <TextView
-                    android:id="@+id/popup_payment_text_discount_cash_amount"
+                    android:visibility="gone"
+                    android:id="@+id/popup_payment_text_cashtax_amount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/popup_payment_text_cash_amount"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/popup_payment_text_discount_cash_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/popup_payment_text_cashtax_amount"
                     android:layout_centerInParent="true"
                     android:text=""
+                    android:layout_marginBottom="20dp"
                     android:textColor="#ffffff"
                     android:textSize="20dp" />
             </RelativeLayout>
@@ -181,12 +209,14 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/popup_payment_otherpay_image"
-                    android:layout_marginTop="50dp"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginRight="50dp"
-                    android:layout_centerHorizontal="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginRight="50dp"
                     android:src="@drawable/btn_otherpay_payment_popup"/>
 
                 <TextView
@@ -200,7 +230,7 @@
 
                     android:layout_centerHorizontal="true"
 
-                    android:text="Store GiftCard Point" />
+                    android:text="Store Giftcard/Point" />
 
                 <TextView
                     android:id="@+id/popup_payment_text_otherpay_amount"
@@ -213,6 +243,30 @@
                     android:text="$ 21.01"
                     android:textColor="#ffffff"
                     android:textSize="36dp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/popup_payment_text_otherpaytax_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/popup_payment_text_otherpay_amount"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/popup_payment_text_discount_otherpay_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/popup_payment_text_otherpaytax_amount"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="20dp"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
             </RelativeLayout>
 
 

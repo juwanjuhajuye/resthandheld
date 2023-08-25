@@ -510,7 +510,9 @@
                         </LinearLayout>
 
                     </LinearLayout>
+
                     <LinearLayout
+                        android:visibility="gone"
                         android:weightSum="3"
                         android:background="#808080"
                         android:layout_height="wrap_content"
@@ -556,13 +558,23 @@
                     <LinearLayout
                         android:weightSum="3"
                         android:background="#808080"
-                        android:layout_height="wrap_content"
+                        android:layout_height="60dp"
                         android:layout_width="match_parent"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
                         android:paddingLeft="10dp"
-                        android:paddingRight="10dp">
+                        android:paddingRight="10dp"
+                        android:orientation="horizontal">
                         <Button
+                            android:textColor="#ff0000"
+                            android:background="@drawable/selector_roundlayout_button_resetselected"
+                            android:id="@+id/billsplitmerge_action_btn"
+                            android:text="ACTION"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                        <Button
+                            android:visibility="gone"
                             android:layout_weight="1"
                             android:id="@+id/tablesale_splitmerge_selected_printind"
 
@@ -574,6 +586,7 @@
                             android:layout_height="match_parent"/>
 
                         <Button
+                            android:visibility="gone"
                             android:layout_marginLeft="10dp"
                             android:layout_weight="1"
                             android:id="@+id/tablesale_splitmerge_void"
@@ -585,6 +598,7 @@
                             android:layout_height="match_parent"/>
 
                         <Button
+                            android:visibility="gone"
                             android:layout_marginLeft="10dp"
                             android:layout_weight="1"
                             android:id="@+id/tablesale_splitmerge_pay_by_bills"
