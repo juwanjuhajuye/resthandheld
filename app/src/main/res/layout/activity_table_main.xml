@@ -25,6 +25,23 @@
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"/>
+
+            <Button
+
+                android:id="@+id/table_main_refresh"
+                android:padding="5dp"
+                android:layout_margin="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:background="@drawable/button_selector_blue_bordered_rounded_pressed"
+                android:text="refresh"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:tag="optionaddPopupCloseButtonTag"
+                android:textSize="12sp" />
+
             <Button
 
                 android:id="@+id/table_main_action"
@@ -34,12 +51,12 @@
                 android:layout_height="match_parent"
 
                 android:gravity="center"
-                android:background="@drawable/selector_roundlayout_button_blue_line"
+                android:background="@drawable/button_selector_blue_bordered_button_rounded"
                 android:text="COMMAND"
                 android:textStyle="bold"
-                android:textColor="#6b9ad9"
+                android:textColor="@color/colorWhite"
                 android:tag="optionaddPopupCloseButtonTag"
-                android:textSize="12dp" />
+                android:textSize="12sp" />
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -70,6 +87,7 @@
             <LinearLayout
                 android:id="@+id/floor_btn_ln"
                 android:layout_margin="10dp"
+                android:padding="15dp"
                 android:background="@drawable/selector_roundlayout_button_purple_tablesale_floor"
                 android:orientation="vertical"
                 android:layout_weight="1"
@@ -86,18 +104,15 @@
                     android:layout_height="wrap_content"/>
 
             </LinearLayout>
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent">
                 <LinearLayout
                     android:id="@+id/action_btn_ln"
-                    android:layout_margin="10dp"
-                    android:background="@drawable/selector_roundlayout_button_tablesale_action"
-                    android:orientation="horizontal"
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_roundlayout_button_tablesale_action"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:padding="15dp">
                     <TextView
                         android:id="@+id/action_btn_text"
                         android:textColor="#ffffff"
@@ -128,15 +143,21 @@
                         android:layout_height="match_parent"/>
 
                 </LinearLayout>
-            </LinearLayout>
 
         </LinearLayout>
-        <GridView
+<!--        <GridView-->
+<!--            android:id="@+id/tablemain_grid"-->
+<!--            android:numColumns="3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+<!--        </GridView>-->
+
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/tablemain_grid"
             android:numColumns="3"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-        </GridView>
+        </androidx.recyclerview.widget.RecyclerView>
     </LinearLayout>
 
 </LinearLayout>
