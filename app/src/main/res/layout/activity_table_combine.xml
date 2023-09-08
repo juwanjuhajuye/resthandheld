@@ -53,19 +53,13 @@
             android:padding="5dp"
             android:orientation="vertical">
 
-            <ScrollView
-                android:id="@+id/combineScrollView"
+            <LinearLayout
+                android:id="@+id/combineLn"
+                android:tag="combineLnTag"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp">
-                <LinearLayout
-                    android:id="@+id/combineLn"
-                    android:tag="combineLnTag"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                </LinearLayout>
-            </ScrollView>
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            </LinearLayout>
 
         </LinearLayout>
 
