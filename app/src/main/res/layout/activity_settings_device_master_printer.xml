@@ -45,7 +45,7 @@
                         android:weightSum="7"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/roundlayout_background_settings_sub"
+                        android:background="@color/colorWhite"
                         android:orientation="vertical"
                         android:padding="10dp">
 
@@ -57,32 +57,30 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
                             <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/roundlayout_background_settings_tab_selected"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
                                 android:padding="5dp">
 
                                 <TextView
                                     android:id="@+id/settingsDevicePrinterTitleTextView1"
                                     android:layout_width="0dp"
-                                    android:layout_height="match_parent"
+                                    android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
-                                    android:text=" Master Printer Settings "
-                                    android:textColor="#826953"
-                                    android:textSize="20dp"
+                                    android:text="Master Printer Settings"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
+                        <View
                             android:layout_width="match_parent"
-                            android:layout_height="20dp"></LinearLayout>
+                            android:layout_height="20dp"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -104,7 +102,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Master Printer Use"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -130,21 +128,21 @@
                                     android:tag="master_use_yn_SwitchTag"
                                     android:textOn="YES"
                                     android:textOff="NO"
-                                    style="@style/SwitchCustom200"
+                                    style="@style/SwitchCustom100"
                                     android:switchTextAppearance="@style/SwitchTextAppearance" />
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="1.3"
+                            android:layout_weight="1"
                             android:orientation="horizontal"
                             android:paddingBottom="8dp"
                             android:paddingTop="8dp" >
@@ -159,66 +157,64 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
                                     android:text="Select Print"/>
                             </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="0.1">
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1.5" >
-
-                                <RadioGroup
-                                    android:id="@+id/MasterSelectPrintRadioGroup"
-                                    android:tag="MasterSelectPrintRadioGroupTag"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:orientation="horizontal">
-
-                                    <RadioButton
-                                        android:id="@+id/ReceiptRadioButton"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:layout_marginRight="10dp"
-                                        android:checked="true"
-                                        android:tag="ReceiptRadioButtonTag"
-                                        android:text="Receipt Form"
-                                        android:textColor="#ffffff"
-                                        android:textSize="15dp" />
-
-                                    <RadioButton
-                                        android:id="@+id/KitchenRadioButton"
-                                        android:tag="KitchenRadioButtonTag"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:layout_marginRight="10dp"
-                                        android:layout_marginLeft="20dp"
-                                        android:textSize="15dp"
-                                        android:textColor="#ffffff"
-                                        android:text="Kitchen Form" />
-                                    <RadioButton
-                                        android:visibility="gone"
-                                        android:id="@+id/LabelRadioButton"
-                                        android:tag="LabelRadioButtonTag"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:layout_marginLeft="20dp"
-                                        android:textSize="15dp"
-                                        android:textColor="#ffffff"
-                                        android:text="Label Form" />
-                                </RadioGroup>
-
-                            </LinearLayout>
                         </LinearLayout>
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp">
 
+                            <RadioGroup
+                                android:id="@+id/MasterSelectPrintRadioGroup"
+                                android:tag="MasterSelectPrintRadioGroupTag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/ReceiptRadioButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="10dp"
+                                    android:checked="true"
+                                    android:tag="ReceiptRadioButtonTag"
+                                    android:text="Receipt Form"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="15dp" />
+
+                                <RadioButton
+                                    android:id="@+id/KitchenRadioButton"
+                                    android:tag="KitchenRadioButtonTag"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:textSize="15dp"
+                                    android:textColor="@color/colorBlack"
+                                    android:text="Kitchen Form" />
+                                <RadioButton
+                                    android:visibility="gone"
+                                    android:id="@+id/LabelRadioButton"
+                                    android:tag="LabelRadioButtonTag"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:textSize="15dp"
+                                    android:textColor="@color/colorBlack"
+                                    android:text="Label Form" />
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -240,7 +236,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Printer Name"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -265,11 +261,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -291,7 +287,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Test Print"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -348,11 +344,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -374,7 +370,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Auto Receipt"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -400,16 +396,16 @@
                                     android:tag="autoreceiptSwitchTag"
                                     android:textOff="Auto Receipt Off"
                                     android:textOn="Auto Receipt On"
-                                    style="@style/SwitchCustom200"
+                                    style="@style/SwitchCustom100"
                                     android:switchTextAppearance="@style/SwitchTextAppearance" />
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -431,7 +427,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Print Language"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -456,11 +452,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:visibility="gone"
@@ -534,7 +530,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Receipt Paper Count"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -560,11 +556,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -586,7 +582,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Network IP"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -616,7 +612,7 @@
                                     android:tag="networkIpTextView1Tag"
                                     android:text=""
                                     android:textColor="#3f3e3a"
-                                    android:textSize="20dp" />
+                                    android:textSize="15dp" />
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -624,7 +620,7 @@
                                     android:layout_weight="0.2"
                                     android:gravity="bottom|center_horizontal"
                                     android:text="."
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
 
@@ -640,7 +636,7 @@
                                     android:tag="networkIpTextView2Tag"
                                     android:text=""
                                     android:textColor="#3f3e3a"
-                                    android:textSize="20dp" />
+                                    android:textSize="15dp" />
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -648,7 +644,7 @@
                                     android:layout_weight="0.2"
                                     android:gravity="bottom|center_horizontal"
                                     android:text="."
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
 
@@ -664,7 +660,7 @@
                                     android:tag="networkIpTextView3Tag"
                                     android:text=""
                                     android:textColor="#3f3e3a"
-                                    android:textSize="20dp" />
+                                    android:textSize="15dp" />
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -672,7 +668,7 @@
                                     android:layout_weight="0.2"
                                     android:gravity="bottom|center_horizontal"
                                     android:text="."
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
 
@@ -688,7 +684,7 @@
                                     android:tag="networkIpTextView4Tag"
                                     android:text=""
                                     android:textColor="#3f3e3a"
-                                    android:textSize="20dp" />
+                                    android:textSize="15dp" />
 
                                 <TextView
                                     android:id="@+id/networkportcolon"
@@ -697,7 +693,7 @@
                                     android:layout_weight="0.2"
                                     android:gravity="center"
                                     android:text=":"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
 
@@ -713,20 +709,15 @@
                                     android:tag="networkPrinterPortTextViewTag"
                                     android:text=""
                                     android:textColor="#3f3e3a"
-                                    android:textSize="20dp" />
-
-                                <TextView
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="2" />
+                                    android:textSize="15dp" />
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:visibility="invisible"
@@ -2335,7 +2326,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/roundlayout_background_settings_sub"
+                        android:background="@color/colorWhite"
                         android:orientation="vertical"
                         android:padding="10dp">
 
@@ -2345,11 +2336,11 @@
                             android:layout_weight="1"
                             android:orientation="horizontal">
 
-                            <LinearLayout
+                            <View
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="3"
-                                android:orientation="horizontal"></LinearLayout>
+                                android:layout_weight="1"
+                                android:orientation="horizontal"/>
 
                             <LinearLayout
                                 android:layout_width="0dp"
@@ -2361,10 +2352,10 @@
                                     android:id="@+id/saveSettingsDevicePrinterButton"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@drawable/button_selector_settings_v"
+                                    android:background="@drawable/button_selector_blue_bordered_button_rounded"
                                     android:padding="10dp"
                                     android:tag="saveSettingsDevicePrinterButtonTag"
-                                    android:text="V"
+                                    android:text="APPLY SETTING"
                                     android:textColor="#ffffff"
                                     android:textSize="30dp"
                                     android:textStyle="bold" />
@@ -2373,7 +2364,7 @@
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="0.1"
+                                android:layout_weight="0.05"
                                 android:orientation="horizontal"></LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
@@ -2387,7 +2378,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.1"
+            android:layout_weight="0.05"
             android:orientation="horizontal"></LinearLayout>
 
     </LinearLayout>

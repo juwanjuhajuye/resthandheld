@@ -99,7 +99,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="3"
+            android:layout_weight="2"
             android:orientation="vertical">
 
             <LinearLayout
@@ -113,70 +113,80 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/roundlayout_background_paymenttopln"
+                    android:layout_weight="2"
                     android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/employeeInfoTv1"
-                        android:tag="employeeInfoTv1Tag"
-                        android:layout_width="0dp"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:background="@drawable/roundlayout_background_paymenttopln"
+                        android:orientation="horizontal">
 
-                        android:textColor="#000000"
-                        android:text=" Employee"
-                        android:textSize="13dp"
-                        android:gravity="left|center_vertical"/>
+                        <TextView
+                            android:id="@+id/employeeInfoTv1"
+                            android:tag="employeeInfoTv1Tag"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
 
-                    <TextView
-                        android:id="@+id/employeeInfoTv2"
-                        android:tag="employeeInfoTv2Tag"
-                        android:layout_width="0dp"
+                            android:textColor="#000000"
+                            android:text=" Employee"
+                            android:textSize="13dp"
+                            android:gravity="left|center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/employeeInfoTv2"
+                            android:tag="employeeInfoTv2Tag"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:text="Wanhaye"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:paddingRight="5dp"
+                            android:gravity="right|center_vertical"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:textColor="#000000"
-                        android:text="Wanhaye"
-                        android:textStyle="bold"
-                        android:textSize="15dp"
-                        android:gravity="right|center_vertical"/>
+                        android:orientation="horizontal"
+                        android:background="@drawable/roundlayout_background_paymenttopln">
 
+                        <TextView
+                            android:id="@+id/gettypeTv1"
+                            android:tag="gettypeTv1Tag"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text=" Type"
+                            android:textSize="15dp"
+                            android:textColor="#3e3d42"
+                            android:gravity="left|center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/paymentTopGetFoodTypeTv"
+                            android:tag="paymentTopGetFoodTypeTvTag"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="To Go"
+                            android:textSize="15dp"
+                            android:textColor="#3e3d42"
+                            android:textStyle="bold"
+                            android:paddingRight="5dp"
+                            android:gravity="right|center_vertical"/>
+
+                    </LinearLayout>
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="10dp"
-
-                    android:paddingRight="5dp"
-                    android:background="@drawable/roundlayout_background_paymenttopln">
-
-                    <TextView
-                        android:id="@+id/gettypeTv1"
-                        android:tag="gettypeTv1Tag"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text=" Type"
-                        android:textSize="15dp"
-                        android:textColor="#3e3d42"
-                        android:gravity="left|center_vertical"/>
-
-                    <TextView
-                        android:id="@+id/paymentTopGetFoodTypeTv"
-                        android:tag="paymentTopGetFoodTypeTvTag"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="To Go"
-                        android:textSize="15dp"
-                        android:textColor="#3e3d42"
-                        android:textStyle="bold"
-                        android:gravity="right|center_vertical"/>
-
-                </LinearLayout>
 
                 <LinearLayout
                     android:visibility="gone"
@@ -249,7 +259,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="3.5"
+                android:layout_weight="3"
                 android:orientation="horizontal"
                 android:background="#ffffff"
                 android:paddingLeft="10dp"
@@ -262,12 +272,11 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
                     <TextView
-                        android:layout_marginBottom="10dp"
                         android:id="@+id/paymentBalanceTitleTextView"
                         android:tag="paymentBalanceTitleTextViewTag"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1"
+                        android:layout_weight=".5"
                         android:textColor="#000000"
                         android:text="Balance"
                         android:textSize="15dp"
@@ -276,7 +285,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:orientation="vertical"
-                        android:layout_weight="2">
+                        android:layout_weight="1">
                         <TextView
                             android:visibility="gone"
                             android:id="@+id/payment_addpay_comment"
@@ -321,12 +330,11 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
                     <TextView
-                        android:layout_marginBottom="10dp"
                         android:id="@+id/paymentTenderedTitleTextView"
                         android:tag="paymentTenderedTitleTextViewTag"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1"
+                        android:layout_weight=".5"
                         android:textColor="#000000"
                         android:text="Tendered"
                         android:textSize="15dp"
@@ -336,7 +344,7 @@
                         android:tag="paymentTenderedEditTextTag"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="2"
+                        android:layout_weight="1"
                         android:gravity="center_vertical|right"
                         android:textSize="20dp"
                         android:textStyle="bold"
@@ -359,12 +367,11 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
                     <TextView
-                        android:layout_marginBottom="10dp"
                         android:id="@+id/paymentChangeTitleTextView"
                         android:tag="paymentChangeTitleTextViewTag"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1"
+                        android:layout_weight=".5"
                         android:textColor="#000000"
                         android:text="Change"
                         android:textSize="15dp"
@@ -374,7 +381,7 @@
                         android:tag="paymentChangeEditTextTag"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="2"
+                        android:layout_weight="1"
                         android:gravity="center_vertical|right"
                         android:textSize="20dp"
                         android:textStyle="bold"
@@ -512,7 +519,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    android:layout_weight="1.8"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -522,16 +529,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:orientation="horizontal"
+                        android:orientation="vertical"
                         android:padding="10dp"
                         android:background="#ffffff"
                         android:layout_marginBottom="10dp">
                         <TextView
                             android:id="@+id/paymentCashTitleTextView"
                             android:tag="paymentCashTitleTextViewTag"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
                             android:text="CASH"
                             android:textColor="#ffffff"
                             android:textStyle="bold"
@@ -539,12 +546,12 @@
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp"
                             android:background="@drawable/roundlayout_darkblue"
-                            android:gravity="center_vertical|left"/>
+                            android:gravity="center"/>
                         <TextView
                             android:id="@+id/paymentCashEditText"
                             android:tag="paymentCashEditTextTag"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
                             android:layout_weight="2.5"
 
                             android:gravity="center"
@@ -560,16 +567,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:orientation="horizontal"
+                        android:orientation="vertical"
                         android:padding="10dp"
                         android:background="#ffffff"
                         android:layout_marginBottom="10dp">
                         <TextView
                             android:id="@+id/paymentCardTitleTextView"
                             android:tag="paymentCardTitleTextViewTag"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
                             android:background="@drawable/roundlayout_darkblue"
                             android:text="CARD"
                             android:textColor="#ffffff"
@@ -577,12 +584,12 @@
                             android:textSize="15dp"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp"
-                            android:gravity="center_vertical|left" />
+                            android:gravity="center" />
                         <TextView
                             android:id="@+id/paymentCardEditText"
                             android:tag="paymentCardEditTextTag"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
                             android:layout_weight="2.5"
                             android:gravity="center"
                             android:textSize="25dp"
@@ -597,16 +604,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:orientation="horizontal"
+                        android:orientation="vertical"
                         android:padding="10dp"
                         android:background="#ffffff"
                         android:layout_marginBottom="10dp">
                         <TextView
                             android:id="@+id/paymentGiftCardTitleTextView"
                             android:tag="paymentGiftCardTitleTextViewTag"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
                             android:background="@drawable/roundlayout_darkblue"
                             android:text="GIFT CARD"
                             android:textColor="#ffffff"
@@ -614,12 +621,12 @@
                             android:textSize="15dp"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp"
-                            android:gravity="center_vertical|left" />
+                            android:gravity="center" />
                         <TextView
                             android:id="@+id/paymentGiftCardEditText"
                             android:tag="paymentGiftCardEditTextTag"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
                             android:layout_weight="2.5"
                             android:gravity="center"
                             android:textSize="25dp"
@@ -634,16 +641,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:orientation="horizontal"
+                        android:orientation="vertical"
                         android:padding="10dp"
                         android:background="#ffffff"
                         android:layout_marginBottom="10dp" >
                         <TextView
                             android:id="@+id/paymentPointTitleTextView"
                             android:tag="paymentPointTitleTextViewTag"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
                             android:background="@drawable/roundlayout_darkblue"
                             android:text="POINT"
                             android:textColor="#ffffff"
@@ -651,12 +658,12 @@
                             android:textSize="15dp"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp"
-                            android:gravity="center_vertical|left" />
+                            android:gravity="center" />
                         <TextView
                             android:id="@+id/paymentPointEditText"
                             android:tag="paymentPointEditTextTag"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
                             android:layout_weight="2.5"
                             android:gravity="center"
                             android:textSize="25dp"
@@ -671,16 +678,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:orientation="horizontal"
+                        android:orientation="vertical"
                         android:padding="10dp"
                         android:background="#ffffff"
                         android:layout_marginBottom="10dp">
                         <TextView
                             android:id="@+id/paymentCheckTitleTextView"
                             android:tag="paymentCheckTitleTextViewTag"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
                             android:background="@drawable/roundlayout_darkblue"
                             android:text="OTHER"
                             android:textColor="#ffffff"
@@ -688,12 +695,12 @@
                             android:textSize="15dp"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp"
-                            android:gravity="center_vertical|left" />
+                            android:gravity="center" />
                         <TextView
                             android:id="@+id/paymentCheckEditText"
                             android:tag="paymentCheckEditTextTag"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
                             android:layout_weight="2.5"
                             android:gravity="center"
                             android:textSize="25dp"
@@ -732,8 +739,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
-                                    android:background="@drawable/button_selector_numberbutton_payment"
-                                    android:layout_margin="3dp"
+                                    android:background="@drawable/button_selector_white_bordered_button"
                                     android:text="7"
                                     android:textSize="20dp"
                                     android:textStyle="bold"
@@ -744,8 +750,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
-                                    android:background="@drawable/button_selector_numberbutton_payment"
-                                    android:layout_margin="3dp"
+                                    android:background="@drawable/button_selector_white_bordered_button"
                                     android:text="8"
                                     android:textSize="20dp"
                                     android:textStyle="bold"
@@ -756,8 +761,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
-                                    android:background="@drawable/button_selector_numberbutton_payment"
-                                    android:layout_margin="3dp"
+                                    android:background="@drawable/button_selector_white_bordered_button"
                                     android:text="9"
                                     android:textSize="20dp"
                                     android:textStyle="bold"
@@ -773,8 +777,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
-                                    android:background="@drawable/button_selector_numberbutton_payment"
-                                    android:layout_margin="3dp"
+                                    android:background="@drawable/button_selector_white_bordered_button"
                                     android:text="4"
                                     android:textSize="20dp"
                                     android:textStyle="bold"
@@ -785,8 +788,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
-                                    android:background="@drawable/button_selector_numberbutton_payment"
-                                    android:layout_margin="3dp"
+                                    android:background="@drawable/button_selector_white_bordered_button"
                                     android:text="5"
                                     android:textSize="20dp"
                                     android:textStyle="bold"
@@ -797,8 +799,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
-                                    android:background="@drawable/button_selector_numberbutton_payment"
-                                    android:layout_margin="3dp"
+                                    android:background="@drawable/button_selector_white_bordered_button"
                                     android:text="6"
                                     android:textSize="20dp"
                                     android:textStyle="bold"
@@ -814,8 +815,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
-                                    android:background="@drawable/button_selector_numberbutton_payment"
-                                    android:layout_margin="3dp"
+                                    android:background="@drawable/button_selector_white_bordered_button"
                                     android:text="1"
                                     android:textSize="20dp"
                                     android:textStyle="bold"
@@ -826,8 +826,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
-                                    android:background="@drawable/button_selector_numberbutton_payment"
-                                    android:layout_margin="3dp"
+                                    android:background="@drawable/button_selector_white_bordered_button"
                                     android:text="2"
                                     android:textSize="20dp"
                                     android:textStyle="bold"
@@ -838,8 +837,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
-                                    android:background="@drawable/button_selector_numberbutton_payment"
-                                    android:layout_margin="3dp"
+                                    android:background="@drawable/button_selector_white_bordered_button"
                                     android:text="3"
                                     android:textSize="20dp"
                                     android:textStyle="bold"
@@ -855,8 +853,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
-                                    android:background="@drawable/button_selector_numberbutton_payment"
-                                    android:layout_margin="3dp"
+                                    android:background="@drawable/button_selector_white_bordered_button"
                                     android:text="0"
                                     android:textSize="20dp"
                                     android:textStyle="bold"
@@ -867,8 +864,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
-                                    android:background="@drawable/button_selector_numberbutton_payment"
-                                    android:layout_margin="3dp"
+                                    android:background="@drawable/button_selector_white_bordered_button"
                                     android:text="00"
                                     android:textSize="20dp"
                                     android:textStyle="bold"
@@ -879,8 +875,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
-                                    android:background="@drawable/button_selector_numberbutton_payment"
-                                    android:layout_margin="3dp"
+                                    android:background="@drawable/button_selector_blue_bordered_button"
                                     android:text="←"
                                     android:textSize="40dp"
                                     android:textStyle="bold"
@@ -894,16 +889,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1.7"
-                        android:orientation="horizontal"
-                        android:paddingRight="3dp">
+                        android:orientation="horizontal">
                         <Button
                             android:id="@+id/billsplitinpayment"
                             android:tag="billsplitinpaymentTag"
-                            android:background="@drawable/button_selector_category4"
+                            android:background="@drawable/button_selector_blue_bordered_button"
                             android:text="BILL SPLIT"
                             android:textSize="20dp"
                             android:textColor="#ffffff"
-                            android:layout_marginRight="6dp"
                             android:layout_marginBottom="3dp"
                             android:layout_weight="1"
                             android:layout_width="0dp"
@@ -914,8 +907,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="2"
-                            android:background="@drawable/button_selector_numberbutton_qty_v"
-                            android:layout_marginBottom="3dp"
+                            android:background="@drawable/button_selector_darkblue_bordered_button"                            android:layout_marginBottom="3dp"
                             android:text="DONE"
                             android:textSize="35dp"
                             android:textStyle="bold"

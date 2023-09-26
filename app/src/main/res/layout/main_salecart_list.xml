@@ -7,14 +7,16 @@
     android:layout_height="wrap_content">
     <LinearLayout
         android:id="@+id/mainSaleCart_Background"
-        android:background="#e7ebee"
+        android:background="@color/colorGray"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp">
         <LinearLayout
             android:id="@+id/mainSaleCartListLinearLayout"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="80dp"
             android:orientation="horizontal"
             android:visibility="visible">
             <LinearLayout
@@ -99,15 +101,15 @@
                 android:visibility="gone"/>
 
             <TextView
+                android:visibility="gone"
                 android:id="@+id/discountExtraDeleteButton"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.25"
                 android:gravity="center"
-                android:text="X"
+                android:text="x"
                 android:textSize="20dp"
-                android:textColor="#ffffff"
-                android:visibility="gone"/>
+                android:textColor="@color/colorBlack" />
 
         </LinearLayout>
 
@@ -204,40 +206,48 @@
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
                     android:gravity="center"
-                    android:text="Customer Memo Add."
+                    android:text="Add memo"
                     android:textStyle="bold"
-                    android:textColor="#6b9ad9"
+                    android:textColor="@color/colorWhite"
                     android:textSize="15dp"
-                    android:background="@drawable/selector_roundlayout_button_blue_line" />
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_selector_blue_bordered_button_rounded" />
                 <LinearLayout
                     android:gravity="right"
                     android:orientation="horizontal"
                     android:layout_weight="1"
                     android:layout_width="0dp"
+                    android:paddingHorizontal="15dp"
                     android:layout_height="match_parent">
+
                     <ImageView
                         android:layout_gravity="center_vertical"
                         android:background="@color/zxing_transparent"
-                        android:id="@+id/salecart_item_plus"
-                        android:src="@drawable/tablet_main_middleservice_cart_add"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:id="@+id/salecart_item_minus"
+                        android:src="@drawable/tablet_main_middleservice_cart_min_dark"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="30dp"/>
+
                     <TextView
                         android:id="@+id/salecart_item_qty_cnt"
                         android:gravity="center"
                         android:text="2"
                         android:textColor="#000000"
-                        android:textSize="15dp"
-                        android:layout_width="40dp"
+                        android:textSize="20dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="match_parent"/>
+
                     <ImageView
                         android:layout_gravity="center_vertical"
                         android:background="@color/zxing_transparent"
-                        android:id="@+id/salecart_item_minus"
-                        android:layout_marginRight="20dp"
-                        android:src="@drawable/tablet_main_middleservice_cart_min"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:id="@+id/salecart_item_plus"
+                        android:src="@drawable/tablet_main_middleservice_cart_add_dark"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="30dp"/>
+
                 </LinearLayout>
             </LinearLayout>
 

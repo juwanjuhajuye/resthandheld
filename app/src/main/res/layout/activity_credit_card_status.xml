@@ -8,27 +8,19 @@
     android:paddingRight="0dp"
     android:paddingTop="0dp"
     android:paddingBottom="0dp"
-    android:background="@android:color/transparent" >
-    <LinearLayout
-        android:layout_weight="0.02"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"/>
+    android:background="@android:color/white" >
     <LinearLayout
         android:orientation="vertical"
         android:layout_weight="1"
         android:layout_width="0dp"
         android:layout_height="match_parent">
         <LinearLayout
-            android:layout_weight="0.03"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"/>
-        <LinearLayout
             android:gravity="center"
             android:id="@+id/creditcardstatusparentln"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="#32323c"
+            android:background="@color/colorWhite"
             android:orientation="vertical">
 
             <LinearLayout
@@ -42,7 +34,7 @@
                     android:text="CREDIT CARD PROCESSING STATUS"
                     android:layout_marginTop="5dp"
                     android:textSize="20dp"
-                    android:textColor="#ffffff"
+                    android:textColor="@color/colorBlack"
                     android:textStyle="bold"
                     android:layout_weight="1"
                     android:layout_width="0dp"
@@ -52,6 +44,8 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/ab_imagebutton_credit_card_status_close"
                     android:background="@android:color/transparent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
@@ -61,17 +55,15 @@
                 android:layout_height="0dp"
                 android:layout_weight="11"
                 android:orientation="horizontal"
-                android:background="#32323c" >
+                android:background="@color/colorWhite" >
 
                 <LinearLayout
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
                     android:layout_marginBottom="30dp"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="20"
                     android:orientation="horizontal"
-                    android:background="#32323c" >
+                    android:background="@color/colorWhite" >
 
                     <LinearLayout
                         android:id="@+id/creditcardstatus_back"
@@ -81,20 +73,19 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="1.5"
+                            android:layout_weight="4"
                             android:paddingTop="5dp"
                             android:paddingBottom="10dp"
-                            android:orientation="horizontal">
+                            android:orientation="vertical">
                             <LinearLayout
                                 android:layout_weight="1"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginTop="10dp"
-                                android:layout_marginLeft="30dp"
-                                android:layout_marginRight="30dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
                                 android:gravity="center_vertical|right"
-                                android:orientation="horizontal"
-                                android:paddingLeft="10dp">
+                                android:orientation="horizontal">
                                 <LinearLayout
                                     android:layout_weight="1"
                                     android:layout_width="0dp"
@@ -119,7 +110,7 @@
                                         android:gravity="center"
                                         android:textSize="25dp"
                                         android:textStyle="bold"
-                                        android:textColor="#ffffff"
+                                        android:textColor="@color/colorBlack"
                                         android:text="  -  "/>
                                     <TextView
                                         android:id="@+id/credit_card_status_list_EndDateEditText"
@@ -134,55 +125,55 @@
 
                                 </LinearLayout>
 
-
-                                <LinearLayout
-                                    android:layout_weight="1"
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:weightSum="1.7"
-                                    android:gravity="center"
-                                    android:padding="10dp"
-                                    android:orientation="horizontal">
-                                    <CheckBox
-                                        android:id="@+id/credit_card_status_pending"
-                                        android:text=" Pending"
-                                        android:textColor="#ffffff"
-                                        android:textSize="17dp"
-                                        android:layout_marginRight="10dp"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"/>
-                                    <CheckBox
-                                        android:id="@+id/credit_card_status_success"
-                                        android:text=" Success"
-                                        android:textColor="#ffffff"
-                                        android:textSize="17dp"
-                                        android:layout_marginRight="10dp"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"/>
-                                    <CheckBox
-                                        android:id="@+id/credit_card_status_decline"
-                                        android:text=" Decline"
-                                        android:textSize="17dp"
-                                        android:textColor="#ffffff"
-                                        android:layout_marginRight="10dp"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"/>
-                                </LinearLayout>
-
-
-                                <ImageButton
-                                    android:scaleType="centerInside"
-                                    android:id="@+id/creditcardstatus_list_date_search"
-                                    android:background="@android:color/transparent"
-                                    android:src="@drawable/ab_images_credit_card_status_search"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content" />
-
                             </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:weightSum="1.7"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+                                <CheckBox
+                                    android:id="@+id/credit_card_status_pending"
+                                    android:text=" Pending"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="17dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"/>
+                                <CheckBox
+                                    android:id="@+id/credit_card_status_success"
+                                    android:text=" Success"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="17dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"/>
+                                <CheckBox
+                                    android:id="@+id/credit_card_status_decline"
+                                    android:text=" Decline"
+                                    android:textSize="17dp"
+                                    android:textColor="@color/colorBlack"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"/>
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:layout_marginTop="5dp"
+                                android:scaleType="centerInside"
+                                android:id="@+id/creditcardstatus_list_date_search"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/ab_images_credit_card_status_search"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"/>
 
                         </LinearLayout>
                         <LinearLayout
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="10dp"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="0.7"
@@ -199,14 +190,14 @@
                                     android:text="Order No."
                                     android:gravity="center"
                                     android:textSize="14dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"/>
                             </LinearLayout>
 
                             <LinearLayout
                                 android:background="#ffffff"
-                                android:layout_weight="1.5"
+                                android:layout_weight="1"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent">
                                 <TextView
@@ -216,7 +207,7 @@
                                     android:gravity="center"
                                     android:background="#616180"
                                     android:textSize="14dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorWhite"
                                     android:text="Date" />
                             </LinearLayout>
 
@@ -229,11 +220,11 @@
                                     android:layout_marginLeft="2dp"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="1.5"
+                                    android:layout_weight="1"
                                     android:gravity="center"
                                     android:background="#616180"
                                     android:textSize="14dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorWhite"
                                     android:text="Items" />
                                 <TextView
                                     android:layout_marginLeft="2dp"
@@ -243,11 +234,11 @@
                                     android:gravity="center"
                                     android:background="#616180"
                                     android:textSize="14dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorWhite"
                                     android:text="Amount" />
                                 <LinearLayout
                                     android:layout_marginLeft="2dp"
-                                    android:layout_weight="1"
+                                    android:layout_weight="1.5"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent">
                                     <TextView
@@ -257,7 +248,7 @@
                                         android:gravity="center"
                                         android:background="#616180"
                                         android:textSize="14dp"
-                                        android:textColor="#ffffff"
+                                        android:textColor="@color/colorWhite"
                                         android:text="Result" />
                                 </LinearLayout>
 
@@ -274,7 +265,7 @@
                                         android:gravity="center"
                                         android:background="#616180"
                                         android:textSize="14dp"
-                                        android:textColor="#ffffff"
+                                        android:textColor="@color/colorBlack"
                                         android:text=" " />
                                 </LinearLayout>
 
@@ -301,17 +292,9 @@
 
 
         </LinearLayout>
-        <LinearLayout
-            android:layout_weight="0.03"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"/>
     </LinearLayout>
 
 
-    <LinearLayout
-        android:layout_weight="0.02"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"/>
 
 
 

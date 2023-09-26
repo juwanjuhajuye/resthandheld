@@ -8,20 +8,13 @@
     android:paddingRight="0dp"
     android:paddingTop="0dp"
     android:paddingBottom="0dp"
-    android:background="@android:color/transparent" >
+    android:background="@color/colorWhite" >
 
     <LinearLayout
         android:id="@+id/table_main_table_split_ln"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,15 +31,12 @@
             </LinearLayout>
 
             <LinearLayout
-                android:background="@drawable/table_main_round_avtivity"
                 android:orientation="vertical"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1">
 
                 <LinearLayout
-                    android:background="@drawable/table_main_round_avtivity"
-
                     android:id="@+id/table_main_billsplit_ln"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -63,11 +53,9 @@
                         android:visibility="visible">
 
                         <RelativeLayout
-                            android:background="@drawable/table_main_popup_top"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="1"
-                            android:layout_marginBottom="10dp"
                             android:paddingRight="10dp" >
                             <TextView
                                 android:id="@+id/table_main_popup_top"
@@ -79,19 +67,28 @@
                                 android:text="Detail Information"
                                 android:textSize="30dp"
                                 android:textStyle="bold"
-                                android:textColor="#ffffff" />
+                                android:textColor="@color/colorBlack" />
 
                             <ImageButton
-                                android:layout_margin="10dp"
                                 android:id="@+id/table_main_bill_split_close"
-                                android:tag="saleHistoryCloseBtnTag"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/aa_images_main_close_x"
                                 android:layout_alignParentRight="true"
                                 android:layout_centerInParent="true"
-                                android:gravity="center"/>
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/tablesale_billsplitmerge_close_on"
+                                android:gravity="center"
+                                android:tag="saleHistoryCloseBtnTag" />
                         </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorGray"
+                            android:layout_marginHorizontal="5dp"/>
 
 
                         <LinearLayout
@@ -113,6 +110,7 @@
                                     android:layout_weight="1"
                                     android:gravity="center_vertical|right"
                                     android:paddingRight="5dp"
+                                    android:layout_marginLeft="10dp"
                                     android:textColor="#000000"
                                     android:textSize="16dp"
                                     android:textStyle="bold"
@@ -131,10 +129,7 @@
                                     android:textColor="#000000"
                                     android:textSize="16dp"
                                     android:text="table name"/>
-                                <TextView
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="0.3"/>
+
 
                                 <TextView
                                     android:id="@+id/infotitle2"
@@ -161,10 +156,6 @@
                                     android:textColor="#000000"
                                     android:textSize="16dp"
                                     android:text="0"/>
-                                <TextView
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="0.3"/>
 
                                 <TextView
                                     android:id="@+id/infotitle3"
@@ -223,6 +214,7 @@
                                     android:textColor="#000000"
                                     android:textSize="16dp"
                                     android:textStyle="bold"
+                                    android:layout_marginLeft="10dp"
                                     android:text="Date In"/>
                                 <TextView
                                     android:layout_width="0dp"
@@ -310,7 +302,7 @@
                                             android:text="Ordered Items"
                                             android:textColor="#000000"
                                             android:textSize="20dp"
-                                            android:layout_weight="5"
+                                            android:layout_weight="3.3"
                                             android:layout_width="0dp"
                                             android:layout_height="match_parent"/>
                                         <TextView
@@ -425,12 +417,6 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-        </LinearLayout>
 
     </LinearLayout>
 

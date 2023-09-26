@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
 
-        android:background="@drawable/roundlayout_background_salehistory_detail"
+        android:background="@color/colorWhite"
         android:visibility="invisible">
 
         <LinearLayout
@@ -31,7 +31,7 @@
 
                 <TextView
                     android:text="COMMAND"
-                    android:textColor="#ffffff"
+                    android:textColor="@color/colorBlack"
                     android:textSize="20dp"
                     android:id="@+id/commandButtonEditText"
                     android:tag="commandButtonEditTextTag"
@@ -132,7 +132,7 @@
                                     android:id="@+id/downloadCommandButton"
                                     android:tag="downloadCommandButtonTag"
                                     android:layout_width="match_parent"
-                                    android:layout_height="120dp"
+                                    android:layout_height="100dp"
                                     android:orientation="vertical"
                                     android:gravity="center_horizontal|center_vertical">
 
@@ -142,8 +142,8 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="4"
-                                        android:gravity="center_horizontal|bottom"
-                                        android:text="DOWNLOAD / UPLOAD"
+                                        android:gravity="center|center_vertical"
+                                        android:text="DOWNLOAD/UPLOAD"
                                         android:textSize="25dp"
                                         android:textStyle="bold"
                                         android:textColor="#ffffff" />
@@ -281,8 +281,8 @@
                                 android:id="@+id/cashinoutButton"
                                 android:tag="cashinoutButtonTag"
                                 android:layout_width="match_parent"
-                                android:layout_height="120dp"
-                                android:background="@drawable/selector_roundlayout_button_blue"
+                                android:layout_height="100dp"
+                                android:background="@drawable/button_selector_blue_bordered_button_rounded"
                                 android:gravity="center_horizontal|center_vertical"
                                 android:text="CASH IN/OUT"
                                 android:textSize="25dp"
@@ -466,8 +466,8 @@
                                     android:id="@+id/backupDBCommandButton"
                                     android:tag="backupDBCommandButtonTag"
                                     android:layout_width="match_parent"
-                                    android:layout_height="120dp"
-
+                                    android:layout_height="100dp"
+                                    android:background="@drawable/button_selector_blue_bordered_button_rounded"
                                     android:gravity="center_horizontal|center_vertical"
                                     android:text="BACKUP DATABASE"
                                     android:textSize="25dp"
@@ -492,8 +492,8 @@
                                     android:id="@+id/commandbutton_logout"
                                     android:tag="commandbutton_logoutTag"
                                     android:layout_width="match_parent"
-                                    android:layout_height="120dp"
-
+                                    android:layout_height="100dp"
+                                    android:background="@drawable/selector_roundlayout_button_red"
                                     android:gravity="center_horizontal|center_vertical"
                                     android:text="LOG OUT"
                                     android:textSize="25dp"

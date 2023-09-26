@@ -14,12 +14,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"
-            android:orientation="horizontal">
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -39,7 +33,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="30"
                 android:orientation="horizontal"
-                android:background="@drawable/roundlayout_button_navy_grayboard"
+                android:background="@color/colorWhite"
                 android:padding="1dp">
 
                 <LinearLayout
@@ -48,7 +42,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <LinearLayout
-                        android:background="#232530"
+                        android:background="@color/colorWhite"
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="40dp">
@@ -56,7 +50,7 @@
                             android:layout_marginLeft="20dp"
                             android:gravity="center_vertical"
                             android:textStyle="bold"
-                            android:textColor="#aaaaaa"
+                            android:textColor="@color/colorBlack"
                             android:text="Bill Split &amp; Merge"
                             android:layout_weight="3"
                             android:layout_width="0dp"
@@ -67,14 +61,14 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent">
                             <TextView
-                                android:textColor="#d3d3d3"
+                                android:textColor="@color/colorBlack"
                                 android:text="Table : "
                                 android:gravity="center_vertical|right"
                                 android:layout_weight="1"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"/>
                             <TextView
-                                android:textColor="#ffffff"
+                                android:textColor="@color/colorBlack"
                                 android:text=" "
                                 android:gravity="center_vertical|left"
                                 android:layout_width="wrap_content"
@@ -82,13 +76,13 @@
                                 android:textStyle="bold"/>
                             <TextView
                                 android:layout_marginLeft="30dp"
-                                android:textColor="#d3d3d3"
+                                android:textColor="@color/colorBlack"
                                 android:text=""
                                 android:gravity="center_vertical|right"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"/>
                             <TextView
-                                android:textColor="#ffffff"
+                                android:textColor="@color/colorBlack"
                                 android:text=" "
                                 android:gravity="center_vertical|left"
                                 android:layout_weight="1"
@@ -104,21 +98,26 @@
                             android:layout_height="40dp"/>
 
                     </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGray"/>
+
                     <LinearLayout
                         android:orientation="vertical"
                         android:layout_weight="1"
-                        android:background="#808080"
+                        android:background="@color/colorWhite"
                         android:layout_width="match_parent"
                         android:layout_height="0dp">
                         <ScrollView
                             android:id="@+id/tablesale_left_scrollview"
-                            android:background="#808080"
                             android:layout_weight="1"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
                             <LinearLayout
                                 android:orientation="vertical"
-                                android:background="#808080"
+                                android:background="@color/colorWhite"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
                                 <LinearLayout
@@ -175,17 +174,49 @@
 
 
                                 </LinearLayout>
+
+                                <Button
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:paddingLeft="10dp"
+                                    android:id="@+id/btn_tablesale_byequalamount"
+                                    android:drawableLeft="@drawable/ab_imagebutton_billsplitmerge_radio"
+                                    android:drawablePadding="10dp"
+                                    android:text="By Equal Amount"
+                                    android:background="@color/zxing_transparent"
+                                    android:textColor="#000000"
+                                    android:textAlignment="textStart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"/>
+
+                                <Button
+                                    android:visibility="gone"
+                                    android:paddingLeft="10dp"
+                                    android:id="@+id/btn_tablesale_bycustomamount"
+                                    android:drawableLeft="@drawable/ab_imagebutton_billsplitmerge_radio"
+                                    android:drawablePadding="10dp"
+                                    android:text="By Custom Amount"
+                                    android:background="@color/zxing_transparent"
+                                    android:textColor="#ffeb3f"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:textAlignment="textStart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"/>
+
                                 <LinearLayout
                                     android:id="@+id/tablesale_byfoodmenu_view"
                                     android:layout_marginBottom="10dp"
                                     android:orientation="vertical"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content">
+                                    android:layout_height="0dp"
+                                    android:layout_weight="10">
                                     <LinearLayout
                                         android:orientation="vertical"
-                                        android:layout_margin="10dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="30dp"
                                         android:layout_width="match_parent"
-                                        android:layout_height="300dp">
+                                        android:layout_height="wrap_content">
                                         <LinearLayout
                                             android:background="#232530"
                                             android:layout_width="match_parent"
@@ -210,15 +241,18 @@
 
                                         <ListView
                                             android:id="@+id/tablesale_byfoodmenu_list"
-                                            android:divider="#00000000"
-                                            android:background="#f4f4f4"
                                             android:layout_width="match_parent"
-                                            android:layout_height="match_parent"></ListView>
+                                            android:layout_height="match_parent"
+                                            android:background="#f4f4f4"
+                                            android:divider="#00000000"
+                                            android:nestedScrollingEnabled="true"
+                                            android:paddingBottom="20dp"/>
                                     </LinearLayout>
 
                                     <LinearLayout
                                         android:layout_gravity="right"
                                         android:layout_marginRight="10dp"
+                                        android:layout_marginTop="10dp"
                                         android:gravity="right"
                                         android:weightSum="2"
                                         android:layout_width="match_parent"
@@ -234,19 +268,7 @@
                                     </LinearLayout>
 
                                 </LinearLayout>
-                                <Button
-                                    android:textSize="20dp"
-                                    android:textStyle="bold"
-                                    android:paddingLeft="10dp"
-                                    android:id="@+id/btn_tablesale_byequalamount"
-                                    android:drawableLeft="@drawable/ab_imagebutton_billsplitmerge_radio"
-                                    android:drawablePadding="10dp"
-                                    android:text="By Equal Amount"
-                                    android:background="@color/zxing_transparent"
-                                    android:textColor="#000000"
-                                    android:textAlignment="textStart"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="70dp"/>
+
                                 <LinearLayout
                                     android:orientation="vertical"
                                     android:id="@+id/tablesale_byequalamount_view"
@@ -312,20 +334,7 @@
 
 
                                 </LinearLayout>
-                                <Button
-                                    android:visibility="gone"
-                                    android:paddingLeft="10dp"
-                                    android:id="@+id/btn_tablesale_bycustomamount"
-                                    android:drawableLeft="@drawable/ab_imagebutton_billsplitmerge_radio"
-                                    android:drawablePadding="10dp"
-                                    android:text="By Custom Amount"
-                                    android:background="@color/zxing_transparent"
-                                    android:textColor="#ffeb3f"
-                                    android:textSize="20dp"
-                                    android:textStyle="bold"
-                                    android:textAlignment="textStart"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="70dp"/>
+
                                 <LinearLayout
                                     android:orientation="vertical"
                                     android:id="@+id/tablesale_bycustomamount_view"
@@ -455,9 +464,9 @@
                             </LinearLayout>
                         </ScrollView>
                         <LinearLayout
-                            android:background="#aaaaaa"
+                            android:background="#DFDFDF"
                             android:orientation="vertical"
-                            android:layout_weight="1"
+                            android:layout_weight="2.5"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
                             <LinearLayout
@@ -467,6 +476,7 @@
 
                                 <GridView
                                     android:id="@+id/tablesale_splitmerge_grid"
+                                    android:scrollbarFadeDuration="0"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:choiceMode="multipleChoice"
@@ -555,9 +565,15 @@
 
 
                     </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGray"/>
+
                     <LinearLayout
                         android:weightSum="3"
-                        android:background="#808080"
+                        android:background="@color/colorWhite"
                         android:layout_height="60dp"
                         android:layout_width="match_parent"
                         android:paddingTop="5dp"
@@ -566,12 +582,13 @@
                         android:paddingRight="10dp"
                         android:orientation="horizontal">
                         <Button
-                            android:textColor="#ff0000"
-                            android:background="@drawable/selector_roundlayout_button_resetselected"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/button_selector_blue_bordered_button_rounded"
                             android:id="@+id/billsplitmerge_action_btn"
                             android:text="ACTION"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"/>
+                            android:layout_height="match_parent"
+                            android:textSize="20dp"/>
 
                         <Button
                             android:visibility="gone"
@@ -623,12 +640,6 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"
-            android:orientation="horizontal">
-        </LinearLayout>
 
     </LinearLayout>
 

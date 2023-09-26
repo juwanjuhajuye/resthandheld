@@ -14,6 +14,7 @@
         android:paddingBottom="10dp"
         android:textSize="20dp"
         android:text="Food Item"
+        android:textColor="@color/colorBlack"
 
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -29,6 +30,7 @@
         android:paddingBottom="10dp"
         android:textSize="20dp"
         android:text="$3.12"
+        android:textColor="@color/colorBlack"
 
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"

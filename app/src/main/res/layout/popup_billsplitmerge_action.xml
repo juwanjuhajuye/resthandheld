@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    android:background="#191d37"
+    android:background="@color/colorWhite"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingVertical="20dp">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="70dp">
+        android:layout_marginBottom="70dp"
+        android:paddingBottom="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,10 +33,10 @@
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/roundlayout_selector_button_gray"
+                    android:background="@drawable/button_selector_blue_bordered_button_rounded"
                     android:text="Merge Selected"
                     android:textAllCaps="false"
-                    android:textColor="#a1a1a1"
+                    android:textColor="@color/colorWhite"
 
                     android:textSize="25dp"
                     android:textStyle="bold" />
@@ -48,10 +50,10 @@
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/roundlayout_selector_button_gray"
+                    android:background="@drawable/button_selector_blue_bordered_button_rounded"
                     android:text="Reset Selected"
                     android:textAllCaps="false"
-                    android:textColor="#a1a1a1"
+                    android:textColor="@color/colorWhite"
 
                     android:textSize="25dp"
                     android:textStyle="bold" />
@@ -63,10 +65,10 @@
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/roundlayout_selector_button_gray"
+                    android:background="@drawable/button_selector_blue_bordered_button_rounded"
                     android:text="Reset All"
                     android:textAllCaps="false"
-                    android:textColor="#a1a1a1"
+                    android:textColor="@color/colorWhite"
 
                     android:textSize="25dp"
                     android:textStyle="bold" />
@@ -77,10 +79,10 @@
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/roundlayout_selector_button_gray"
+                    android:background="@drawable/button_selector_blue_bordered_button_rounded"
                     android:text="Selected Printing"
                     android:textAllCaps="false"
-                    android:textColor="#a1a1a1"
+                    android:textColor="@color/colorWhite"
 
                     android:textSize="25dp"
                     android:textStyle="bold" />
@@ -92,10 +94,10 @@
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/roundlayout_selector_button_gray"
+                    android:background="@drawable/button_selector_blue_bordered_button_rounded"
                     android:text="Void by Bills"
                     android:textAllCaps="false"
-                    android:textColor="#a1a1a1"
+                    android:textColor="@color/colorWhite"
 
                     android:textSize="25dp"
                     android:textStyle="bold" />
@@ -111,10 +113,10 @@
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/roundlayout_selector_button_gray"
+                    android:background="@drawable/button_selector_blue_bordered_button_rounded"
                     android:text="Pay by Bills"
                     android:textAllCaps="false"
-                    android:textColor="#a1a1a1"
+                    android:textColor="@color/colorWhite"
 
                     android:textSize="25dp"
                     android:textStyle="bold" />
@@ -138,9 +140,9 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="10dp"
         android:layout_marginRight="20dp"
-        android:background="@drawable/tablet_button_selector_red_line"
+        android:background="@drawable/selector_roundlayout_button_red"
         android:text="CLOSE"
-        android:textColor="#8d0704"
+        android:textColor="@color/colorWhite"
         android:textSize="40dp" />
 
 </RelativeLayout>

@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@drawable/roundlayout_background_settings_popup" >
+        android:background="@color/colorPrimaryDarker" >
 
 
         <LinearLayout

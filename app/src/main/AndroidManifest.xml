@@ -35,6 +35,9 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
+    <uses-permission android:name="com.pax.permission.ICC"/>
+    <uses-permission android:name="com.pax.permission.PRINTER"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -163,7 +166,7 @@
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.Settings"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
             android:label="@string/title_activity_settings"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.Recall"
@@ -251,27 +254,27 @@
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingDeviceLabelPrinter1"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingDeviceLabelPrinter2"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingDeviceLabelPrinter3"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingDeviceLabelPrinter4"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingDeviceLabelPrinter5"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.TipCardList"
@@ -408,7 +411,7 @@
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingsDeviceKitchenPrinter1"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CustomerPointEdit"
@@ -448,7 +451,7 @@
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CashInOutPopup"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CashInOutPopupPreviousList"
@@ -495,22 +498,22 @@
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingsDeviceKitchenPrinter2"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingsDeviceKitchenPrinter3"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingsDeviceKitchenPrinter4"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingsDeviceKitchenPrinter5"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.KitchenPrinterLoading"
@@ -716,7 +719,7 @@
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingReceipt_popup"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
             android:label="@string/title_activity_settings"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.receiptsetting.Setting_Server_Receipt"

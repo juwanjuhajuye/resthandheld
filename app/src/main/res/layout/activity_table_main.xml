@@ -35,8 +35,8 @@
                 android:layout_height="match_parent"
 
                 android:gravity="center"
-                android:background="@drawable/button_selector_blue_bordered_rounded_pressed"
-                android:text="refresh"
+                android:background="@drawable/button_selector_blue_bordered_button_rounded"
+                android:text="REFRESH"
                 android:textStyle="bold"
                 android:textColor="@color/colorWhite"
                 android:tag="optionaddPopupCloseButtonTag"

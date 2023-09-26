@@ -45,7 +45,7 @@
 
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/roundlayout_background_settings_sub"
+                        android:background="@color/colorWhite"
                         android:orientation="vertical"
                         android:padding="10dp">
 
@@ -63,9 +63,7 @@
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/roundlayout_background_settings_tab_selected"
-                                android:padding="5dp">
+                                android:layout_height="match_parent">
 
                                 <TextView
                                     android:id="@+id/settingsDevicePrinterTitleTextView1"
@@ -73,9 +71,9 @@
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
-                                    android:text=" Printer Settings "
-                                    android:textColor="#826953"
-                                    android:textSize="20dp"
+                                    android:text="Printer Settings "
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
                         </LinearLayout>
@@ -104,7 +102,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Printer Name"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -129,11 +127,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -155,7 +153,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Test Print"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -202,21 +200,21 @@
                                     android:id="@+id/testPrintButton"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:background="@drawable/button_selector_category6"
+                                    android:background="@drawable/button_selector_blue_bordered_button_rounded"
                                     android:gravity="center"
                                     android:padding="8dp"
-                                    android:text="TEST PRINT"
+                                    android:text="TEST"
                                     android:textColor="#ffffff"
                                     android:textSize="14dp" />
 
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:visibility="gone"
@@ -239,7 +237,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Auto Receipt"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -298,7 +296,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Print Language"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -351,7 +349,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Font Size"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -386,7 +384,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="1.5"
+                            android:layout_weight="2"
                             android:orientation="horizontal">
 
                             <LinearLayout
@@ -403,7 +401,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Receipt Paper Count"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -429,11 +427,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -455,7 +453,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Network IP"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -485,7 +483,7 @@
                                     android:tag="networkIpTextView1Tag"
                                     android:text=""
                                     android:textColor="#3f3e3a"
-                                    android:textSize="20dp" />
+                                    android:textSize="15dp" />
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -493,7 +491,7 @@
                                     android:layout_weight="0.2"
                                     android:gravity="bottom|center_horizontal"
                                     android:text="."
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
 
@@ -509,7 +507,7 @@
                                     android:tag="networkIpTextView2Tag"
                                     android:text=""
                                     android:textColor="#3f3e3a"
-                                    android:textSize="20dp" />
+                                    android:textSize="15dp" />
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -517,7 +515,7 @@
                                     android:layout_weight="0.2"
                                     android:gravity="bottom|center_horizontal"
                                     android:text="."
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
 
@@ -533,7 +531,7 @@
                                     android:tag="networkIpTextView3Tag"
                                     android:text=""
                                     android:textColor="#3f3e3a"
-                                    android:textSize="20dp" />
+                                    android:textSize="15dp" />
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -541,7 +539,7 @@
                                     android:layout_weight="0.2"
                                     android:gravity="bottom|center_horizontal"
                                     android:text="."
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
 
@@ -557,7 +555,7 @@
                                     android:tag="networkIpTextView4Tag"
                                     android:text=""
                                     android:textColor="#3f3e3a"
-                                    android:textSize="20dp" />
+                                    android:textSize="15dp" />
 
                                 <TextView
                                     android:id="@+id/networkportcolon"
@@ -566,7 +564,7 @@
                                     android:layout_weight="0.2"
                                     android:gravity="center"
                                     android:text=":"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
 
@@ -582,17 +580,17 @@
                                     android:tag="networkPrinterPortTextViewTag"
                                     android:text=""
                                     android:textColor="#3f3e3a"
-                                    android:textSize="20dp" />
+                                    android:textSize="15dp" />
 
 
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -613,7 +611,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Receipt Footer"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -647,15 +645,11 @@
                                     android:textColor="#3f3e3a"
                                     android:textSize="20dp" />
 
-                                <TextView
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="0.5" />
                             </LinearLayout>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="40dp"
 
                             android:orientation="horizontal">
                         </LinearLayout>
@@ -670,8 +664,8 @@
                     <!-- Device 관련 시작 -->
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/roundlayout_background_settings_sub"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorWhite"
                         android:orientation="vertical"
                         android:padding="10dp">
 
@@ -689,9 +683,7 @@
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/roundlayout_background_settings_tab_selected"
-                                android:padding="5dp">
+                                android:layout_height="match_parent">
 
                                 <TextView
                                     android:id="@+id/settingsDevicePrinterTitleTextView2"
@@ -699,9 +691,9 @@
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
-                                    android:text=" Device Settings "
-                                    android:textColor="#826953"
-                                    android:textSize="20dp"
+                                    android:text="Device Settings "
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="25dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
                         </LinearLayout>
@@ -731,7 +723,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Tender Use for Zero Balance"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -765,12 +757,6 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"></LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
                             android:layout_weight="1"
                             android:orientation="horizontal"
                             android:visibility="gone">
@@ -789,7 +775,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Auto Discount Use for Only Cash"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -825,7 +811,7 @@
                                     android:layout_marginLeft="10dp"
                                     android:gravity="center_vertical|right"
                                     android:text="Rate "
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="16dp" />
 
                                 <EditText
@@ -871,7 +857,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Membership Card Digit Position"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -911,7 +897,7 @@
                                             android:checked="true"
                                             android:tag="customercarddigitpositionalignLeftRadioButtonTag"
                                             android:text="Left"
-                                            android:textColor="#ffffff"
+                                            android:textColor="@color/colorBlack"
                                             android:textSize="15dp" />
 
                                         <RadioButton
@@ -922,7 +908,7 @@
                                             android:layout_marginRight="10dp"
                                             android:tag="customercarddigitpositionalignMiddleRadioButtonTag"
                                             android:text="Middle"
-                                            android:textColor="#ffffff"
+                                            android:textColor="@color/colorBlack"
                                             android:textSize="15dp" />
 
                                         <RadioButton
@@ -932,7 +918,7 @@
                                             android:layout_marginLeft="20dp"
                                             android:tag="customercarddigitpositionalignRightRadioButtonTag"
                                             android:text="Right"
-                                            android:textColor="#ffffff"
+                                            android:textColor="@color/colorBlack"
                                             android:textSize="15dp" />
 
                                         <RadioButton
@@ -942,7 +928,7 @@
                                             android:layout_marginLeft="20dp"
                                             android:tag="customercarddigitpositionalignDefaultRadioButtonTag"
                                             android:text="Default"
-                                            android:textColor="#ffffff"
+                                            android:textColor="@color/colorBlack"
                                             android:textSize="15dp" />
                                     </RadioGroup>
                                 </LinearLayout>
@@ -962,7 +948,7 @@
                                         android:layout_weight="1"
                                         android:gravity="right|center_vertical"
                                         android:text="Start"
-                                        android:textColor="#ffffff"
+                                        android:textColor="@color/colorBlack"
                                         android:textSize="16dp" />
 
                                     <EditText
@@ -985,7 +971,7 @@
                                         android:layout_weight="1"
                                         android:gravity="right|center_vertical"
                                         android:text="Count"
-                                        android:textColor="#ffffff"
+                                        android:textColor="@color/colorBlack"
                                         android:textSize="16dp" />
 
                                     <EditText
@@ -1005,7 +991,7 @@
                                         android:layout_height="match_parent"
                                         android:layout_weight="1"
                                         android:gravity="right|center_vertical"
-                                        android:textColor="#ffffff"
+                                        android:textColor="@color/colorBlack"
                                         android:textSize="16dp" />
 
                                 </LinearLayout>
@@ -1013,12 +999,6 @@
 
                             </LinearLayout>
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"></LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -1041,7 +1021,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Giftcard Digit Position"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -1081,7 +1061,7 @@
                                             android:checked="true"
                                             android:tag="giftcarddigitpositionalignLeftRadioButtonTag"
                                             android:text="Left"
-                                            android:textColor="#ffffff"
+                                            android:textColor="@color/colorBlack"
                                             android:textSize="15dp" />
 
                                         <RadioButton
@@ -1092,7 +1072,7 @@
                                             android:layout_marginRight="10dp"
                                             android:tag="giftcarddigitpositionalignMiddleRadioButtonTag"
                                             android:text="Middle"
-                                            android:textColor="#ffffff"
+                                            android:textColor="@color/colorBlack"
                                             android:textSize="15dp" />
 
                                         <RadioButton
@@ -1102,7 +1082,7 @@
                                             android:layout_marginLeft="20dp"
                                             android:tag="giftcarddigitpositionalignRightRadioButtonTag"
                                             android:text="Right"
-                                            android:textColor="#ffffff"
+                                            android:textColor="@color/colorBlack"
                                             android:textSize="15dp" />
 
                                         <RadioButton
@@ -1112,7 +1092,7 @@
                                             android:layout_marginLeft="20dp"
                                             android:tag="giftcarddigitpositionalignDefaultRadioButtonTag"
                                             android:text="Default"
-                                            android:textColor="#ffffff"
+                                            android:textColor="@color/colorBlack"
                                             android:textSize="15dp" />
                                     </RadioGroup>
                                 </LinearLayout>
@@ -1132,7 +1112,7 @@
                                         android:layout_weight="1"
                                         android:gravity="right|center_vertical"
                                         android:text="Start"
-                                        android:textColor="#ffffff"
+                                        android:textColor="@color/colorBlack"
                                         android:textSize="16dp" />
 
                                     <EditText
@@ -1155,7 +1135,7 @@
                                         android:layout_weight="1"
                                         android:gravity="right|center_vertical"
                                         android:text="Count"
-                                        android:textColor="#ffffff"
+                                        android:textColor="@color/colorBlack"
                                         android:textSize="16dp" />
 
                                     <EditText
@@ -1175,7 +1155,7 @@
                                         android:layout_height="match_parent"
                                         android:layout_weight="1"
                                         android:gravity="right|center_vertical"
-                                        android:textColor="#ffffff"
+                                        android:textColor="@color/colorBlack"
                                         android:textSize="16dp" />
 
                                 </LinearLayout>
@@ -1193,74 +1173,60 @@
                         <LinearLayout
                             android:id="@+id/employeecommissionLn1"
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:orientation="horizontal"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
                             android:visibility="visible">
 
                             <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
                                 android:paddingBottom="8dp"
                                 android:paddingTop="8dp">
 
                                 <TextView
                                     android:id="@+id/settingsDevicePrinterSubTitleTextView10"
-                                    android:layout_width="0dp"
+                                    android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Employee Commission Policy"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
 
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="0.1"></LinearLayout>
+                            <RadioGroup
+                                android:id="@+id/employeecommissionpolicyRadioGroup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:tag="employeecommissionpolicyRadioGroupTag">
 
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1.5"
-                                android:paddingBottom="8dp"
-                                android:paddingTop="8dp">
-
-                                <RadioGroup
-                                    android:id="@+id/employeecommissionpolicyRadioGroup"
+                                <RadioButton
+                                    android:id="@+id/employeecommissionpolicyEmployeeOnlyRadioButton"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:orientation="horizontal"
-                                    android:tag="employeecommissionpolicyRadioGroupTag">
+                                    android:layout_marginRight="10dp"
+                                    android:checked="true"
+                                    android:tag="employeecommissionpolicyEmployeeOnlyRadioButtonTag"
+                                    android:text="Employee Only"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="15dp" />
 
-                                    <RadioButton
-                                        android:id="@+id/employeecommissionpolicyEmployeeOnlyRadioButton"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:layout_marginRight="10dp"
-                                        android:checked="true"
-                                        android:tag="employeecommissionpolicyEmployeeOnlyRadioButtonTag"
-                                        android:text="Employee Only"
-                                        android:textColor="#ffffff"
-                                        android:textSize="15dp" />
+                                <RadioButton
+                                    android:id="@+id/employeecommissionpolicyEmployeeMenuRadioButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="10dp"
+                                    android:tag="employeecommissionpolicyEmployeeMenuRadioButtonTag"
+                                    android:text="Employee + Menu"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="15dp" />
+                            </RadioGroup>
 
-                                    <RadioButton
-                                        android:id="@+id/employeecommissionpolicyEmployeeMenuRadioButton"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:layout_marginLeft="20dp"
-                                        android:layout_marginRight="10dp"
-                                        android:tag="employeecommissionpolicyEmployeeMenuRadioButtonTag"
-                                        android:text="Employee + Menu"
-                                        android:textColor="#ffffff"
-                                        android:textSize="15dp" />
-                                </RadioGroup>
-
-                            </LinearLayout>
                         </LinearLayout>
+
+
 
                         <LinearLayout
                             android:id="@+id/employeecommissionLn2"
@@ -1268,6 +1234,12 @@
                             android:layout_height="0dp"
                             android:layout_weight="0.1"
                             android:orientation="horizontal"></LinearLayout>
+
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -1287,7 +1259,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Print for Void"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -1303,7 +1275,8 @@
                                 android:layout_weight="1.5"
                                 android:orientation="horizontal"
                                 android:paddingBottom="8dp"
-                                android:paddingTop="8dp">
+                                android:paddingTop="8dp"
+                                android:gravity="end">
 
                                 <Switch
                                     android:id="@+id/voidPrintSwitch"
@@ -1320,11 +1293,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -1335,7 +1308,7 @@
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="2">
+                                android:layout_weight="2"
                                 android:paddingBottom="8dp"
                                 android:paddingTop="8dp">
 
@@ -1346,7 +1319,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Print for Return"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -1362,7 +1335,8 @@
                                 android:layout_weight="1.5"
                                 android:orientation="horizontal"
                                 android:paddingBottom="8dp"
-                                android:paddingTop="8dp">
+                                android:paddingTop="8dp"
+                                android:gravity="end">
 
                                 <Switch
                                     android:id="@+id/returnPrintSwitch"
@@ -1379,11 +1353,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -1406,7 +1380,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Manager Pwd Use for Void"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -1448,13 +1422,12 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
                             <LinearLayout
                                 android:layout_width="0dp"
-                                android:layout_height="match_parent"
+                                android:layout_height="wrap_content"
                                 android:layout_weight="2"
                                 android:paddingBottom="8dp"
                                 android:paddingTop="8dp">
@@ -1466,7 +1439,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Cash Drawer On/Off on Command"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -1481,7 +1454,8 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5"
                                 android:paddingBottom="8dp"
-                                android:paddingTop="8dp">
+                                android:paddingTop="8dp"
+                                android:gravity="end">
 
                                 <Switch
                                     android:id="@+id/cashdraweronoffonsalemodeSwitch"
@@ -1498,17 +1472,15 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"
-                            android:visibility="gone"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
                             <LinearLayout
@@ -1525,7 +1497,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Cash Drawer On/Off on Receipt"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -1540,7 +1512,8 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5"
                                 android:paddingBottom="8dp"
-                                android:paddingTop="8dp">
+                                android:paddingTop="8dp"
+                                android:gravity="end">
 
                                 <Switch
                                     android:id="@+id/cashdraweronoffonreceiptSwitch"
@@ -1557,12 +1530,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"
-                            android:visibility="gone"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -1584,7 +1556,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Signed Print Y/N"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -1599,7 +1571,8 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5"
                                 android:paddingBottom="8dp"
-                                android:paddingTop="8dp">
+                                android:paddingTop="8dp"
+                                android:gravity="end">
 
                                 <Switch
                                     android:id="@+id/signatureprintynSwitch"
@@ -1616,12 +1589,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"
-                            android:visibility="gone"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -1643,7 +1615,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Signed Print Seperately"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -1658,7 +1630,8 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5"
                                 android:paddingBottom="8dp"
-                                android:paddingTop="8dp">
+                                android:paddingTop="8dp"
+                                android:gravity="end">
 
                                 <Switch
                                     android:id="@+id/signatureprintseperatelySwitch"
@@ -1675,12 +1648,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"
-                            android:visibility="gone"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -1702,7 +1674,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Modifier Print Y/N"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -1717,7 +1689,8 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5"
                                 android:paddingBottom="8dp"
-                                android:paddingTop="8dp">
+                                android:paddingTop="8dp"
+                                android:gravity="end">
 
                                 <Switch
                                     android:id="@+id/modifierprintynSwitch"
@@ -1734,12 +1707,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"
-                            android:visibility="gone"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -1761,7 +1733,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Card Merchant Receipt"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -1776,7 +1748,8 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5"
                                 android:paddingBottom="8dp"
-                                android:paddingTop="8dp">
+                                android:paddingTop="8dp"
+                                android:gravity="end">
 
                                 <Switch
                                     android:id="@+id/cardmerchantreceiptynSwitch"
@@ -1793,12 +1766,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"
-                            android:visibility="gone"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -1820,7 +1792,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Order No. Section View"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -1835,7 +1807,8 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5"
                                 android:paddingBottom="8dp"
-                                android:paddingTop="8dp">
+                                android:paddingTop="8dp"
+                                android:gravity="end">
 
                                 <Switch
                                     android:id="@+id/ordernumbersectionviewynSwitch"
@@ -1852,17 +1825,15 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"
-                            android:visibility="gone"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
                             <LinearLayout
@@ -1879,7 +1850,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Tax Exempt Text (T/E) Use"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -1894,7 +1865,8 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5"
                                 android:paddingBottom="8dp"
-                                android:paddingTop="8dp">
+                                android:paddingTop="8dp"
+                                android:gravity="end">
 
                                 <Switch
                                     android:id="@+id/taxexemptprintingynSwitch"
@@ -1912,17 +1884,15 @@
                         </LinearLayout>
 
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"
-                            android:visibility="gone"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
                             <LinearLayout
@@ -1939,7 +1909,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Employee Info Print Y/N"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -1954,7 +1924,8 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5"
                                 android:paddingBottom="8dp"
-                                android:paddingTop="8dp">
+                                android:paddingTop="8dp"
+                                android:gravity="end">
 
                                 <Switch
                                     android:id="@+id/empinfoprintingynSwitch"
@@ -1972,12 +1943,11 @@
                         </LinearLayout>
 
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal"
-                            android:visibility="gone"></LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -1999,7 +1969,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:text="Menu List Print Y/N"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textSize="20dp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -2014,7 +1984,8 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5"
                                 android:paddingBottom="8dp"
-                                android:paddingTop="8dp">
+                                android:paddingTop="8dp"
+                                android:gravity="end">
 
                                 <Switch
                                     android:id="@+id/menulistprintingynSwitch"
@@ -2032,18 +2003,16 @@
                         </LinearLayout>
 
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.1"
-                            android:orientation="horizontal">
-                        </LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:id="@+id/dualdpadtypeLn"
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:paddingBottom="8dp"
                             android:paddingTop="8dp"
@@ -2060,7 +2029,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
                                     android:text="Logo Printing On Receipt"/>
                             </LinearLayout>
@@ -2080,7 +2049,7 @@
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
                                     android:orientation="horizontal"
-                                    android:gravity="left|center_vertical">
+                                    android:gravity="end|center_vertical">
 
                                     <Switch
                                         android:id="@+id/logoprintingonreceiptynSwitch"
@@ -2099,6 +2068,12 @@
                             </LinearLayout>
 
                         </LinearLayout>
+
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+						android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -2137,8 +2112,8 @@
                                         android:id="@+id/dualdpadlocalpathBtn"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
-                                        android:gravity="left|center_vertical"
-                                        android:background="@drawable/button_selector_category6"
+                                        android:gravity="end|center_vertical"
+                                        android:background="@drawable/button_selector_blue_bordered_button_rounded"
                                         android:textSize="16dp"
                                         android:textColor="#ffffff"
                                         android:text="  Download Logo File  " />
@@ -2218,7 +2193,6 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/roundlayout_background_settings_sub"
                         android:orientation="vertical"
                         android:padding="10dp">
 
@@ -2231,7 +2205,7 @@
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="3"
+                                android:layout_weight="1"
                                 android:orientation="horizontal"></LinearLayout>
 
                             <LinearLayout
@@ -2244,10 +2218,10 @@
                                     android:id="@+id/saveSettingsDevicePrinterButton"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@drawable/button_selector_settings_v"
+                                    android:background="@drawable/button_selector_blue_bordered_button_rounded"
                                     android:padding="10dp"
                                     android:tag="saveSettingsDevicePrinterButtonTag"
-                                    android:text="V"
+                                    android:text="APPLY SETTING"
                                     android:textColor="#ffffff"
                                     android:textSize="30dp"
                                     android:textStyle="bold" />
@@ -2256,7 +2230,7 @@
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="0.1"
+                                android:layout_weight="0.05"
                                 android:orientation="horizontal"></LinearLayout>
                         </LinearLayout>
                     </LinearLayout>

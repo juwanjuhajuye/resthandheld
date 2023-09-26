@@ -11,10 +11,7 @@
      >
 
     <LinearLayout
-        android:paddingRight="50dp"
-        android:paddingLeft="50dp"
-        android:paddingTop="100dp"
-        android:paddingBottom="100dp"
+
         android:id="@+id/realtimewebordersLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"

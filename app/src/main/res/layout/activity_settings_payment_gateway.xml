@@ -29,7 +29,6 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="8.5"
-            android:padding="10dp"
             android:orientation="vertical">
 
             <ScrollView
@@ -46,7 +45,7 @@
                         android:layout_height="match_parent"
                         android:padding="10dp"
                         android:orientation="vertical"
-                        android:background="@drawable/roundlayout_background_settings_sub">
+                        android:background="@color/colorWhite">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -63,7 +62,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
                                     android:text="Card Charge System Use?"/>
                             </LinearLayout>
@@ -77,7 +76,8 @@
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="2">
+                                android:layout_weight="2"
+                                android:gravity="end">
                                 <Switch
                                     android:id="@+id/cardchargesystemuseSwitch"
                                     android:tag="cardchargesystemuseSwitchTag"
@@ -92,11 +92,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="10dp"
-                            android:orientation="horizontal">
-                        </LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+		android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -113,7 +113,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
                                     android:text="Payment Gateway"/>
                             </LinearLayout>
@@ -127,7 +127,8 @@
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="2">
+                                android:layout_weight="2"
+                                android:gravity="end">
                                 <Spinner
                                     android:id="@+id/paymentgatewaySpinner"
                                     android:tag="paymentgatewaySpinnerTag"
@@ -258,11 +259,11 @@
                         </LinearLayout>
 
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="10dp"
-                            android:orientation="horizontal">
-                        </LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+		android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -279,7 +280,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
                                     android:text="Comm Type"/>
                             </LinearLayout>
@@ -293,7 +294,8 @@
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="2">
+                                android:layout_weight="2"
+                                android:gravity="end">
                                 <Spinner
                                     android:id="@+id/commtypeSpinner"
                                     android:tag="commtypeSpinnerTag"
@@ -302,11 +304,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="10dp"
-                            android:orientation="horizontal">
-                        </LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+		android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -323,7 +325,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
                                     android:text="Network IP"/>
                             </LinearLayout>
@@ -354,7 +356,7 @@
                                         android:background="@drawable/roundlayout_background_settings_textview"
                                         android:padding="8dp"
                                         android:inputType="number"
-                                        android:textSize="20dp"
+                                        android:textSize="15dp"
                                         android:textColor="#3f3e3a"
                                         android:text=""/>
                                     <TextView
@@ -363,7 +365,7 @@
                                         android:layout_weight="0.2"
                                         android:gravity="bottom|center_horizontal"
                                         android:textSize="20dp"
-                                        android:textColor="#ffffff"
+                                        android:textColor="@color/colorBlack"
                                         android:textStyle="bold"
                                         android:text="."/>
                                     <EditText
@@ -376,7 +378,7 @@
                                         android:background="@drawable/roundlayout_background_settings_textview"
                                         android:padding="8dp"
                                         android:inputType="number"
-                                        android:textSize="20dp"
+                                        android:textSize="15dp"
                                         android:textColor="#3f3e3a"
                                         android:text=""/>
                                     <TextView
@@ -385,7 +387,7 @@
                                         android:layout_weight="0.2"
                                         android:gravity="bottom|center_horizontal"
                                         android:textSize="20dp"
-                                        android:textColor="#ffffff"
+                                        android:textColor="@color/colorBlack"
                                         android:textStyle="bold"
                                         android:text="."/>
                                     <EditText
@@ -398,7 +400,7 @@
                                         android:background="@drawable/roundlayout_background_settings_textview"
                                         android:padding="8dp"
                                         android:inputType="number"
-                                        android:textSize="20dp"
+                                        android:textSize="15dp"
                                         android:textColor="#3f3e3a"
                                         android:text=""/>
                                     <TextView
@@ -407,7 +409,7 @@
                                         android:layout_weight="0.2"
                                         android:gravity="bottom|center_horizontal"
                                         android:textSize="20dp"
-                                        android:textColor="#ffffff"
+                                        android:textColor="@color/colorBlack"
                                         android:textStyle="bold"
                                         android:text="."/>
                                     <EditText
@@ -420,7 +422,7 @@
                                         android:background="@drawable/roundlayout_background_settings_textview"
                                         android:padding="8dp"
                                         android:inputType="number"
-                                        android:textSize="20dp"
+                                        android:textSize="15dp"
                                         android:textColor="#3f3e3a"
                                         android:text=""/>
                                 </LinearLayout>
@@ -433,10 +435,10 @@
                                     <TextView
                                         android:layout_width="0dp"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="0.2"
+                                        android:layout_weight="0.4"
                                         android:gravity="center"
                                         android:textSize="20dp"
-                                        android:textColor="#ffffff"
+                                        android:textColor="@color/colorBlack"
                                         android:textStyle="bold"
                                         android:text=":"/>
                                     <EditText
@@ -449,7 +451,7 @@
                                         android:background="@drawable/roundlayout_background_settings_textview"
                                         android:padding="8dp"
                                         android:inputType="number"
-                                        android:textSize="20dp"
+                                        android:textSize="15dp"
                                         android:textColor="#3f3e3a"
                                         android:text=""/>
                                 </LinearLayout>
@@ -458,11 +460,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="10dp"
-                            android:orientation="horizontal">
-                        </LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+		android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -479,7 +481,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
                                     android:text="Signature Pad"/>
                             </LinearLayout>
@@ -493,7 +495,8 @@
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="2">
+                                android:layout_weight="2"
+                                android:gravity="end">
                                 <Switch
                                     android:id="@+id/signaturePadSwitch"
                                     android:tag="signaturePadSwitchTag"
@@ -508,11 +511,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="10dp"
-                            android:orientation="horizontal">
-                        </LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+		android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -529,7 +532,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
                                     android:text="Signature Delete"/>
                             </LinearLayout>
@@ -543,7 +546,12 @@
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="2">
+                                android:layout_weight="2"
+                                android:gravity="end">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"/>
                                 <EditText
                                     android:id="@+id/signatureimagedeletedaysagoEv"
                                     android:tag="signatureimagedeletedaysagoEvTag"
@@ -563,22 +571,18 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
                                     android:text="days ago"/>
 
-                                <TextView
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"/>
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="10dp"
-                            android:orientation="horizontal">
-                        </LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+		android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -595,7 +599,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
                                     android:text="Tip Use?"/>
                             </LinearLayout>
@@ -609,7 +613,8 @@
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="2">
+                                android:layout_weight="2"
+                                android:gravity="end">
                                 <Switch
                                     android:id="@+id/tipuseSwitch"
                                     android:tag="tipuseSwitchTag"
@@ -624,11 +629,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="10dp"
-                            android:orientation="horizontal">
-                        </LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+		android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -645,7 +650,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
                                     android:text="Tip Selection On Sign-Pad"/>
                             </LinearLayout>
@@ -659,7 +664,8 @@
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="2">
+                                android:layout_weight="2"
+                                android:gravity="end">
                                 <Switch
                                     android:id="@+id/tipSelectionOnSignaturePadSwitch"
                                     android:tag="tipSelectionOnSignaturePadSwitchTag"
@@ -675,11 +681,11 @@
                         </LinearLayout>
 
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="10dp"
-                            android:orientation="horizontal">
-                        </LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+		android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -696,7 +702,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
                                     android:text="Tip Line On the Receipt"/>
                             </LinearLayout>
@@ -710,7 +716,8 @@
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="2">
+                                android:layout_weight="2"
+                                android:gravity="end">
                                 <Switch
                                     android:id="@+id/tiplineOnReceiptSwitch"
                                     android:tag="tiplineOnReceiptSwitchTag"
@@ -726,11 +733,11 @@
                         </LinearLayout>
 
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="10dp"
-                            android:orientation="horizontal">
-                        </LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+		android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -747,7 +754,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
                                     android:text="Tip Selection"/>
                             </LinearLayout>
@@ -783,7 +790,7 @@
                                     android:layout_weight="0.5"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
                                     android:text="%"/>
                                 <EditText
@@ -805,7 +812,7 @@
                                     android:layout_weight="0.5"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
                                     android:text="%"/>
                                 <EditText
@@ -827,7 +834,7 @@
                                     android:layout_weight="0.5"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
                                     android:text="%"/>
                                 <EditText
@@ -849,7 +856,7 @@
                                     android:layout_weight="0.5"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
                                     android:text="%"/>
 
@@ -913,11 +920,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="10dp"
-                            android:orientation="horizontal">
-                        </LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+		android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -934,7 +941,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
                                     android:text="Key In Y / N"/>
                             </LinearLayout>
@@ -948,7 +955,8 @@
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="2">
+                                android:layout_weight="2"
+                                android:gravity="end">
                                 <Switch
                                     android:id="@+id/keyinynSwitch"
                                     android:tag="keyinynSwitchTag"
@@ -963,11 +971,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="10dp"
-                            android:orientation="horizontal">
-                        </LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+		android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -984,7 +992,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
                                     android:text="Tip Processing In Payment"/>
                             </LinearLayout>
@@ -998,7 +1006,8 @@
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="2">
+                                android:layout_weight="2"
+                                android:gravity="end">
                                 <Switch
                                     android:id="@+id/tipprocessingynSwitch"
                                     android:tag="tipprocessingynSwitchTag"
@@ -1013,11 +1022,11 @@
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="10dp"
-                            android:orientation="horizontal">
-                        </LinearLayout>
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+		android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -1034,7 +1043,7 @@
                                     android:layout_weight="1"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
                                     android:text="Time Out "/>
                             </LinearLayout>
@@ -1049,7 +1058,8 @@
                                 android:weightSum="10"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="2">
+                                android:layout_weight="2"
+                                android:gravity="end">
                                 <EditText
                                     android:id="@+id/setting_payment_timeout"
                                     android:tag="tipselectTag1"
@@ -1066,14 +1076,20 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="2"
+                                    android:layout_weight="4"
                                     android:gravity="left|center_vertical"
                                     android:textSize="20dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorBlack"
                                     android:textStyle="bold"
-                                    android:text="  minute(s) "/>
+                                    android:text="minute(s) "/>
                             </LinearLayout>
                         </LinearLayout>
+
+                        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+		android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -1083,38 +1099,38 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_height="100dp"
                             android:orientation="horizontal">
 
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="3"
+                                android:layout_weight="1"
                                 android:orientation="horizontal">
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="0dp"
-                                android:layout_height="match_parent"
+                                android:layout_height="wrap_content"
                                 android:layout_weight="0.9"
                                 android:orientation="horizontal">
                                 <Button
                                     android:id="@+id/saveSettingsPaymentGatewayButton"
                                     android:tag="saveSettingsPaymentGatewayButtonTag"
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
+                                    android:layout_height="wrap_content"
                                     android:padding="10dp"
-                                    android:background="@drawable/button_selector_settings_v"
+                                    android:background="@drawable/button_selector_blue_bordered_button_rounded"
                                     android:textSize="30dp"
-                                    android:textColor="#ffffff"
+                                    android:textColor="@color/colorWhite"
                                     android:textStyle="bold"
-                                    android:text="V"/>
+                                    android:text="APPLY SETTING"/>
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="0.1"
+                                android:layout_weight="0.05"
                                 android:orientation="horizontal">
                             </LinearLayout>
                         </LinearLayout>

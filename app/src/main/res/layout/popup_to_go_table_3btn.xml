@@ -3,11 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/darker_gray">
-    <RelativeLayout
+    <LinearLayout
         android:background="@drawable/roundlayout_white"
         android:layout_margin="1dp"
         android:layout_width="match_parent"
-        android:layout_height="400dp">
+        android:layout_height="400dp"
+        android:orientation="vertical">
 
 <!--        <TextView-->
 <!--            android:id="@+id/option_codetype_dialog_title_tv"-->
@@ -34,13 +35,15 @@
             android:layout_centerHorizontal="true"
             android:id="@+id/option_codetype_dialog_text"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
 
 
         <LinearLayout
             android:id="@+id/dialog_numbers_bottom_layout"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:minHeight="56dp"
             android:orientation="vertical"
             android:weightSum="4"
@@ -54,7 +57,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
-                android:background="#4682C2"
+                android:background="@color/colorPrimary"
                 android:gravity="center"
                 android:text="YES"
                 android:textColor="#fff"
@@ -77,7 +80,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="2"
                 android:gravity="center"
-                android:background="#ff0000"
+                android:background="@color/colorAccent"
                 android:textColor="#fff"
                 android:text="NO"
                 android:textSize="36sp" />
@@ -85,7 +88,7 @@
 
 
         </LinearLayout>
-    </RelativeLayout>
+    </LinearLayout>
 
 
 </RelativeLayout>

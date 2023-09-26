@@ -8,7 +8,7 @@
         android:background="#32323c"
         android:id="@+id/credit_card_status_row_rl"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="90dp"
         android:orientation="horizontal">
         <LinearLayout
             android:visibility="gone"
@@ -28,7 +28,7 @@
         </LinearLayout>
         <LinearLayout
             android:background="#ffffff"
-            android:layout_weight="1.5"
+            android:layout_weight="1"
             android:id="@+id/date_credit_card_status_row"
             android:layout_width="0dp"
             android:layout_height="match_parent">
@@ -68,7 +68,7 @@
                 android:textStyle="bold"
                 android:textColor="#000000"
                 android:textAlignment="gravity"
-                android:layout_weight="1.5"
+                android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"/>
             <TextView
@@ -85,7 +85,7 @@
                 android:layout_height="match_parent"/>
             <LinearLayout
                 android:layout_marginLeft="2dp"
-                android:layout_weight="1"
+                android:layout_weight="1.5"
                 android:layout_width="0dp"
                 android:layout_height="match_parent">
                 <TextView
