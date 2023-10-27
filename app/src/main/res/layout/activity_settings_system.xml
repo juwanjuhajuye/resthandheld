@@ -4372,7 +4372,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-		android:layout_marginVertical="5dp"
+                        android:layout_marginVertical="5dp"
                         android:background="@color/colorGray"/>
 
                     <LinearLayout
@@ -4385,8 +4385,7 @@
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            >
+                            android:layout_weight="1" >
                             <TextView
                                 android:id="@+id/settingsSystemTitleTextView90"
                                 android:layout_width="0dp"
@@ -4424,10 +4423,70 @@
 
                     </LinearLayout>
 
+
+
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-		android:layout_marginVertical="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+                            <TextView
+                                android:id="@+id/settingsSystemTitleTextView91"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left|center_vertical"
+                                android:textSize="20dp"
+                                android:textColor="@color/colorBlack"
+                                android:textStyle="bold"
+                                android:text="Item Delete Reason"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="end">
+                            <Switch
+                                android:id="@+id/itemdeletereasonynSwitch"
+                                android:tag="itemdeletereasonynSwitchTag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="left|center_vertical"
+                                style="@style/SwitchCustom80"
+                                android:switchTextAppearance="@style/SwitchTextAppearance"
+                                android:textOn="On"
+                                android:textOff="Off"
+                                android:checked="true"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="5dp"
                         android:background="@color/colorGray"/>
 
                     <LinearLayout
