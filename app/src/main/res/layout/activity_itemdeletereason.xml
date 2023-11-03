@@ -8,7 +8,7 @@
     android:paddingRight="0dp"
     android:paddingTop="0dp"
     android:paddingBottom="0dp"
-    android:background="@android:color/transparent" >
+    android:background="@color/colorWhite" >
 
     <LinearLayout
         android:id="@+id/realtimewebordersLinearLayout"
@@ -16,12 +16,6 @@
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.3"
-            android:orientation="horizontal">
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -48,9 +42,33 @@
                     android:paddingBottom="10dp"
                     android:paddingTop="10dp"
                     android:gravity="center"
-                    android:background="@drawable/roundlayout_background_paymentcashpad">
+                    >
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:text="Delete Reason"
+                            android:textSize="25dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"/>
+                        <Button
+                            android:id="@+id/kitchenMemoCloseBtn"
+                            android:src="@drawable/checklist_close"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/selector_roundlayout_button_red"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="5dp"
+                            android:text="CLOSE"
+                            android:textColor="@color/colorWhite"/>
+                    </LinearLayout>
 
                     <LinearLayout
+                        android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
@@ -61,14 +79,15 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="5"
-                            android:text="Reason"
-                            android:textSize="18dp"
+                            android:text="menu name"
+                            android:textSize="20dp"
                             android:textStyle="bold"
-                            android:textColor="#3e3d42"
+                            android:textColor="@color/colorBlack"
                             android:gravity="center_vertical|left"/>
 
                         <Button
-                            android:id="@+id/kitchenMemoCloseBtn"
+                            android:visibility="gone"
+
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
 
@@ -117,55 +136,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="0.1" />
 
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1.2"
-                            android:orientation="vertical">
 
-                            <Button
-                                android:id="@+id/kitchenMemoBtn"
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="6"
-                                android:text="ENTER"
-                                android:textColor="#ffffff"
-                                android:textSize="20dp"
-                                android:background="@drawable/button_selector_bluebutton" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="0.5" />
-
-                            <Button
-                                android:id="@+id/kitchenMemoClearBtn"
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="3"
-                                android:text="CLEAR"
-                                android:textSize="20dp"
-                                android:textColor="#ffffff"
-                                android:background="@drawable/button_selector_category6" />
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="0.5"
-                                android:visibility="gone" />
-
-                            <Button
-
-                                android:id="@+id/kitchenMemoNextBtn"
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="3"
-                                android:text="NEXT LINE"
-                                android:textSize="16dp"
-                                android:textColor="#ffffff"
-                                android:background="@drawable/button_selector_category4"
-                                android:visibility="gone" />
-
-                        </LinearLayout>
 
 
 
@@ -185,44 +156,80 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="10"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
                         <Spinner
                             android:visibility="gone"
                             android:id="@+id/spinner_memoReason"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
-
                         <ScrollView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
-
                             <TableLayout
+                                android:isScrollContainer="true"
                                 android:id="@+id/kitchen_memo_table_ln"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:isScrollContainer="true">
+                                android:layout_height="wrap_content">
 
 
                             </TableLayout>
                         </ScrollView>
 
+
                     </LinearLayout>
 
+                    <LinearLayout
 
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_weight="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+                            <Button
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/kitchenMemoClearBtn"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:text="CLEAR"
+                                android:textSize="20dp"
+                                android:textColor="#ffffff"
+                                android:background="@drawable/button_selector_blue_bordered_button_rounded" />
 
+                            <Button
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/kitchenMemoNextBtn"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:text="NEXT LINE"
+                                android:textSize="16dp"
+                                android:textColor="#ffffff"
+                                android:background="@drawable/button_selector_blue_bordered_button_rounded" />
+                        </LinearLayout>
 
+                        <Button
+                            android:layout_margin="20dp"
+                            android:id="@+id/kitchenMemoBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:text="SUBMIT"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp"
+                            android:background="@drawable/button_selector_blue_bordered_button_rounded" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/emptyLinearLayout"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:orientation="horizontal">
             </LinearLayout>
 
         </LinearLayout>

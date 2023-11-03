@@ -279,6 +279,13 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"/>
 
+<!--            <Button-->
+<!--                android:id="@+id/main_cart_timemenu"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="time menu"/>-->
+
             <Button
                 android:id="@+id/main_cart_popup_btn"
                 android:layout_margin="2dp"
@@ -1353,6 +1360,7 @@
                                     android:weightSum="2">
 
                                     <TextView
+                                        android:id="@+id/main_cart_top_table"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_weight="1"
@@ -1432,7 +1440,7 @@
                                             android:layout_height="wrap_content"
                                             android:layout_weight="1.6"
                                             android:gravity="right"
-                                            android:text="30"
+                                            android:text=""
                                             android:textColor="#191d37"
                                             android:textSize="20dp"
                                             android:textStyle="bold" />

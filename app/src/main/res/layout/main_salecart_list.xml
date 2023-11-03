@@ -101,7 +101,7 @@
                 android:visibility="gone"/>
 
             <TextView
-                android:visibility="gone"
+
                 android:id="@+id/discountExtraDeleteButton"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -271,6 +271,24 @@
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:gravity="center_vertical|left"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mainSaleCartListLinearLayout_delete_ln"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:weightSum="10"
+            android:gravity="right"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/mainSaleCartListLinearLayout_delete"
+                android:background="@drawable/roundlayout_button_red"
+                android:text="Item Delete"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="30dp"/>
         </LinearLayout>
         <LinearLayout
             android:visibility="gone"

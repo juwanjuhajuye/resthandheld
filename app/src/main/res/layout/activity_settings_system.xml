@@ -79,7 +79,7 @@
                                     android:id="@+id/system_info_btn"
                                     android:layout_alignParentRight="true"
                                     android:layout_centerVertical="true"
-                                    android:background="@android:color/transparent"
+                                    android:background="@color/colorPrimary"
                                     android:scaleType="centerCrop"
                                     android:src="@drawable/button_information"
                                     android:layout_width="22dp"
@@ -687,7 +687,8 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp">
                             <TextView
                                 android:id="@+id/settingsSystemTitleTextView19"
 
@@ -825,7 +826,8 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp">
                             <TextView
                                 android:id="@+id/settingsSystemTitleTextView20"
                                 android:layout_width="0dp"
@@ -918,7 +920,8 @@
                         android:paddingTop="4dp" >
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp">
                             <TextView
                                 android:id="@+id/settingsSystemTitleTextView8"
                                 android:layout_width="0dp"
@@ -1008,7 +1011,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-		android:layout_marginVertical="5dp"
+		                android:layout_marginVertical="5dp"
                         android:background="@color/colorGray"/>
 
                     <LinearLayout
@@ -1061,12 +1064,6 @@
                         </LinearLayout>
 
                     </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-		android:layout_marginVertical="5dp"
-                        android:background="@color/colorGray"/>
 
                     <LinearLayout
                         android:visibility="gone"
@@ -1233,6 +1230,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
                             >
                             <TextView
                                 android:id="@+id/settingsSystemTitleTextView17"
@@ -1374,6 +1372,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
                             >
                             <TextView
                                 android:id="@+id/settingsSystemTitleTextView18"
@@ -1601,6 +1600,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
                             >
                             <TextView
                                 android:id="@+id/settingsSystemTitleTextView26"
@@ -1782,7 +1782,8 @@
                         android:orientation="vertical" >
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp">
                             <TextView
                                 android:id="@+id/settingsSystemTitleTextView27"
                                 android:layout_width="0dp"
@@ -1938,7 +1939,8 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp">
                             <TextView
                                 android:id="@+id/settingsSystemTitleTextView54"
                                 android:layout_width="0dp"
@@ -2416,6 +2418,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
                             >
                             <TextView
                                 android:id="@+id/settingsSystemTitleTextView33"
@@ -2467,6 +2470,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
                             >
                             <TextView
                                 android:id="@+id/settingsSystemTitleTextView34"
@@ -4131,6 +4135,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
                             >
                             <TextView
                                 android:id="@+id/settingsSystemTitleTextView73"
@@ -4181,6 +4186,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
                             >
                             <TextView
                                 android:id="@+id/settingsSystemTitleTextView74"
@@ -4372,7 +4378,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_marginVertical="5dp"
+		android:layout_marginVertical="5dp"
                         android:background="@color/colorGray"/>
 
                     <LinearLayout
@@ -4385,7 +4391,8 @@
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1" >
+                            android:layout_weight="1"
+                            >
                             <TextView
                                 android:id="@+id/settingsSystemTitleTextView90"
                                 android:layout_width="0dp"
@@ -4422,9 +4429,6 @@
                         </LinearLayout>
 
                     </LinearLayout>
-
-
-
 
                     <View
                         android:layout_width="match_parent"

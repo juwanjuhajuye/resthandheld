@@ -24,7 +24,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="60"
+                android:layout_weight="70"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -86,10 +86,10 @@
                         android:tag="cashInOutPopupCloseButtonTag"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="10dp"
-                        android:gravity="center"
-                        android:paddingLeft="25dp"
-                        android:paddingRight="25dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center|center_vertical"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
                         android:layout_marginVertical="2dp"
                         android:textSize="15dp"
                         android:textColor="#fff"
@@ -150,14 +150,6 @@
                         android:orientation="horizontal"
                         android:background="#ffffff"
                         android:layout_marginTop="5dp">
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="10"
-                            android:orientation="horizontal">
-
-                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -969,10 +961,9 @@
                                                     android:layout_width="0dp"
                                                     android:layout_height="match_parent"
                                                     android:layout_weight="1"
-                                                    android:layout_gravity="center"
+                                                    android:layout_gravity="center|center_vertical"
                                                     android:background="@drawable/roundlayout_background_plus"
-                                                    android:paddingLeft="3dp"
-                                                    android:paddingRight="3dp"
+                                                    android:paddingHorizontal="3dp"
                                                     android:textSize="22dp"
                                                     android:textColor="#3e57ce"
                                                     android:textOn="+"
@@ -1014,7 +1005,9 @@
                                                     android:id="@+id/cashinoutAddButton"
                                                     android:layout_width="match_parent"
                                                     android:layout_height="match_parent"
-                                                    android:background="@drawable/ab_imagebutton_cashinout_add"/>
+                                                    android:background="@drawable/button_selector_blue_bordered_button_rounded"
+                                                    android:text="ADD"
+                                                    android:textColor="@color/colorWhite"/>
 
                                             </LinearLayout>
                                         </LinearLayout>
@@ -1384,7 +1377,7 @@
                                                 <LinearLayout
                                                     android:layout_width="match_parent"
                                                     android:layout_height="0dp"
-                                                    android:layout_weight="180"
+                                                    android:layout_weight="160"
                                                     android:orientation="horizontal">
 
                                                     <ListView
@@ -1399,11 +1392,12 @@
 
                                                 </LinearLayout>
 
-                                                <LinearLayout
+                                                <View
                                                     android:layout_width="match_parent"
                                                     android:layout_height="1dp"
                                                     android:orientation="horizontal"
-                                                    android:background="#bbbbc8"></LinearLayout>
+                                                    android:background="#bbbbc8"
+                                                    android:layout_marginBottom="5dp"/>
 
 
 
@@ -1429,37 +1423,38 @@
                                                 android:layout_weight="60"
                                                 android:orientation="horizontal"
                                                 android:gravity="center_vertical|right"
-                                                android:background="#ffffff"
-                                                android:padding="5dp">
+                                                android:background="#ffffff">
 
-                                                <ImageButton
+                                                <Button
                                                     android:layout_marginRight="10dp"
                                                     android:id="@+id/cashinoutRemoveButton"
-                                                    android:src="@drawable/ab_imagebutton_cashinout_delete"
+                                                    android:background="@drawable/button_selector_blue_bordered_button_rounded"
+                                                    android:text="DELETE"
+                                                    android:paddingHorizontal="10dp"
+                                                    android:paddingVertical="5dp"
+                                                    android:textColor="@color/colorWhite"
                                                     android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:background="@color/zxing_transparent"/>
+                                                    android:layout_height="match_parent"/>
 
-                                                <ImageButton
+                                                <Button
                                                     android:id="@+id/cashinoutDetailViewButton"
-                                                    android:src="@drawable/ab_imagebutton_cashinout_detailview"
+                                                    android:background="@drawable/button_selector_blue_bordered_button_rounded"
+                                                    android:text="DETAIL VIEW"
+                                                    android:paddingHorizontal="10dp"
+                                                    android:paddingVertical="5dp"
+                                                    android:textColor="@color/colorWhite"
                                                     android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:background="@color/zxing_transparent"/>
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginRight="5dp"/>
 
                                             </LinearLayout>
 
-                                            <LinearLayout
+                                            <View
                                                 android:layout_width="match_parent"
                                                 android:layout_height="1dp"
                                                 android:orientation="horizontal"
-                                                android:background="#bbbbc8"></LinearLayout>
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="0dp"
-                                                android:layout_weight="10"
-                                                android:orientation="vertical"></LinearLayout>
+                                                android:background="#bbbbc8"
+                                                android:layout_marginVertical="5dp"/>
 
                                             <LinearLayout
                                                 android:layout_width="match_parent"
@@ -1490,15 +1485,18 @@
                                                         <LinearLayout
                                                             android:layout_width="0dp"
                                                             android:layout_height="match_parent"
-                                                            android:layout_weight="80"
+                                                            android:layout_weight="145"
                                                             android:gravity="center_vertical|right"
-                                                            android:orientation="horizontal">
+                                                            android:orientation="horizontal"
+                                                            android:layout_marginLeft="5dp">
 
                                                             <Button
                                                                 android:id="@+id/cashinoutCashoutButton"
                                                                 android:layout_width="match_parent"
-                                                                android:layout_height="wrap_content"
-                                                                android:background="@drawable/ab_imagebutton_cashinout_cashout"/>
+                                                                android:layout_height="match_parent"
+                                                                android:background="@drawable/button_selector_blue_bordered_button_rounded"
+                                                                android:text="CASH OUT"
+                                                                android:textColor="@color/colorWhite"/>
 
                                                         </LinearLayout>
 
@@ -1521,7 +1519,9 @@
                                                             android:id="@+id/cashinoutCashDrawerButton"
                                                             android:layout_width="match_parent"
                                                             android:layout_height="match_parent"
-                                                            android:background="@drawable/ab_imagebutton_cashinout_cashdrawer"/>
+                                                            android:background="@drawable/button_selector_blue_bordered_button_rounded"
+                                                            android:text="CASH DRAWER"
+                                                            android:textColor="@color/colorWhite"/>
 
                                                     </LinearLayout>
 
@@ -1536,13 +1536,16 @@
                                                         android:layout_width="0dp"
                                                         android:layout_height="match_parent"
                                                         android:layout_weight="145"
-                                                        android:orientation="horizontal">
+                                                        android:orientation="horizontal"
+                                                        android:layout_marginRight="5dp">
 
                                                         <Button
                                                             android:id="@+id/cashinoutGotosaleButton"
                                                             android:layout_width="match_parent"
                                                             android:layout_height="match_parent"
-                                                            android:background="@drawable/ab_imagebutton_cashinout_gotosale"/>
+                                                            android:background="@drawable/button_selector_blue_bordered_button_rounded"
+                                                            android:text="GO TO SALES"
+                                                            android:textColor="@color/colorWhite"/>
 
                                                     </LinearLayout>
 
@@ -1566,12 +1569,6 @@
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="10"
-                            android:orientation="horizontal"></LinearLayout>
 
 
                     </LinearLayout>

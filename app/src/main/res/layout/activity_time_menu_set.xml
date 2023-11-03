@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="320dp"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
@@ -16,6 +17,10 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+
+        android:background="@color/colorWhite"
 
         android:orientation="vertical">
 
@@ -56,8 +61,6 @@
             android:orientation="vertical"
             >
 
-
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -71,6 +74,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:orientation="horizontal"
+                    android:layout_marginVertical="20dp"
                     >
 
                     <Button
@@ -90,6 +94,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:orientation="horizontal"
+                    android:layout_marginVertical="20dp"
                     >
 
                     <Button
@@ -110,6 +115,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:orientation="horizontal"
+                    android:layout_marginVertical="20dp"
                     >
 
                     <Button
@@ -131,6 +137,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:orientation="horizontal"
+                    android:layout_marginVertical="20dp"
                     >
 
                     <Button
@@ -157,10 +164,10 @@
                     android:id="@+id/closeBtn"
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
-                    android:background="@drawable/tablet_button_selector_red_line"
+                    android:background="@drawable/selector_roundlayout_button_red"
                     android:tag="optionaddPopupCloseButtonTag"
                     android:text="Close"
-                    android:textColor="#8d0704"
+                    android:textColor="@color/colorWhite"
                     android:textSize="40dp" />
             </LinearLayout>
 
