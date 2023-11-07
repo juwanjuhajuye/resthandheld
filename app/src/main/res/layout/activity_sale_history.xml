@@ -461,6 +461,9 @@
                                     android:layout_height="0dp"
                                     android:layout_weight="1"
                                     android:layout_marginBottom="10dp"
+                                    android:background="@drawable/roundlayout_blue"
+                                    android:text="VOID"
+                                    android:textColor="#ffffff"
                                     />
                                 <Button
                                     android:id="@+id/saleHistoryReturnButton"
@@ -469,6 +472,9 @@
                                     android:layout_height="0dp"
                                     android:layout_weight="1"
                                     android:layout_marginBottom="10dp"
+                                    android:background="@drawable/roundlayout_blue"
+                                    android:text="RETURN"
+                                    android:textColor="#ffffff"
                                     />
 
                             </LinearLayout>
@@ -487,6 +493,9 @@
                                     android:layout_height="0dp"
                                     android:layout_weight="1"
                                     android:layout_marginBottom="10dp"
+                                    android:background="@drawable/roundlayout_blue"
+                                    android:text="Delivery"
+                                    android:textColor="#ffffff"
                                     />
                                 <Button
                                     android:id="@+id/saleHistoryDoneButton"
@@ -495,6 +504,9 @@
                                     android:layout_height="0dp"
                                     android:layout_weight="1"
                                     android:layout_marginBottom="10dp"
+                                    android:background="@drawable/roundlayout_blue"
+                                    android:text="DONE"
+                                    android:textColor="#ffffff"
                                     />
 
                             </LinearLayout>
@@ -513,6 +525,9 @@
                                     android:layout_height="0dp"
                                     android:layout_weight="1"
                                     android:layout_marginBottom="10dp"
+                                    android:background="@drawable/roundlayout_blue"
+                                    android:text="REPRINT"
+                                    android:textColor="#ffffff"
                                     />
                                 <Button
                                     android:id="@+id/saleHistoryTipAdjustmentButton"
@@ -521,6 +536,9 @@
                                     android:layout_height="0dp"
                                     android:layout_weight="1"
                                     android:layout_marginBottom="10dp"
+                                    android:background="@drawable/roundlayout_blue"
+                                    android:text="TIP ADD"
+                                    android:textColor="#ffffff"
                                     />
 
                             </LinearLayout>
@@ -532,14 +550,15 @@
                                 android:layout_height="40dp"
                                 android:background="#ffffff"
                                 android:orientation="horizontal">
-                                <ImageButton
+                                <Button
                                     android:id="@+id/repayButton"
                                     android:tag="repayButtonTag"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:src="@drawable/ab_imagebutton_popup_repay_salehistory"
+                                    android:text="RE PAY"
+                                    android:textColor="#ffffff"
                                     android:scaleType="centerCrop"
-                                    android:background="@color/zxing_transparent"
+                                    android:background="@drawable/roundlayout_green"
                                     />
 
 
@@ -551,14 +570,15 @@
                                 android:layout_height="40dp"
                                 android:background="#ffffff"
                                 android:orientation="horizontal">
-                                <ImageButton
+                                <Button
                                     android:id="@+id/saleHistoryMMSButton"
                                     android:tag="saleHistoryMMSButtonTag"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:src="@drawable/ab_imagebutton_popup_mms_salehistory"
                                     android:scaleType="centerCrop"
-                                    android:background="@color/zxing_transparent"
+                                    android:text="MMS"
+                                    android:textColor="#ffffff"
+                                    android:background="@drawable/roundlayout_pink"
                                     />
 
 
