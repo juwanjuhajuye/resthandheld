@@ -16,12 +16,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"
-            android:orientation="horizontal">
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -72,7 +66,7 @@
                                 android:textColor="#3e3d42"
                                 android:textStyle="bold"
                                 android:textSize="16dp"
-                                android:background="@drawable/roundlayout_cashinout_tv_bg1"/>
+                                android:background="@drawable/button_selector_gray4"/>
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
@@ -80,7 +74,7 @@
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="0.3"
+                                android:layout_weight="0.1"
                                 android:gravity="center"
                                 android:textSize="25dp"
                                 android:textStyle="bold"
@@ -99,7 +93,7 @@
                                 android:textColor="#3e3d42"
                                 android:textStyle="bold"
                                 android:textSize="16dp"
-                                android:background="@drawable/roundlayout_cashinout_tv_bg1"/>
+                                android:background="@drawable/button_selector_gray4"/>
 
                             <ImageButton
                                 android:layout_gravity="center"
@@ -110,7 +104,7 @@
                                 android:layout_height="wrap_content" />
 
                             <TextView
-                                android:layout_weight="0.1"
+                                android:layout_weight="0.05"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"/>
                             <ImageButton
@@ -207,7 +201,8 @@
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
                         android:orientation="horizontal"
-                        android:background="#1e1e1e">
+                        android:background="#1e1e1e"
+                        android:visibility="gone">
 
                         <TextView
                             android:id="@+id/shititletv1"
@@ -343,7 +338,9 @@
                         android:id="@+id/salehistory_list"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="10" />
+                        android:layout_weight="10"
+                        android:divider="@null"
+                        android:dividerHeight="10dp"/>
 
                     <LinearLayout
                         android:id="@+id/listPageLn"
@@ -369,13 +366,6 @@
             </LinearLayout>
 
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"
-            android:orientation="horizontal">
         </LinearLayout>
 
     </LinearLayout>

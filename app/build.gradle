@@ -10,8 +10,8 @@ android {
         applicationId 'com.example.jjbfather.jjjqsrt2go2goresttablet'
         minSdkVersion 17
         targetSdkVersion 28
-        versionCode 231110
-        versionName "23.11.10.beta"
+        versionCode 231117
+        versionName "23.11.17.beta"
         multiDexEnabled true
         ndk {
             abiFilters "armeabi-v7a", 'arm64-v8a','x86','x86_64', "armeabi", "mips"
@@ -63,8 +63,8 @@ dependencies {
     implementation(name: 'libtsisdkwrapper-arm-release', ext: 'aar')
 
     //PAX 관련
-    implementation files('libs/PAX_POSLinkAndroid_20210810.jar')
-    implementation files('libs/GLComm_V1.08.00_20210514.jar')
+    implementation files('libs/PAX_POSLinkAndroid_20220818.jar')
+    implementation files('libs/GLComm_V1.10.02_T_20220707.jar')
 
     // sam4 printer
     implementation files('libs/Sam4sAndroidSDK.jar')
@@ -89,8 +89,8 @@ dependencies {
     // Elo 관련 라이브러리
     implementation files('libs/Android_Platform_Adapter.jar')
     implementation files('libs/magtek-usb.jar')
-    implementation files('libs/starioextension.jar')
-    implementation files('libs/StarIOPort3.1.jar')
+//    implementation files('libs/starioextension.jar')
+//    implementation files('libs/StarIOPort3.1.jar')
     // FCM 관련
     //noinspection GradleCompatible
     // 구글 플레이 서비스 구글플레이서비스 (Google Play Service)
@@ -121,6 +121,9 @@ dependencies {
 
     // slieing up panel
     implementation 'com.sothree.slidinguppanel:library:3.4.0'
+
+    implementation 'com.starmicronics:stario:2.11.1'
+    implementation 'com.starmicronics:starioextension:1.15.1'
 }
 
 repositories {
