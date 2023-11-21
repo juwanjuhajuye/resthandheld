@@ -10,8 +10,8 @@ android {
         applicationId 'com.example.jjbfather.jjjqsrt2go2goresttablet'
         minSdkVersion 17
         targetSdkVersion 28
-        versionCode 231117
-        versionName "23.11.17.beta"
+        versionCode 231121
+        versionName "23.11.21.beta"
         multiDexEnabled true
         ndk {
             abiFilters "armeabi-v7a", 'arm64-v8a','x86','x86_64', "armeabi", "mips"
