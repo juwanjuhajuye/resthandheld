@@ -10,8 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_margin="10dp"
-        android:background="@drawable/roundlayout_line"
+        android:layout_margin="5dp"
+        android:background="@color/colorWhite"
         android:visibility="invisible">
 
         <LinearLayout
@@ -19,8 +19,8 @@
             android:layout_height="0dp"
             android:layout_weight="0.9"
             android:orientation="horizontal"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp">
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -33,14 +33,11 @@
                     android:id="@+id/quickSaleTitleEditText"
                     android:tag="quickSaleTitleEditTextTag"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:text="QUICK SALE"/>
 
             </LinearLayout>
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2"/>
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -55,8 +52,12 @@
                 <Button
                     android:id="@+id/quickSaleCloseBtn"
                     android:tag="quickSaleCloseBtnTag"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:background="@drawable/selector_roundlayout_button_red"
+                    android:text="CLOSE"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp" />
 
             </LinearLayout>
         </LinearLayout>
@@ -88,7 +89,7 @@
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.5">
+                    android:layout_weight="0.2">
 
                     <RadioGroup
                         android:id="@+id/quickSaleServiceProductRadioGroup"
@@ -98,7 +99,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginTop="24dp"
                         android:checkedButton="@+id/quickSaleServiceRadioButton"
-                        android:gravity="center"
+                        android:gravity="left"
                         android:orientation="vertical"
                         android:tag="quickSaleServiceProductRadioGroupTag">
 
@@ -127,7 +128,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:gravity="right">
 
                     <Switch
                         android:id="@+id/quickkitchenprintynSwitch"
@@ -156,8 +158,8 @@
                     android:tag="quickSaleServiceProductNameTitleTextViewTag"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1.5"
-                    android:gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
                     android:textSize="14dp"
                     android:textColor="#3e3d42"
                     android:text="Name"/>
@@ -176,8 +178,8 @@
                     android:tag="quickSalePriceTitleTextViewTag"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1.5"
-                    android:gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
                     android:textSize="14dp"
                     android:textColor="#3e3d42"
                     android:text="Price"/>
@@ -250,6 +252,11 @@
                                     android:text=""
                                     android:gravity="center" />
                             </LinearLayout>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" >
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="100dp"
@@ -303,6 +310,11 @@
                                     android:text=""
                                     android:gravity="center" />
                             </LinearLayout>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" >
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="100dp"
@@ -356,6 +368,11 @@
                                     android:text=""
                                     android:gravity="center" />
                             </LinearLayout>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" >
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="100dp"
@@ -409,6 +426,11 @@
                                     android:text=""
                                     android:gravity="center" />
                             </LinearLayout>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" >
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="100dp"
@@ -462,6 +484,11 @@
                                     android:text=""
                                     android:gravity="center" />
                             </LinearLayout>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" >
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="100dp"
@@ -517,6 +544,11 @@
                                     android:text=""
                                     android:gravity="center" />
                             </LinearLayout>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" >
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="100dp"
@@ -571,6 +603,11 @@
                                     android:text=""
                                     android:gravity="center" />
                             </LinearLayout>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" >
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="100dp"
@@ -625,6 +662,11 @@
                                     android:text=""
                                     android:gravity="center" />
                             </LinearLayout>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" >
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="100dp"
@@ -679,6 +721,11 @@
                                     android:text=""
                                     android:gravity="center" />
                             </LinearLayout>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" >
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="100dp"
@@ -733,6 +780,11 @@
                                     android:text=""
                                     android:gravity="center" />
                             </LinearLayout>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" >
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="100dp"
@@ -962,12 +1014,12 @@
                         android:tag="quickSaleSuButtonTagV"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/button_selector_numberbutton_quicksale_v"
+                        android:background="@drawable/button_selector_blue_bordered_button_rounded"
                         android:layout_margin="3dp"
-                        android:text="V"
+                        android:text="CONFIRM"
                         android:textSize="35dp"
                         android:textStyle="bold"
-                        android:textColor="#3e3d42"/>
+                        android:textColor="@color/colorWhite"/>
                 </LinearLayout>
 
             </LinearLayout>

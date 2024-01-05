@@ -30,12 +30,14 @@
     <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/Android_Platform_Adapter.jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/commons-net-3.6.jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/ePOS2.jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/GLComm_V1.10.02_T_20220707.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/GLComm_V1.12.01_20230515.jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/jsoup-1.7.3.jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/magtek-usb.jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/mail.jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/MarketVersionChecker.jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/PAX_POSLinkAndroid_20220818.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/PaxLog_1.0.11_20220921.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/PAX_POSLinkAndroid_20231101.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/POSLink_Core_Android_V2.00.03_20230828.jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/Printer.jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/Sam4sAndroidSDK.jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.starmicronics:starioextension:1.15.1" level="project" />

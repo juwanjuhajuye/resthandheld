@@ -28,14 +28,16 @@
             android:orientation="vertical">
             <Button
                 android:id="@+id/closebtn"
-                android:layout_width="40dp"
+                android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:layout_alignParentRight="true"
 
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:background="@drawable/a0_handheld_ui_close_icon"
-                android:textSize="30dp" />
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_roundlayout_button_red"
+                android:text="CLOSE"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp" />
         </LinearLayout>
 
         <LinearLayout

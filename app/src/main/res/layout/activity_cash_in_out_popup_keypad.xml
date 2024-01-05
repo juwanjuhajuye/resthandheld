@@ -56,10 +56,10 @@
                 <Button
                     android:id="@+id/cashEnter_suButtonX"
                     android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="0.6"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.8"
                     android:background="@drawable/selector_roundlayout_button_red"
-                    android:text="X"
+                    android:text="CLOSE"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:textColor="@color/colorWhite"

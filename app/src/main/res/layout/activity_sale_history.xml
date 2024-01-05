@@ -67,6 +67,9 @@
                             android:layout_height="match_parent"
                             android:layout_alignParentRight="true"
                             android:gravity="center"
+                            android:text="CLOSE"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/selector_roundlayout_button_red"
                             android:tag="saleHistoryCloseBtnTag" />
                     </RelativeLayout>
 

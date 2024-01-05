@@ -121,10 +121,10 @@
                     android:layout_height="0dp"
                     android:layout_weight="5"
                     android:orientation="vertical"
-                    android:padding="30dp">
+                    android:padding="5dp">
 
                     <LinearLayout
-                        android:layout_weight="7"
+                        android:layout_weight="9"
                         android:layout_width="match_parent"
                         android:layout_height="0dp">
                         <FrameLayout
@@ -138,158 +138,175 @@
                                 android:id="@+id/tipSelectionLn"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:orientation="horizontal"
+                                android:orientation="vertical"
                                 android:visibility="visible"
                                 android:padding="5dp" >
 
                                 <LinearLayout
-                                    android:id="@+id/tipSuggestLn1"
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
                                     android:layout_weight="1"
-                                    android:orientation="vertical"
-                                    android:background="@drawable/button_selector_tipselect">
+                                    android:orientation="horizontal">
 
-                                    <TextView
-                                        android:id="@+id/tipSuggest1_1"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
+                                    <LinearLayout
+                                        android:id="@+id/tipSuggestLn1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
                                         android:layout_weight="1"
-                                        android:gravity="bottom|center_horizontal"
-                                        android:text="No Tip"
-                                        android:textSize="38dp"
-                                        android:textColor="#ffffff"
-                                        android:textStyle="bold" />
+                                        android:orientation="vertical"
+                                        android:background="@drawable/button_selector_tipselect">
 
-                                    <TextView
-                                        android:id="@+id/tipSuggest1_2"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
+                                        <TextView
+                                            android:id="@+id/tipSuggest1_1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:gravity="bottom|center_horizontal"
+                                            android:text="No tip"
+                                            android:textSize="24dp"
+                                            android:textColor="#ffffff"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/tipSuggest1_2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text=""
+                                            android:textSize="40dp"
+                                            android:textColor="#ffffff" />
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.1"/>
+
+                                    <LinearLayout
+                                        android:id="@+id/tipSuggestLn2"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
                                         android:layout_weight="1"
-                                        android:gravity="center"
-                                        android:text=""
-                                        android:textSize="40dp"
-                                        android:textColor="#ffffff" />
+                                        android:orientation="vertical"
+                                        android:background="@drawable/button_selector_tipselect">
+
+                                        <TextView
+                                            android:id="@+id/tipSuggest2_1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:gravity="bottom|center_horizontal"
+                                            android:text="5%"
+                                            android:textSize="24dp"
+                                            android:textColor="#ffffff"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/tipSuggest2_2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:gravity="top|center_horizontal"
+                                            android:text="($0.77)"
+                                            android:textSize="24dp"
+                                            android:textColor="#ffffff" />
+                                    </LinearLayout>
 
                                 </LinearLayout>
 
-                                <LinearLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
                                     android:layout_weight="0.15"
-                                    android:orientation="vertical">
-                                </LinearLayout>
+                                    android:orientation="vertical"/>
 
                                 <LinearLayout
-                                    android:id="@+id/tipSuggestLn2"
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
                                     android:layout_weight="1"
-                                    android:orientation="vertical"
-                                    android:background="@drawable/button_selector_tipselect">
+                                    android:orientation="horizontal">
 
-                                    <TextView
-                                        android:id="@+id/tipSuggest2_1"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
+                                    <LinearLayout
+                                        android:id="@+id/tipSuggestLn3"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
                                         android:layout_weight="1"
-                                        android:gravity="bottom|center_horizontal"
-                                        android:text="5%"
-                                        android:textSize="45dp"
-                                        android:textColor="#ffffff"
-                                        android:textStyle="bold" />
+                                        android:orientation="vertical"
+                                        android:background="@drawable/button_selector_tipselect">
 
-                                    <TextView
-                                        android:id="@+id/tipSuggest2_2"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
+                                        <TextView
+                                            android:id="@+id/tipSuggest3_1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:gravity="bottom|center_horizontal"
+                                            android:text="10%"
+                                            android:textSize="24dp"
+                                            android:textColor="#ffffff"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/tipSuggest3_2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:gravity="top|center_horizontal"
+                                            android:text="($0.77)"
+                                            android:textSize="24dp"
+                                            android:textColor="#ffffff" />
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.1"/>
+
+                                    <LinearLayout
+                                        android:id="@+id/tipSuggestLn4"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
                                         android:layout_weight="1"
-                                        android:gravity="top|center_horizontal"
-                                        android:text="($0.77)"
-                                        android:textSize="38dp"
-                                        android:textColor="#ffffff" />
+                                        android:orientation="vertical"
+                                        android:background="@drawable/button_selector_tipselect">
+
+                                        <TextView
+                                            android:id="@+id/tipSuggest4_1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:gravity="bottom|center_horizontal"
+                                            android:text="15%"
+                                            android:textSize="24dp"
+                                            android:textColor="#ffffff"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/tipSuggest4_2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:gravity="top|center_horizontal"
+                                            android:text="($0.77)"
+                                            android:textSize="24dp"
+                                            android:textColor="#ffffff" />
+                                    </LinearLayout>
+
                                 </LinearLayout>
 
-                                <LinearLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
                                     android:layout_weight="0.15"
-                                    android:orientation="vertical">
-                                </LinearLayout>
+                                    android:orientation="vertical"/>
 
-                                <LinearLayout
-                                    android:id="@+id/tipSuggestLn3"
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:orientation="vertical"
-                                    android:background="@drawable/button_selector_tipselect">
-
-                                    <TextView
-                                        android:id="@+id/tipSuggest3_1"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:gravity="bottom|center_horizontal"
-                                        android:text="10%"
-                                        android:textSize="45dp"
-                                        android:textColor="#ffffff"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:id="@+id/tipSuggest3_2"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:gravity="top|center_horizontal"
-                                        android:text="($0.77)"
-                                        android:textSize="38dp"
-                                        android:textColor="#ffffff" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="0.15"
-                                    android:orientation="vertical">
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:id="@+id/tipSuggestLn4"
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:orientation="vertical"
-                                    android:background="@drawable/button_selector_tipselect">
-
-                                    <TextView
-                                        android:id="@+id/tipSuggest4_1"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:gravity="bottom|center_horizontal"
-                                        android:text="15%"
-                                        android:textSize="45dp"
-                                        android:textColor="#ffffff"
-                                        android:textStyle="bold" />
-
-                                    <TextView
-                                        android:id="@+id/tipSuggest4_2"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:gravity="top|center_horizontal"
-                                        android:text="($0.77)"
-                                        android:textSize="38dp"
-                                        android:textColor="#ffffff" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="0.15"
-                                    android:orientation="vertical">
-                                </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
 
                                 <LinearLayout
                                     android:id="@+id/tipSuggestLn5"
@@ -306,7 +323,7 @@
                                         android:layout_weight="1"
                                         android:gravity="bottom|center_horizontal"
                                         android:text="20%"
-                                        android:textSize="45dp"
+                                        android:textSize="24dp"
                                         android:textColor="#ffffff"
                                         android:textStyle="bold" />
 
@@ -317,16 +334,14 @@
                                         android:layout_weight="1"
                                         android:gravity="top|center_horizontal"
                                         android:text="($0.77)"
-                                        android:textSize="38dp"
+                                        android:textSize="24dp"
                                         android:textColor="#ffffff" />
                                 </LinearLayout>
 
-                                <LinearLayout
+                                <View
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="0.15"
-                                    android:orientation="vertical">
-                                </LinearLayout>
+                                    android:layout_weight="0.1"/>
 
                                 <LinearLayout
                                     android:id="@+id/tipSuggestLn6"
@@ -343,7 +358,7 @@
                                         android:layout_weight="1"
                                         android:gravity="bottom|center_horizontal"
                                         android:text="Custom"
-                                        android:textSize="34dp"
+                                        android:textSize="24dp"
                                         android:textColor="#ffffff"
                                         android:textStyle="bold" />
 
@@ -358,6 +373,13 @@
                                         android:textColor="#ffffff" />
 
                                 </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+
 
                             </LinearLayout>
 
@@ -389,14 +411,6 @@
                             <!-- Tip Selection 사용안할 때 보여지는 부분 끝 -->
 
                         </FrameLayout>
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_weight="3"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp">
-
                     </LinearLayout>
 
 

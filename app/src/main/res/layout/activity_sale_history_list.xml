@@ -131,7 +131,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:orientation="horizontal"
-                                android:layout_marginLeft="10dp">
+                                android:layout_marginLeft="5dp">
                                 <RadioButton
                                     android:layout_weight="1"
                                     android:id="@+id/hereRadioButton"
@@ -147,7 +147,7 @@
                                     android:tag="takeawayRadioButtonTag"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginLeft="10dp"
                                     android:textSize="15dp"
                                     android:textColor="#000000"
                                     android:text="To Go"/>
@@ -157,7 +157,7 @@
                                     android:tag="deliveryRadioButtonTag"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginLeft="10dp"
                                     android:textSize="15dp"
                                     android:textColor="#000000"
                                     android:text="Delivery" />
@@ -167,7 +167,7 @@
                                     android:tag="allRadioButtonTag"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginLeft="10dp"
                                     android:textSize="15dp"
                                     android:textColor="#000000"
                                     android:text="All  "

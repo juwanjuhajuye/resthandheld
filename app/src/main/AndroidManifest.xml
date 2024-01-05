@@ -130,19 +130,19 @@
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SaleHistoryReturn"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
             android:label="@string/title_activity_sale_history_return"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SaleHistoryReturnItemList"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
             android:label="@string/title_activity_sale_history_return_item_list"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SaleHistoryTipAdjustment"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
             android:label="@string/title_activity_sale_history_tip_adjustment"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.ClockInOut"
@@ -325,7 +325,7 @@
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.GiftCardBalanceCheck"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CustomerMemo"
@@ -562,7 +562,7 @@
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SaleHistory_Reprint"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.PaymentRotateScreen"
@@ -586,7 +586,7 @@
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CommandDownloadData"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
             android:excludeFromRecents="true"
-            android:theme="@android:style/Theme.Dialog" />
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.MainMiddleService_ScaleWeight"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
