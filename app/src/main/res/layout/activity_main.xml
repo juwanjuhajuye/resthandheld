@@ -234,12 +234,6 @@
         </LinearLayout>
     </RelativeLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </LinearLayout>
-
     <RelativeLayout
         android:visibility="visible"
         android:id="@+id/rootLn"
@@ -1571,7 +1565,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="2"
+                            android:layout_weight="2.5"
                             android:orientation="horizontal">
 
                             <LinearLayout
@@ -2159,7 +2153,7 @@
         <ImageView
             android:visibility="gone"
             android:id="@+id/main_loading_back_screen"
-            android:src="@color/colorPrimaryDark"
+            android:src="@color/colorWhite"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 

@@ -129,7 +129,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.3"
+                android:layout_weight="0.1"
                 android:gravity="center" />
             <TextView
                 android:layout_width="0dp"
@@ -144,10 +144,10 @@
                 android:textSize="18dp"
                 android:layout_weight="2"
                 android:padding="5dp"
-                android:gravity="center"
+                android:gravity="left"
                 android:textStyle="italic" />
             <LinearLayout
-                android:visibility="gone"
+                android:visibility="visible"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
@@ -156,17 +156,19 @@
                     android:id="@+id/modifieredit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
-                    android:gravity="center"
+                    android:gravity="center|center"
                     android:text=" EDIT "
                     android:textColor="#ffffff"
                     android:textSize="16dp"
-                    android:background="@drawable/button_selector_calculator" />
+                    android:background="@drawable/button_selector_blue_bordered_button_rounded" />
             </LinearLayout>
             <TextView
+                android:visibility="gone"
                 android:id="@+id/mainSaleCartListEach2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -224,7 +226,7 @@
                         android:layout_gravity="center_vertical"
                         android:background="@color/zxing_transparent"
                         android:id="@+id/salecart_item_minus"
-                        android:src="@drawable/tablet_main_middleservice_cart_min_dark"
+                        android:src="@drawable/tablet_main_middleservice_cart_min_dark_button"
                         android:layout_width="0dp"
                         android:layout_weight="2"
                         android:layout_height="30dp"/>
@@ -243,7 +245,7 @@
                         android:layout_gravity="center_vertical"
                         android:background="@color/zxing_transparent"
                         android:id="@+id/salecart_item_plus"
-                        android:src="@drawable/tablet_main_middleservice_cart_add_dark"
+                        android:src="@drawable/tablet_main_middleservice_cart_add_dark_button"
                         android:layout_width="0dp"
                         android:layout_weight="2"
                         android:layout_height="30dp"/>
@@ -280,15 +282,27 @@
             android:weightSum="10"
             android:gravity="right"
             android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/mainSaleCartListLinearLayout_option"
+                android:background="@drawable/button_selector_blue_bordered_button_rounded"
+                android:text="Options"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+            />
+
             <Button
                 android:id="@+id/mainSaleCartListLinearLayout_delete"
-                android:background="@drawable/roundlayout_button_red"
+                android:background="@drawable/selector_roundlayout_button_red"
                 android:text="Item Delete"
                 android:textColor="#ffffff"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
-                android:layout_marginRight="30dp"/>
+                android:layout_marginRight="15dp"/>
         </LinearLayout>
         <LinearLayout
             android:visibility="gone"

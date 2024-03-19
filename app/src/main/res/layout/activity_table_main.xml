@@ -6,145 +6,165 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
-        android:orientation="vertical"
+        android:padding="10dp"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="70dp">
+        <TextView
+            android:id="@+id/tablesalemain_title"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:textColor="#191d37"
+            android:text="Tables"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+
+            android:id="@+id/table_main_refresh"
+            android:padding="5dp"
+            android:layout_margin="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:background="@drawable/button_selector_blue_bordered_button_rounded"
+            android:text="REFRESH"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:tag="optionaddPopupCloseButtonTag"
+            android:textSize="12sp" />
+
+        <Button
+
+            android:id="@+id/table_main_action"
+            android:padding="5dp"
+            android:layout_margin="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:background="@drawable/button_selector_blue_bordered_button_rounded"
+            android:text="COMMAND"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:tag="optionaddPopupCloseButtonTag"
+            android:textSize="12sp" />
         <LinearLayout
-            android:padding="10dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="70dp">
-            <TextView
-                android:id="@+id/tablesalemain_title"
-                android:layout_marginLeft="20dp"
-                android:layout_gravity="center"
-                android:textColor="#191d37"
-                android:text="Tables"
-                android:textSize="25dp"
-                android:textStyle="bold"
-                android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:visibility="gone"
+                android:layout_margin="10dp"
                 android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:background="@drawable/tablet_button_selector_red"
+                android:tag="optionaddPopupCloseButtonTag"
+                android:text="Close"
+                android:textColor="#ffffff"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Floor list:"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Floor List:"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:id="@+id/floor_btn_ln"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:background="@drawable/selector_roundlayout_button_purple_tablesale_floor"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="#ffffff"
+                android:id="@+id/floor_btn_text1"
+
+                android:gravity="center"
+                android:textSize="24dp"
+                android:text="Floor"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
-            <Button
-
-                android:id="@+id/table_main_refresh"
-                android:padding="5dp"
-                android:layout_margin="2dp"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-
-                android:gravity="center"
-                android:background="@drawable/button_selector_blue_bordered_button_rounded"
-                android:text="REFRESH"
-                android:textStyle="bold"
-                android:textColor="@color/colorWhite"
-                android:tag="optionaddPopupCloseButtonTag"
-                android:textSize="12sp" />
-
-            <Button
-
-                android:id="@+id/table_main_action"
-                android:padding="5dp"
-                android:layout_margin="2dp"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-
-                android:gravity="center"
-                android:background="@drawable/button_selector_blue_bordered_button_rounded"
-                android:text="COMMAND"
-                android:textStyle="bold"
-                android:textColor="@color/colorWhite"
-                android:tag="optionaddPopupCloseButtonTag"
-                android:textSize="12sp" />
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0"
-                android:gravity="right|center_vertical"
-                android:orientation="horizontal">
-
-
-                <Button
-                    android:visibility="gone"
-                    android:layout_margin="10dp"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.5"
-                    android:gravity="center"
-                    android:background="@drawable/tablet_button_selector_red"
-                    android:tag="optionaddPopupCloseButtonTag"
-                    android:text="Close"
-                    android:textColor="#ffffff"
-                    android:textSize="10dp" />
-
-            </LinearLayout>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/action_btn_ln"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_roundlayout_button_tablesale_action"
             android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:id="@+id/floor_btn_ln"
-                android:layout_margin="10dp"
-                android:padding="15dp"
-                android:background="@drawable/selector_roundlayout_button_purple_tablesale_floor"
-                android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:padding="15dp">
+            <TextView
+                android:id="@+id/action_btn_text"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="24dp"
+                android:text="Action"
                 android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent">
-                <TextView
-                    android:textColor="#ffffff"
-                    android:id="@+id/floor_btn_text1"
-
-                    android:gravity="center"
-                    android:textSize="30dp"
-                    android:text="Floor"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-
-            </LinearLayout>
-                <LinearLayout
-                    android:id="@+id/action_btn_ln"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/selector_roundlayout_button_tablesale_action"
-                    android:orientation="horizontal"
-                    android:layout_margin="10dp"
-                    android:padding="15dp">
-                    <TextView
-                        android:id="@+id/action_btn_text"
-                        android:textColor="#ffffff"
-                        android:gravity="center"
-                        android:textSize="30dp"
-                        android:text="Action"
-                        android:layout_weight="1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
-
-                </LinearLayout>
-                <LinearLayout
-                    android:visibility="gone"
-                    android:id="@+id/select_btn_ln"
-                    android:layout_margin="10dp"
-                    android:background="@drawable/selector_roundlayout_button_blue"
-                    android:orientation="horizontal"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent">
-                    <TextView
-                        android:textColor="#ffffff"
-                        android:gravity="center"
-                        android:textSize="30dp"
-                        android:text="Select"
-                        android:layout_weight="1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
-
-                </LinearLayout>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
 
         </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/select_btn_ln"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_roundlayout_button_blue"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:text="Select"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 <!--        <GridView-->
 <!--            android:id="@+id/tablemain_grid"-->
 <!--            android:numColumns="3"-->
@@ -152,12 +172,11 @@
 <!--            android:layout_height="match_parent">-->
 <!--        </GridView>-->
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/tablemain_grid"
-            android:numColumns="3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        </androidx.recyclerview.widget.RecyclerView>
-    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tablemain_grid"
+        android:numColumns="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>

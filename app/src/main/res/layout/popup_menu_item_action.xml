@@ -8,7 +8,7 @@
     android:paddingBottom="1dp">
 
     <Button
-        android:id="@+id/popup_main_action_close"
+        android:id="@+id/popup_menu_item_action_close"
         android:layout_width="80dp"
         android:layout_height="50dp"
         android:layout_marginRight="10dp"
@@ -54,40 +54,9 @@
                     android:background="@drawable/ab_imagebutton_tablet_action_order"
                     android:visibility="gone" />
 
-                <Button
-                    android:id="@+id/popup_main_action_pay"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/selector_roundlayout_button_red"
-                    android:text="Pay"
-                    android:textAllCaps="false"
-
-                    android:textColor="#ffffff"
-                    android:textSize="25dp" />
 
                 <Button
-                    android:id="@+id/popup_main_action_quick"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/button_selector_blue_bordered_button_rounded"
-                    android:textColor="@color/colorWhite"
-                    android:text="Quick"
-                    android:textAllCaps="false"
-
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
-
-
-
-
-
-                <Button
-                    android:visibility="gone"
-                    android:id="@+id/popup_main_action_general_modifier"
+                    android:id="@+id/popup_menu_item_action_general_modifier"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
@@ -118,22 +87,7 @@
 
 
                 <Button
-                    android:id="@+id/popup_main_action_menusearch"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/button_selector_blue_bordered_button_rounded"
-                    android:textColor="@color/colorWhite"
-                    android:text="Menu Search"
-                    android:textAllCaps="false"
-
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:visibility="gone"
-                    android:id="@+id/popup_main_action_tax_exempt"
+                    android:id="@+id/popup_menu_item_action_tax_exempt"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
@@ -198,8 +152,7 @@
 
 
                 <Button
-                    android:visibility="gone"
-                    android:id="@+id/popup_main_action_discount"
+                    android:id="@+id/popup_menu_item_action_discount"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
@@ -230,8 +183,7 @@
 
 
                 <Button
-                    android:visibility="gone"
-                    android:id="@+id/popup_main_action_remove_tax_exempt"
+                    android:id="@+id/popup_menu_item_action_remove_tax_exempt"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
@@ -243,47 +195,6 @@
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
-                <Button
-                    android:id="@+id/popup_main_action_giftcard"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/button_selector_blue_bordered_button_rounded"
-                    android:textColor="@color/colorWhite"
-                    android:text="GiftCard"
-                    android:textAllCaps="false"
-
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/popup_main_action_product"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/button_selector_blue_bordered_button_rounded"
-                    android:textColor="@color/colorWhite"
-                    android:text="Product"
-                    android:textAllCaps="false"
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
-
-                <Button
-
-                    android:id="@+id/popup_main_action_setting"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/button_selector_blue_bordered_button_rounded"
-                    android:text="Settings"
-                    android:textAllCaps="false"
-                    android:textColor="@color/colorWhite"
-
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
 
 
 

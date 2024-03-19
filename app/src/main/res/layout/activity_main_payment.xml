@@ -13,7 +13,7 @@
         android:orientation="vertical"
 
         android:background="#ffffff"
-        android:visibility="invisible">
+        android:visibility="visible">
 
 
         <LinearLayout
@@ -542,7 +542,7 @@
                             android:text="CASH"
                             android:textColor="#ffffff"
                             android:textStyle="bold"
-                            android:textSize="15dp"
+                            android:textSize="12dp"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp"
                             android:background="@drawable/roundlayout_darkblue"
@@ -555,7 +555,7 @@
                             android:layout_weight="2.5"
 
                             android:gravity="center"
-                            android:textSize="25dp"
+                            android:textSize="16dp"
                             android:textStyle="bold"
                             android:textColor="#ffffff"
                             android:background="@drawable/roundlayout_darkblue"/>
@@ -581,7 +581,7 @@
                             android:text="CARD"
                             android:textColor="#ffffff"
                             android:textStyle="bold"
-                            android:textSize="15dp"
+                            android:textSize="12dp"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp"
                             android:gravity="center" />
@@ -592,7 +592,7 @@
                             android:layout_height="0dp"
                             android:layout_weight="2.5"
                             android:gravity="center"
-                            android:textSize="25dp"
+                            android:textSize="16dp"
                             android:textStyle="bold"
                             android:textColor="#ffffff"
                             android:background="@drawable/roundlayout_darkblue"/>
@@ -618,7 +618,7 @@
                             android:text="GIFT CARD"
                             android:textColor="#ffffff"
                             android:textStyle="bold"
-                            android:textSize="15dp"
+                            android:textSize="12dp"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp"
                             android:gravity="center" />
@@ -629,7 +629,7 @@
                             android:layout_height="0dp"
                             android:layout_weight="2.5"
                             android:gravity="center"
-                            android:textSize="25dp"
+                            android:textSize="16dp"
                             android:textStyle="bold"
                             android:textColor="#ffffff"
                             android:background="@drawable/roundlayout_darkblue"/>
@@ -655,7 +655,7 @@
                             android:text="POINT"
                             android:textColor="#ffffff"
                             android:textStyle="bold"
-                            android:textSize="15dp"
+                            android:textSize="12dp"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp"
                             android:gravity="center" />
@@ -666,7 +666,7 @@
                             android:layout_height="0dp"
                             android:layout_weight="2.5"
                             android:gravity="center"
-                            android:textSize="25dp"
+                            android:textSize="16dp"
                             android:textStyle="bold"
                             android:textColor="#ffffff"
                             android:background="@drawable/roundlayout_darkblue"/>
@@ -692,7 +692,7 @@
                             android:text="OTHER"
                             android:textColor="#ffffff"
                             android:textStyle="bold"
-                            android:textSize="15dp"
+                            android:textSize="12dp"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp"
                             android:gravity="center" />
@@ -703,7 +703,7 @@
                             android:layout_height="0dp"
                             android:layout_weight="2.5"
                             android:gravity="center"
-                            android:textSize="25dp"
+                            android:textSize="16dp"
                             android:textStyle="bold"
                             android:textColor="#ffffff"
                             android:background="@drawable/roundlayout_darkblue"/>

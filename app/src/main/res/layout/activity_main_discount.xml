@@ -264,7 +264,7 @@
                                 android:switchTextAppearance="@style/SwitchTextAppearance"
                                 android:textOn="All"
                                 android:textOff="Each"
-                                android:checked="true"/>
+                                android:checked="false"/>
                         </LinearLayout>
                     </LinearLayout>
 
