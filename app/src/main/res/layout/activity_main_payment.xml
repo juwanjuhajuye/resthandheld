@@ -13,7 +13,7 @@
         android:orientation="vertical"
 
         android:background="#ffffff"
-        android:visibility="visible">
+        android:visibility="invisible">
 
 
         <LinearLayout
