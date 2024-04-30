@@ -43,21 +43,21 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 28 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/activation.jar" level="project" />
-    <orderEntry type="library" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/additionnal.jar" level="project" />
-    <orderEntry type="library" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/Android_Platform_Adapter.jar" level="project" />
-    <orderEntry type="library" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/commons-net-3.6.jar" level="project" />
-    <orderEntry type="library" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/ePOS2.jar" level="project" />
-    <orderEntry type="library" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/GLComm_V1.12.01_20230515.jar" level="project" />
-    <orderEntry type="library" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/jsoup-1.7.3.jar" level="project" />
-    <orderEntry type="library" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/magtek-usb.jar" level="project" />
-    <orderEntry type="library" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/mail.jar" level="project" />
-    <orderEntry type="library" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/MarketVersionChecker.jar" level="project" />
-    <orderEntry type="library" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/PaxLog_1.0.11_20220921.jar" level="project" />
-    <orderEntry type="library" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/PAX_POSLinkAndroid_20231101.jar" level="project" />
-    <orderEntry type="library" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/POSLink_Core_Android_V2.00.03_20230828.jar" level="project" />
-    <orderEntry type="library" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/Printer.jar" level="project" />
-    <orderEntry type="library" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/Sam4sAndroidSDK.jar" level="project" />
+    <orderEntry type="library" name="Gradle: D./Works/QSR_POS/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/activation.jar" level="project" />
+    <orderEntry type="library" name="Gradle: D./Works/QSR_POS/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/additionnal.jar" level="project" />
+    <orderEntry type="library" name="Gradle: D./Works/QSR_POS/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/Android_Platform_Adapter.jar" level="project" />
+    <orderEntry type="library" name="Gradle: D./Works/QSR_POS/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/commons-net-3.6.jar" level="project" />
+    <orderEntry type="library" name="Gradle: D./Works/QSR_POS/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/ePOS2.jar" level="project" />
+    <orderEntry type="library" name="Gradle: D./Works/QSR_POS/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/GLComm_V1.12.01_20230515.jar" level="project" />
+    <orderEntry type="library" name="Gradle: D./Works/QSR_POS/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/jsoup-1.7.3.jar" level="project" />
+    <orderEntry type="library" name="Gradle: D./Works/QSR_POS/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/magtek-usb.jar" level="project" />
+    <orderEntry type="library" name="Gradle: D./Works/QSR_POS/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/mail.jar" level="project" />
+    <orderEntry type="library" name="Gradle: D./Works/QSR_POS/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/MarketVersionChecker.jar" level="project" />
+    <orderEntry type="library" name="Gradle: D./Works/QSR_POS/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/PaxLog_1.0.11_20220921.jar" level="project" />
+    <orderEntry type="library" name="Gradle: D./Works/QSR_POS/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/PAX_POSLinkAndroid_20231101.jar" level="project" />
+    <orderEntry type="library" name="Gradle: D./Works/QSR_POS/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/POSLink_Core_Android_V2.00.03_20230828.jar" level="project" />
+    <orderEntry type="library" name="Gradle: D./Works/QSR_POS/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/Printer.jar" level="project" />
+    <orderEntry type="library" name="Gradle: D./Works/QSR_POS/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/Sam4sAndroidSDK.jar" level="project" />
     <orderEntry type="library" name="Gradle: com.starmicronics:starioextension:1.15.1" level="project" />
     <orderEntry type="library" name="Gradle: androidx.collection:collection:1.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-encoders:16.0.0" level="project" />
