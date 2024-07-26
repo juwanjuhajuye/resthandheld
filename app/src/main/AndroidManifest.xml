@@ -186,10 +186,10 @@
             android:label="@string/title_activity_qty_edit_cash_in_out"
             android:theme="@android:style/Theme.Dialog"
             android:windowSoftInputMode="stateAlwaysHidden" />
-<!--        <activity-->
-<!--            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.Splash"-->
-<!--            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"-->
-<!--            android:label="@string/title_activity_splash" />-->
+        <!--        <activity-->
+        <!--            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.Splash"-->
+        <!--            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"-->
+        <!--            android:label="@string/title_activity_splash" />-->
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CloudWebPageAtNotConnection"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
@@ -240,16 +240,6 @@
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
             android:theme="@android:style/Theme.Dialog"
             android:windowSoftInputMode="stateAlwaysHidden" />
-
-
-        <!-- 07182024 -->
-        <activity
-            android:name="com.example.jjbfather.jjjqsrt2go2gorest.SettingsPaymentGatewayDevices"
-            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
-            android:theme="@android:style/Theme.Dialog"
-            android:windowSoftInputMode="stateAlwaysHidden" />
-
-
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingDeviceLabelPrinter"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
@@ -563,12 +553,12 @@
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
             android:theme="@style/Theme.Transparent"
             android:windowSoftInputMode="stateAlwaysHidden" />
-<!--        <activity-->
-<!--            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.TimeMenuSet"-->
-<!--            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"-->
-<!--            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"-->
-<!--            android:windowSoftInputMode="stateAlwaysHidden"-->
-<!--            tools:ignore="Instantiatable" />-->
+        <!--        <activity-->
+        <!--            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.TimeMenuSet"-->
+        <!--            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"-->
+        <!--            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"-->
+        <!--            android:windowSoftInputMode="stateAlwaysHidden"-->
+        <!--            tools:ignore="Instantiatable" />-->
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SaleHistory_Reprint"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
@@ -853,6 +843,20 @@
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SignatureImageDelete"
             android:enabled="true"
             android:exported="true" />
+
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CheckOnlineStatus"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.UploadKitchenPrintingDataToCloud"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SignatureImageDelete"
+            android:enabled="true"
+            android:exported="true" />
+
         <service
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.UploadMemberMileageHistoryToCloud_Service"
             android:enabled="true"
@@ -900,7 +904,16 @@
         <service
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.NewCartCheckByStation"
             android:enabled="true"
-            android:exported="false" /> <!-- Service 끝 -->
+            android:exported="false" />
+
+        <!-- 07202024 -->
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.TOrderDataSendService"
+            android:enabled="true"
+            android:exported="true" />
+
+
+        <!-- Service 끝 -->
         <!-- 구글 플레이 서비스 구글플레이서비스 (Google Play Service) -->
         <!-- FCM 관련 -->
         <!--
@@ -918,6 +931,9 @@
         <!-- <meta-data -->
         <!-- android:name="io.fabric.ApiKey" -->
         <!-- android:value="59a3dd427b6e4ed7246253d9fc46901a8585dd00" /> -->
+        <service android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.ForecdTerminationService"
+            android:stopWithTask="false" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.jjbfather.jjjqsrt2go2goresthandheld.fileprovider"

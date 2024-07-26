@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id=":app:unitTest" external.linked.project.path="$MODULE_DIR$/../../../app" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
-    <facet type="android" name="Android">
+    <facet external-system-id="GRADLE" type="android" name="Android">
       <configuration>
         <option name="SELECTED_BUILD_VARIANT" value="debug" />
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
@@ -99,7 +99,6 @@
     <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/MarketVersionChecker.jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/PaxLog_1.0.11_20220921.jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/PAX_POSLinkAndroid_20231101.jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/POSLink_Core_Android_V2.00.03_20230828.jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/Printer.jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: D./Works/BCS_QSR/2Go2Go/App/JJJ_2go2go_POS_Rest_HandHeld/app/libs/Sam4sAndroidSDK.jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.starmicronics:starioextension:1.15.1" level="project" />
