@@ -223,7 +223,7 @@
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.BatchSummary"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
             android:label="@string/title_activity_batch_summary"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@style/Theme.Transparent"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingsSystem"
@@ -237,6 +237,22 @@
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingsPaymentGateway"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+
+
+
+
+
+
+
+
+
+
+
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SettingsPaymentGatewayDevices"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
             android:theme="@android:style/Theme.Dialog"
             android:windowSoftInputMode="stateAlwaysHidden" />
@@ -365,7 +381,7 @@
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.BatchListDetail"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@style/Theme.Transparent"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.JJJ_SignPad"
