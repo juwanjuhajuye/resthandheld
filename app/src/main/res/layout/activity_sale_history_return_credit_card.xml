@@ -76,8 +76,6 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="8.5"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
             android:orientation="horizontal">
 
 
@@ -88,7 +86,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="2.2"
                 android:orientation="vertical"
-                android:padding="10dp">
+                android:padding="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -591,7 +589,7 @@
                 android:orientation="vertical"
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp"
-                android:paddingRight="16dp">
+                android:paddingRight="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -629,7 +627,7 @@
                                 android:tag="returnCreditCardAmountTextViewTag"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="2"
+                                android:layout_weight="1.5"
                                 android:gravity="center_vertical|right"
                                 android:textColor="#4a5757"
                                 android:textSize="16dp"
@@ -659,7 +657,7 @@
                                 android:tag="returnCreditCardPaidTextViewTag"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="2"
+                                android:layout_weight="1.5"
                                 android:gravity="center_vertical|right"
                                 android:textColor="#4a5757"
                                 android:textSize="16dp"
@@ -689,7 +687,7 @@
                                 android:tag="returnCreditCardBalanceTextViewTag"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight="2"
+                                android:layout_weight="1.5"
                                 android:gravity="center_vertical|right"
                                 android:textColor="#4a5757"
                                 android:textSize="16dp"
@@ -756,7 +754,7 @@
                             android:layout_margin="3dp"
                             android:text="Void"
                             android:textSize="16dp"
-                            android:textColor="#ffffff"/>
+                            android:textColor="@color/colorBlack"/>
 
                         <TextView
                             android:layout_width="0dp"

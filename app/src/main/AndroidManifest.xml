@@ -300,7 +300,7 @@
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SaleHistoryReturnCreditCard"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
-            android:theme="@android:style/Theme.Dialog"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.ClockInOutWebPage"

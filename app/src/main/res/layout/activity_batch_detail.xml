@@ -81,15 +81,15 @@
 
                     <ScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="10dp">
+                        android:layout_height="match_parent"
+                        android:fillViewport="true">
 
                         <LinearLayout
                             android:id="@+id/batchSummaryClosingReportLinearLayout"
                             android:tag="batchSummaryClosingReportLinearLayoutTag"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:padding="20dp"
+                            android:padding="10dp"
                             android:orientation="vertical">
 
                             <LinearLayout
@@ -326,10 +326,10 @@
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
-                                    android:gravity="center_vertical|left"
+                                    android:gravity="center_vertical|right"
                                     android:textSize="12dp"
                                     android:textColor="#5e6264"
-                                    android:text="       DISCOVER"/>
+                                    android:text="DISCOVER"/>
                                 <TextView
                                     android:id="@+id/batchDiscoverAmountTv"
                                     android:tag="batchDiscoverAmountTvTag"
@@ -486,7 +486,10 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:layout_marginBottom="10dp"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    android:text="PRINT"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/button_selector_category7"/>
 
             </LinearLayout>
 
