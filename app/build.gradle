@@ -10,8 +10,8 @@ android {
         applicationId 'com.example.jjbfather.jjjqsrt2go2goresttablet'
         minSdkVersion 17
         targetSdkVersion 28
-        versionCode 24090405
-        versionName "24.09.04.05.beta"
+        versionCode 24090409
+        versionName "24.09.04.09.beta"
         multiDexEnabled true
         ndk {
             abiFilters "armeabi-v7a", 'arm64-v8a','x86','x86_64', "armeabi", "mips"
@@ -71,6 +71,8 @@ dependencies {
     implementation files('libs/GLComm_V1.12.01_20230515.jar')
     //missing before
     implementation files('libs/PaxLog_1.0.11_20220921.jar')
+    //needed for aidl implementation
+    implementation files('libs/POSLink_Core_Android_V2.00.02_20230228.jar')
 
     // sam4 printer
     implementation files('libs/Sam4sAndroidSDK.jar')
