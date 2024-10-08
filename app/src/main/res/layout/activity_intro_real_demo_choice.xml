@@ -390,6 +390,34 @@
                                     android:padding="7dp"
                                     android:orientation="vertical">
                                     <TextView
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="match_parent"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingRight="10dp"
+                                        android:textSize="20dp"
+                                        android:textColor="#232531"
+                                        android:text="DB CODE NAME" />
+                                    <TextView
+                                        android:id="@+id/introRealDemoDbCodeNameEditText"
+                                        android:tag="introRealDemoDbCodeNameEditTextTag"
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="match_parent"
+                                        android:background="@drawable/roundlayout_intro_edittext2"
+                                        android:gravity="center"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text=""
+                                        android:textSize="20dp"
+                                        android:textStyle="bold"
+                                        android:textColor="#232531"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="7dp"
+                                    android:orientation="vertical">
+                                    <TextView
                                         android:id="@+id/introRealDemoTitleTextView4"
                                         android:layout_height="wrap_content"
                                         android:layout_width="match_parent"

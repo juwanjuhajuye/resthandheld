@@ -471,6 +471,49 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
+                        android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:id="@+id/settingsSystemTitleTextView_dbcodename"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left|center_vertical"
+                                android:textSize="20dp"
+                                android:textColor="@color/colorBlack"
+                                android:textStyle="bold"
+                                android:text="DB CODE NAME"/>
+
+                            <EditText
+                                android:id="@+id/dbcodename_setting_edtext"
+                                android:tag="dbcodename_setting_edtextTag"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/roundlayout_background_settings_textview"
+                                android:padding="2dp"
+                                android:textSize="20dp"
+                                android:textColor="#3f3e3a"
+                                android:text=""/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
 		android:layout_marginVertical="5dp"
                         android:background="@color/colorGray"/>
 
