@@ -190,6 +190,12 @@
         <!--            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.Splash"-->
         <!--            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"-->
         <!--            android:label="@string/title_activity_splash" />-->
+
+        <activity
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SplashActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label="SplashActivity" />
         <activity
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.CloudWebPageAtNotConnection"
             android:configChanges="keyboard|keyboardHidden|orientation|orientation|screenSize"
@@ -927,7 +933,11 @@
             android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.TOrderDataSendService"
             android:enabled="true"
             android:exported="true" />
-
+        <!-- 10142024 -->
+        <service
+            android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.SendDataToTOrderAfterDownloadService"
+            android:enabled="true"
+            android:exported="true" />
 
         <!-- Service 끝 -->
         <!-- 구글 플레이 서비스 구글플레이서비스 (Google Play Service) -->
@@ -949,6 +959,7 @@
         <!-- android:value="59a3dd427b6e4ed7246253d9fc46901a8585dd00" /> -->
         <service android:name="com.example.jjbfather.jjjqsrt2go2goresthandheld.ForecdTerminationService"
             android:stopWithTask="false" />
+
 
         <provider
             android:name="androidx.core.content.FileProvider"
