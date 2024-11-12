@@ -125,7 +125,7 @@
                                 android:layout_height="match_parent">
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="50dp"
+                                    android:layout_height="70dp"
                                     android:drawableLeft="@drawable/ab_imagebutton_billsplitmerge_radio"
                                     android:background="@color/zxing_transparent"
                                     android:orientation="horizontal"
@@ -142,7 +142,7 @@
                                         android:text="By Menu"
                                         android:textAlignment="textStart"
                                         android:layout_width="0dp"
-                                        android:layout_height="match_parent"
+                                        android:layout_height="70dp"
                                         android:layout_weight="1"/>
 
                                     <LinearLayout
@@ -190,7 +190,7 @@
                                     android:textColor="#000000"
                                     android:textAlignment="textStart"
                                     android:layout_width="match_parent"
-                                    android:layout_height="50dp"/>
+                                    android:layout_height="70dp"/>
 
                                 <Button
                                     android:visibility="gone"
@@ -217,7 +217,7 @@
                                     <LinearLayout
                                         android:orientation="vertical"
                                         android:layout_marginLeft="10dp"
-                                        android:layout_marginRight="10dp"
+                                        android:layout_marginRight="30dp"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content">
                                         <LinearLayout
@@ -273,7 +273,7 @@
                                 </LinearLayout>
 
                                 <LinearLayout
-                                    android:orientation="horizontal"
+                                    android:orientation="vertical"
                                     android:id="@+id/tablesale_byequalamount_view"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content">
@@ -283,7 +283,7 @@
                                         android:orientation="horizontal"
                                         android:layout_weight="1"
                                         android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
+                                        android:layout_height="wrap_content">
                                         <LinearLayout
                                             android:gravity="center"
                                             android:layout_weight="1"
@@ -317,12 +317,12 @@
 
                                     </LinearLayout>
                                     <LinearLayout
-
+                                        android:layout_marginTop="10dp"
                                         android:layout_weight="1"
                                         android:gravity="center"
                                         android:orientation="horizontal"
                                         android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
+                                        android:layout_height="wrap_content">
                                         <ImageButton
                                             android:id="@+id/tablesale_splitmerge_splitevenly"
                                             android:background="@color/zxing_transparent"
@@ -469,7 +469,7 @@
                         <LinearLayout
                             android:background="#DFDFDF"
                             android:orientation="vertical"
-                            android:layout_weight="4"
+                            android:layout_weight="2"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
                             <LinearLayout
@@ -486,10 +486,10 @@
                                     android:columnWidth="60dp"
                                     android:horizontalSpacing="5dp"
                                     android:listSelector="@android:color/transparent"
-                                    android:numColumns="3"
-                                    android:paddingTop="5dp"
+                                    android:numColumns="2"
+                                    android:paddingLeft="10dp"
 
-
+                                    android:paddingTop="10dp"
                                     android:verticalSpacing="15dp"
                                     tools:listitem="@layout/tablesale_grid_bill_row" />
                             </LinearLayout>
