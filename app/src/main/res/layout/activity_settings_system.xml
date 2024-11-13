@@ -514,6 +514,49 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
+                        android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:id="@+id/settingsSystemTitleTextView_mobilehostname"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left|center_vertical"
+                                android:textSize="20dp"
+                                android:textColor="@color/colorBlack"
+                                android:textStyle="bold"
+                                android:text="MOBILE HOST"/>
+
+                            <EditText
+                                android:id="@+id/mobilehostname_setting_edtext"
+                                android:tag="mobilehostname_setting_edtextTag"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/roundlayout_background_settings_textview"
+                                android:padding="2dp"
+                                android:textSize="20dp"
+                                android:textColor="#3f3e3a"
+                                android:text=""/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
 		android:layout_marginVertical="5dp"
                         android:background="@color/colorGray"/>
 
@@ -1908,7 +1951,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-		android:layout_marginVertical="5dp"
+		                android:layout_marginVertical="5dp"
                         android:background="@color/colorGray"/>
 
                     <LinearLayout
@@ -1942,6 +1985,126 @@
                             <Switch
                                 android:id="@+id/onlineorderuseynSwitch"
                                 android:tag="onlineorderynSwitchTag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="left|center_vertical"
+                                style="@style/SwitchCustom80"
+                                android:switchTextAppearance="@style/SwitchTextAppearance"
+                                android:textOn="Yes"
+                                android:textOff="No"
+                                android:checked="true"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/infoTextView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textSize="14dp"
+                            android:textColor="@color/colorBlack"
+                            android:text="(Required to restart the POS)"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/settingsSystemTitleTextView92"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left|center_vertical"
+                                android:textSize="20dp"
+                                android:textColor="@color/colorBlack"
+                                android:textStyle="bold"
+                                android:text="Table Order Use"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:gravity="end">
+                            <Switch
+                                android:id="@+id/tableorderuseynSwitch"
+                                android:tag="tableorderuseynSwitchTag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="left|center_vertical"
+                                style="@style/SwitchCustom80"
+                                android:switchTextAppearance="@style/SwitchTextAppearance"
+                                android:textOn="Yes"
+                                android:textOff="No"
+                                android:checked="true"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/infoTextView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textSize="14dp"
+                            android:textColor="@color/colorBlack"
+                            android:text="(Required to restart the POS)"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/settingsSystemTitleTextView96"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left|center_vertical"
+                                android:textSize="20dp"
+                                android:textColor="@color/colorBlack"
+                                android:textStyle="bold"
+                                android:text="Table Order Download"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:gravity="end">
+                            <Switch
+                                android:id="@+id/tableorderdownloadynSwitch"
+                                android:tag="tableorderdownloadynSwitchTag"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="left|center_vertical"
@@ -4515,6 +4678,60 @@
                             <Switch
                                 android:id="@+id/itemdeletereasonynSwitch"
                                 android:tag="itemdeletereasonynSwitchTag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="left|center_vertical"
+                                style="@style/SwitchCustom80"
+                                android:switchTextAppearance="@style/SwitchTextAppearance"
+                                android:textOn="On"
+                                android:textOff="Off"
+                                android:checked="true"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="5dp"
+                        android:background="@color/colorGray"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+                            <TextView
+                                android:id="@+id/settingsSystemTitleTextView95"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left|center_vertical"
+                                android:textSize="20dp"
+                                android:textColor="@color/colorBlack"
+                                android:textStyle="bold"
+                                android:text="Bill Window print"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="end">
+                            <Switch
+                                android:id="@+id/setting_bill_windowprint_sw"
+                                android:tag="setting_bill_windowprint_swTag"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="left|center_vertical"
