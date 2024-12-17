@@ -146,6 +146,20 @@
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
+                <Button
+                    android:id="@+id/popup_main_action_billprint"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_selector_blue_bordered_button_rounded"
+                    android:textColor="@color/colorWhite"
+                    android:text="Bill Print"
+                    android:textAllCaps="false"
+
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
 
 
                 <!--            -->
